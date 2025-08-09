@@ -23,6 +23,9 @@ Options -MultiViews
   # 4) Internally map extensionless URL to existing .php file
   RewriteCond %{REQUEST_FILENAME}.php -f
   RewriteRule ^(.+)$ $1.php [L]
+
+  # 5) Custom 404 for anything else
+  RewriteRule . /404.php [L]
 </IfModule>
 
 # Ensure index.php is a default directory index

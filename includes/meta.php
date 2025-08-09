@@ -18,6 +18,11 @@ $SEO_META = [
         'description' => 'Build digital products and brand experiences with Orixy, a modern digital studio.',
         'url' => '',
     ],
+    '404' => [
+        'title' => '404 - Page Not Found',
+        'description' => 'The page you’re looking for was not found.',
+        'robots' => 'noindex,follow',
+    ],
 ];
 
 
