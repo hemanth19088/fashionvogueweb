@@ -11,12 +11,8 @@ include __DIR__ . '/includes/head.php';
   <span class="cirle-shape2 position-absolute"></span>
   <div class="container">
     <div class="ori-section-title-2 text-center" style="padding:140px 0 60px">
-      <div class="sub-title text-uppercase pera-content">We Keep The Terms Simple</div>
-      <h2>Manage your business with <br/> smart app.</h2>
-      <div class="download-btn-grp" style="margin-top:20px">
-        <a href="#"><img src="assets/img/logo/app.png" alt="App Store"></a>
-        <a href="#"><img src="assets/img/logo/play.png" alt="Play Store"></a>
-      </div>
+      <div class="sub-title text-uppercase pera-content">Auditions | Opportunities | Communities | AI Tools | Portfolio Boost</div>
+      <h2>Everything Fashion Vogue <br/>In One Portal.</h2>
     </div>
   </div>
   <div class="line_animation">
@@ -28,10 +24,12 @@ include __DIR__ . '/includes/head.php';
 <section id="ori-screenshots" class="ori-screenshots-section position-relative">
   <div class="ori-appScreenshotCarousel-container swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image:url(assets/img/screenshoot/sc.png)"></div>
-      <div class="swiper-slide" style="background-image:url(assets/img/screenshoot/sc.png)"></div>
-      <div class="swiper-slide" style="background-image:url(assets/img/screenshoot/sc.png)"></div>
-      <div class="swiper-slide" style="background-image:url(assets/img/screenshoot/sc.png)"></div>
+      <div class="swiper-slide" style="background-image:url(assets/images/appscreenshots/1.png)"></div>
+      <div class="swiper-slide" style="background-image:url(assets/images/appscreenshots/2.png)"></div>
+      <div class="swiper-slide" style="background-image:url(assets/images/appscreenshots/3.png)"></div>
+      <div class="swiper-slide" style="background-image:url(assets/images/appscreenshots/5.png)"></div>
+      <div class="swiper-slide" style="background-image:url(assets/images/appscreenshots/4.png)"></div>
+      <div class="swiper-slide" style="background-image:url(assets/images/appscreenshots/6.png)"></div>
     </div>
   </div>
   <div class="line_animation">
