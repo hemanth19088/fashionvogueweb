@@ -11321,7 +11321,11 @@ Font load
   }
 
   .ori-header-section {
-    padding: 25px 15px;
+    padding: 35px 15px 25px;
+  }
+
+  .ori-header-section.header-style-one {
+    padding-top: 50px !important;
   }
 
   .mobile_menu_button {
