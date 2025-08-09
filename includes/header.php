@@ -11,7 +11,7 @@
 					<ul id="main-nav" class="nav navbar-nav clearfix">
 						<li><a href="index">Home</a></li>
 						<li class="dropdown">
-							<a href="!#">Showverse</a>
+							<a href="showverse">Showverse</a>
 							<ul class="dropdown-menu clearfix">
 								<li><a href="about">About</a></li>
 								<li><a href="experience">Experience</a></li>
@@ -19,14 +19,14 @@
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="!#">Events</a>
+							<a href="events">Events</a>
 							<ul class="dropdown-menu clearfix">
 								<li><a href="upcoming">Upcoming</a></li>
 								<li><a href="past-highlights">Past Highlights</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="!#">Opportunities</a>
+							<a href="opportunities">Opportunities</a>
 							<ul class="dropdown-menu clearfix">
 								<li><a href="models">Models</a></li>
 								<li><a href="designers">Designers</a></li>
@@ -35,14 +35,14 @@
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="!#">App</a>
+							<a href="app">App</a>
 							<ul class="dropdown-menu clearfix">
 								<li><a href="download">Download</a></li>
 								<li><a href="features">Features</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="!#">Media</a>
+							<a href="media">Media</a>
 							<ul class="dropdown-menu clearfix">
 								<li><a href="press">Press & Bytes</a></li>
 								<li><a href="gallery">Gallery</a></li>
@@ -77,7 +77,7 @@
 						<ul id="m-main-nav" class="nav navbar-nav clearfix">
 							<li><a href="index">Home</a></li>
 							<li class="dropdown">
-								<a href="!#">Showverse</a>
+								<a href="showverse">Showverse</a>
 								<ul class="dropdown-menu clearfix">
 									<li><a href="about">About</a></li>
 									<li><a href="experience">Experience</a></li>
@@ -85,14 +85,14 @@
 								</ul>
 							</li>
 							<li class="dropdown">
-								<a href="!#">Events</a>
+								<a href="events">Events</a>
 								<ul class="dropdown-menu clearfix">
 									<li><a href="upcoming">Upcoming</a></li>
 									<li><a href="past-highlights">Past Highlights</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
-								<a href="!#">Opportunities</a>
+								<a href="opportunities">Opportunities</a>
 								<ul class="dropdown-menu clearfix">
 									<li><a href="models">Models</a></li>
 									<li><a href="designers">Designers</a></li>
@@ -101,14 +101,14 @@
 								</ul>
 							</li>
 							<li class="dropdown">
-								<a href="!#">App</a>
+								<a href="app">App</a>
 								<ul class="dropdown-menu clearfix">
 									<li><a href="download">Download</a></li>
 									<li><a href="features">Features</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
-								<a href="!#">Media</a>
+								<a href="media">Media</a>
 								<ul class="dropdown-menu clearfix">
 									<li><a href="press">Press & Bytes</a></li>
 									<li><a href="gallery">Gallery</a></li>
