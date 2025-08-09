@@ -1,3 +1,30 @@
+# Pretty URLs: hide .php extensions and support clean routes
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /fashionvogueweb/
+
+  # 1) Redirect requests that explicitly include .php to extensionless
+  #    e.g., /fashionvogueweb/about.php  ->  /fashionvogueweb/about
+  RewriteCond %{THE_REQUEST} \s/+fashionvogueweb/([^\s?]+)\.php[\s?] [NC]
+  RewriteRule ^ %1 [R=301,L]
+
+  # 2) Bypass existing files/directories (assets, images, css, js, etc.)
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule . - [L]
+
+  # 3) If an extensionless request matches a PHP file, serve it
+  #    e.g., /fashionvogueweb/contact  ->  /fashionvogueweb/contact.php
+  RewriteCond %{REQUEST_FILENAME}.php -f
+  RewriteRule ^ %{REQUEST_URI}.php [L]
+
+  # 4) Optional: route anything else to index.php (uncomment for single-page routing)
+  # RewriteRule ^ index.php [L]
+</IfModule>
+
+# Ensure index.php is a default directory index
+DirectoryIndex index.php index.html
+
 RewriteEngine On
     RewriteBase /
     RewriteCond %{REQUEST_FILENAME} !-d
