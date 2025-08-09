@@ -9,46 +9,46 @@
 			<div class="ori-main-navigation-area">
 				<nav class="ori-main-navigation  clearfix ul-li">
 					<ul id="main-nav" class="nav navbar-nav clearfix">
-						<li><a href="#ori-slider-1">Home</a></li>
+						<li><a href="index">Home</a></li>
 						<li class="dropdown">
 							<a href="!#">Showverse</a>
 							<ul class="dropdown-menu clearfix">
-								<li><a href="#about">About</a></li>
-								<li><a href="#experience">Experience</a></li>
-								<li><a href="#highlights">Highlights</a></li>
+								<li><a href="about">About</a></li>
+								<li><a href="experience">Experience</a></li>
+								<li><a href="highlights">Highlights</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a href="!#">Events</a>
 							<ul class="dropdown-menu clearfix">
-								<li><a href="#upcoming">Upcoming</a></li>
-								<li><a href="#past-highlights">Past Highlights</a></li>
+								<li><a href="upcoming">Upcoming</a></li>
+								<li><a href="past-highlights">Past Highlights</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a href="!#">Opportunities</a>
 							<ul class="dropdown-menu clearfix">
-								<li><a href="#models">Models</a></li>
-								<li><a href="#designers">Designers</a></li>
-								<li><a href="#makeup-artists">Makeup Artists</a></li>
-								<li><a href="#sponsors">Sponsors</a></li>
+								<li><a href="models">Models</a></li>
+								<li><a href="designers">Designers</a></li>
+								<li><a href="makeup-artists">Makeup Artists</a></li>
+								<li><a href="sponsors">Sponsors</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a href="!#">App</a>
 							<ul class="dropdown-menu clearfix">
-								<li><a href="#download">Download</a></li>
-								<li><a href="#features">Features</a></li>
+								<li><a href="download">Download</a></li>
+								<li><a href="features">Features</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a href="!#">Media</a>
 							<ul class="dropdown-menu clearfix">
-								<li><a href="#press">Press & Bytes</a></li>
-								<li><a href="#gallery">Gallery</a></li>
-								<li><a href="#latest-news">Latest News</a></li>
-								<li><a href="#blogs">Blogs</a></li>
-								<li><a href="#contact">Get in Touch</a></li>
+								<li><a href="press">Press & Bytes</a></li>
+								<li><a href="gallery">Gallery</a></li>
+								<li><a href="latest-news">Latest News</a></li>
+								<li><a href="blogs">Blogs</a></li>
+								<li><a href="contact">Get in Touch</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -75,46 +75,46 @@
 					</div>
 					<nav class="mobile-main-navigation  clearfix ul-li">
 						<ul id="m-main-nav" class="nav navbar-nav clearfix">
-							<li><a href="#ori-slider-1">Home</a></li>
+							<li><a href="index">Home</a></li>
 							<li class="dropdown">
 								<a href="!#">Showverse</a>
 								<ul class="dropdown-menu clearfix">
-									<li><a href="#about">About</a></li>
-									<li><a href="#experience">Experience</a></li>
-									<li><a href="#highlights">Highlights</a></li>
+									<li><a href="about">About</a></li>
+									<li><a href="experience">Experience</a></li>
+									<li><a href="highlights">Highlights</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
 								<a href="!#">Events</a>
 								<ul class="dropdown-menu clearfix">
-									<li><a href="#upcoming">Upcoming</a></li>
-									<li><a href="#past-highlights">Past Highlights</a></li>
+									<li><a href="upcoming">Upcoming</a></li>
+									<li><a href="past-highlights">Past Highlights</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
 								<a href="!#">Opportunities</a>
 								<ul class="dropdown-menu clearfix">
-									<li><a href="#models">Models</a></li>
-									<li><a href="#designers">Designers</a></li>
-									<li><a href="#makeup-artists">Makeup Artists</a></li>
-									<li><a href="#sponsors">Sponsors</a></li>
+									<li><a href="models">Models</a></li>
+									<li><a href="designers">Designers</a></li>
+									<li><a href="makeup-artists">Makeup Artists</a></li>
+									<li><a href="sponsors">Sponsors</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
 								<a href="!#">App</a>
 								<ul class="dropdown-menu clearfix">
-									<li><a href="#download">Download</a></li>
-									<li><a href="#features">Features</a></li>
+									<li><a href="download">Download</a></li>
+									<li><a href="features">Features</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
 								<a href="!#">Media</a>
 								<ul class="dropdown-menu clearfix">
-									<li><a href="#press">Press & Bytes</a></li>
-									<li><a href="#gallery">Gallery</a></li>
-									<li><a href="#latest-news">Latest News</a></li>
-									<li><a href="#blogs">Blogs</a></li>
-									<li><a href="#contact">Get in Touch</a></li>
+									<li><a href="press">Press & Bytes</a></li>
+									<li><a href="gallery">Gallery</a></li>
+									<li><a href="latest-news">Latest News</a></li>
+									<li><a href="blogs">Blogs</a></li>
+									<li><a href="contact">Get in Touch</a></li>
 								</ul>
 							</li>
 						</ul>
