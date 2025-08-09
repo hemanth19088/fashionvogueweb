@@ -98,4 +98,46 @@
 <script src="assets/js/jquery.marquee.min.js"></script>
 <script src="assets/js/script.js"></script>
 
+<script>
+(function(){
+  var form = document.getElementById('contactForm');
+  if (!form) return;
+  var successEl = document.getElementById('contactSuccess');
+  var errorEl = document.getElementById('contactError');
+  var formWrap = form.closest('.ori-contact-form-wrap') || form;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    successEl && (successEl.style.display='none');
+    errorEl && (errorEl.style.display='none');
+    var formData = new FormData(form);
+    formData.append('ajax','1');
+    fetch(form.action, { method:'POST', body: formData, headers: { 'Accept':'application/json' } })
+      .then(function(res){ return res.json(); })
+      .then(function(data){
+        if (data && data.success) {
+          if (successEl) {
+            successEl.textContent = 'Thank you! Our team will get in touch with you.';
+            successEl.style.display='block';
+          }
+          form.reset();
+          if (formWrap) formWrap.style.display='none';
+        } else {
+          if (errorEl) errorEl.style.display='block';
+        }
+      })
+      .catch(function(){ if (errorEl) errorEl.style.display='block'; });
+    return false;
+  });
+})();
+</script>
+
+<!-- WhatsApp sticky -->
+<div class="fv-whatsapp-sticky" style="position:fixed;right:20px;bottom:95px;z-index:2147483647">
+  <span style="position:absolute;right:0;bottom:74px;background:#25D366;color:#fff;padding:8px 12px;border-radius:20px;font-size:14px;font-weight:600;box-shadow:0 8px 20px rgba(0,0,0,.15);white-space:nowrap">Say Hello</span>
+  <a href="https://wa.me/919035620546" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"
+     style="width:64px;height:64px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:30px;box-shadow:0 8px 20px rgba(0,0,0,.2)">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
 
