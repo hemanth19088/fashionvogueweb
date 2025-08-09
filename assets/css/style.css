@@ -13018,6 +13018,35 @@ Font load
     width: 120px;
   }
 
+/* ===== Custom: WhatsApp sticky button ===== */
+.fv-whatsapp-sticky {
+  position: fixed !important;
+  right: 20px !important;
+  bottom: 95px !important; /* keep above scroll-to-top */
+  z-index: 2147483647 !important; /* max stack */
+  pointer-events: auto;
+}
+.fv-whatsapp-sticky a {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.fv-whatsapp-sticky a:hover, .fv-whatsapp-sticky a:focus {
+  color: #fff;
+  transform: translateY(-2px);
+}
+@media (max-width: 575px) {
+  .fv-whatsapp-sticky { right: 14px; bottom: calc(80px + env(safe-area-inset-bottom)); }
+  .fv-whatsapp-sticky a { width: 56px; height: 56px; font-size: 28px; }
+}
+
   .ori-footer-section.footer-style-seven .ori-footer-logo-social .ori-footer-social a {
     margin-left: 8px;
   }
