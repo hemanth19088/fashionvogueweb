@@ -4,6 +4,9 @@ Options -MultiViews
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  # Redirect /index (no extension) to site root
+  RewriteRule ^index/?$ / [R=301,L]
+
   # 1) Redirect index.php to the directory root
   RewriteCond %{THE_REQUEST} \s/+[^\s\?]*index\.php[\s\?] [NC]
   RewriteRule ^index\.php$ / [R=301,L]
