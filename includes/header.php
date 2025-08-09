@@ -3,20 +3,23 @@
 <header id="ori-header" class="ori-header-section header-style-one">
 	<div class="ori-header-content-area">
 		<div class="ori-header-content d-flex align-items-center justify-content-between">
-			<div class="brand-logo">
-				<a href="#"><img src="assets/img/logo/logo1.png" alt=""></a>
-			</div>
+            <div class="brand-logo">
+                <a href="index">
+                    <picture>
+                        <source media="(prefers-color-scheme: dark)" srcset="assets/images/logos/fashionvogue_colour_logo.png">
+                        <img src="assets/images/logos/fashionvogue_blackandwhite_logo.png" alt="FashionVogue Logo">
+                    </picture>
+                </a>
+            </div>
 			<div class="ori-main-navigation-area">
 				<nav class="ori-main-navigation  clearfix ul-li">
 					<ul id="main-nav" class="nav navbar-nav clearfix">
 						<li><a href="index">Home</a></li>
-						<li class="dropdown">
+						<li>
 							<a href="showverse">Showverse</a>
-							<ul class="dropdown-menu clearfix">
-								<li><a href="about">About</a></li>
-								<li><a href="experience">Experience</a></li>
-								<li><a href="highlights">Highlights</a></li>
-							</ul>
+						</li>
+						<li >
+							<a href="app">App</a>
 						</li>
 						<li class="dropdown">
 							<a href="events">Events</a>
@@ -28,17 +31,11 @@
 						<li class="dropdown">
 							<a href="opportunities">Opportunities</a>
 							<ul class="dropdown-menu clearfix">
+							<li><a href="pressrelease">PR/Agency</a></li>
 								<li><a href="models">Models</a></li>
 								<li><a href="designers">Designers</a></li>
 								<li><a href="makeup-artists">Makeup Artists</a></li>
 								<li><a href="sponsors">Sponsors</a></li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a href="app">App</a>
-							<ul class="dropdown-menu clearfix">
-								<li><a href="download">Download</a></li>
-								<li><a href="features">Features</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
@@ -70,9 +67,11 @@
 					<div class="mobile_menu_close open_mobile_menu">
 						<i class="fal fa-times"></i>
 					</div>
-					<div class="m-brand-logo">
-						<a  href="!#"><img src="assets/img/logo/logo1.png" alt=""></a>
-					</div>
+                    <div class="m-brand-logo">
+                        <a href="index">
+                            <img src="assets/images/logos/fashionvogue_colour_logo.png" alt="FashionVogue Logo">
+                        </a>
+                    </div>
 					<nav class="mobile-main-navigation  clearfix ul-li">
 						<ul id="m-main-nav" class="nav navbar-nav clearfix">
 							<li><a href="index">Home</a></li>

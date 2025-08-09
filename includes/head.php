@@ -54,7 +54,7 @@ $baseHref = rtrim($scriptDir, '/') . '/';
     <base href="<?= htmlspecialchars($baseHref, ENT_QUOTES) ?>">
 
     <link rel="canonical" href="<?= htmlspecialchars($meta['url'], ENT_QUOTES) ?>">
-    <link rel="shortcut icon" href="assets/img/logo/ficon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/logos/fashionvogue_favicion.png" type="image/png">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -81,6 +81,8 @@ $baseHref = rtrim($scriptDir, '/') . '/';
     <link rel="stylesheet" href="assets/css/video.min.css">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/rs6.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>

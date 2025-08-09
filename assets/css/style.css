@@ -558,6 +558,15 @@ select:visited {
   position: absolute;
   padding: 40px 100px;
 }
+/* Brand logo sizing and alignment */
+.ori-header-section .brand-logo {
+  width: 180px;
+}
+.ori-header-section .brand-logo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 .ori-header-section .ori-megamenu {
   position: static !important;
 }
@@ -10946,6 +10955,14 @@ Font load
     font-size: 18px;
   }
 
+  /* Ensure logo scales down and aligns */
+  .ori-header-section .brand-logo { width: 150px; }
+  .ori-header-section .brand-logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
   .ori-header-section.sticky-on {
     padding: 10px 15px;
   }
@@ -11304,6 +11321,7 @@ Font load
     position: absolute;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
+    width: 130px;
   }
 
   .ori-header-section .ori-header-content {

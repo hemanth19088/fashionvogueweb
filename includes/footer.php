@@ -9,9 +9,11 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-6">
 					<div class="ori-footer-widget">
-						<div class="logo-widget">
-							<a href="#"><img src="assets/img/logo/logo1.png" alt=""></a>
-						</div>
+                    <div class="logo-widget">
+                        <a href="index">
+                            <img src="assets/images/logos/fashionvogue_colour_logo.png" alt="FashionVogue Logo">
+                        </a>
+                    </div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
