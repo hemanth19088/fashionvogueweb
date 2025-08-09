@@ -54,7 +54,7 @@ include __DIR__ . '/includes/head.php';
         </div>
         <div class="col-lg-6">
           <div class="ori-contact-form-wrap">
-            <form action="sendemail" method="post">
+            <form id="contactForm" action="sendemail" method="post">
               <label>Name *</label>
               <input type="text" name="name" required>
               <label>Email *</label>
@@ -67,6 +67,8 @@ include __DIR__ . '/includes/head.php';
               <textarea name="message" placeholder="Write your message" required></textarea>
               <button type="submit">Submit</button>
             </form>
+            <div id="contactSuccess" style="display:none;margin-top:15px" class="alert alert-success">Thank you! Your message has been sent.</div>
+            <div id="contactError" style="display:none;margin-top:15px" class="alert alert-danger">Sorry, something went wrong. Please try again.</div>
           </div>
         </div>
       </div>
