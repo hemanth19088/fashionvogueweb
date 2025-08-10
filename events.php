@@ -6,8 +6,21 @@ include __DIR__ . '/includes/head.php';
 <?php include __DIR__ . '/includes/header.php'; ?>
 
 <!-- End of header section
+hello	============================================= -->
+	
+<!-- Start of breadcrumb section
 	============================================= -->
-
+	<section id="ori-breadcrumb-5" class="ori-breadcrumb-section-5">
+		<div class="container">
+			<div class="ori-breadcrumb-content-5 text-center">
+				<h2>Events</h2>
+				<ul class="ori-breadcrumb-list-5 d-flex justify-content-center">
+					<li><a href="#">Home</a></li>
+					<li><span>Events</span></li>
+				</ul>
+			</div>
+		</div>
+	</section>
 <!-- Start of Slider section
 	============================================= -->
 	<section id="ori-banner-5" class="ori-banner-section-5">
