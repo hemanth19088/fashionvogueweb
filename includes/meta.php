@@ -23,6 +23,14 @@ $SEO_META = [
         'description' => 'The page you’re looking for was not found.',
         'robots' => 'noindex,follow',
     ],
+    'showverse' => [
+        'title' => 'Showverse - Fashion Vogue',
+        'description' => 'Explore the world of fashion through our innovative Showverse platform.',
+        'keywords' => 'fashion, showverse, digital fashion, fashion platform, fashion technology',
+        'url' => 'showverse',
+        'image' => 'assets/img/logos/fashionvogue_colour_logo.png',
+        'robots' => 'index,follow'
+    ],
 ];
 
 
