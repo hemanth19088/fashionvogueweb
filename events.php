@@ -40,10 +40,9 @@ data-text="w:normal;s:67,51,38,36;l:80,61,46,42;fw:600;"
 data-frame_0="x:50,38,28,17;"
 data-frame_1="sp:1500;"
 data-frame_999="o:0;st:w;"
-style="z-index:8;font-family:'Jost';text-transform:uppercase;"
->Enjoy life with <br />
-orixy insurance<br />
-protection 
+ style="z-index:8;font-family:'Jost';text-transform:uppercase;"
+>The Scene at <br />
+FashionVogue
 							</rs-layer><!--
 
 							--><rs-layer
@@ -57,8 +56,7 @@ protection
 							data-frame_1="st:300;sp:1500;"
 							data-frame_999="o:0;st:w;"
 							style="z-index:9;font-family:'Arimo';"
-							>Llife happily ever after with your beloved family <br />
-							covered by our best insurance 
+							>Be Part of the Next Best Thing in Fashion. 
 							</rs-layer><!--
 
 							--><a
@@ -77,7 +75,7 @@ protection
 							data-frame_999="o:0;st:w;"
 							data-frame_hover="bgc:#007aff;bor:3px,3px,3px,3px;sp:100;e:power1.inOut;bri:120%;"
 							style="z-index:10;background-color:#14a3eb;font-family:'Arimo';text-transform:uppercase;"
-							>Lets Get Started 
+							>Fashion Awaits You
 							</a><!--
 
 							--><rs-layer
@@ -133,7 +131,7 @@ protection
 							data-frame_1="st:700;sp:1500;"
 							data-frame_999="o:0;st:w;"
 							style="z-index:14;font-family:'Arimo';text-transform:uppercase;"
-							>1000+ family alreyday join with us 
+							>1000+ Made Future with FashionVogue
 							</rs-layer><!--
 							-->						</rs-slide>
 						</rs-slides>
@@ -150,7 +148,7 @@ protection
 			<div class="ori-ins-search-content wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
 				<form action="#" method="get">
 					<input type="text" name="search" placeholder="Tell us what you need for">
-					<button type="submit">Submit Massage</button>
+					<button type="submit">Submit</button>
 				</form>
 			</div>
 		</div>
@@ -161,339 +159,329 @@ protection
 <!-- Start of Service Section 
 	============================================= -->
 	<section id="ori-service-5" class="ori-service-section-5">
-		<div class="container">
-			<div class="ori-section-title-5 text-uppercase text-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-				<h2>Benefits provided by our service</h2>
-			</div>
-			<div class="ori-service-content-5">
-				<div class="row justify-content-center">
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
-						<div class="ori-service-inner-item-5">
-							<div class="service-icon d-flex justify-content-center align-items-center">
-								<i class="fal fa-user-headset"></i>
-							</div>
-							<div class="service-text pera-content">
-								<h3><a href="#">Always ready to protect you 24 hours</a></h3>
-								<p>Increase product sales and increase the amount of cash that comes in for futher development</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
-						<div class="ori-service-inner-item-5">
-							<div class="service-icon d-flex justify-content-center align-items-center">
-								<i class="fal fa-running"></i>
-							</div>
-							<div class="service-text pera-content">
-								<h3><a href="#">Insurance claims easily and quickly</a></h3>
-								<p>Increase product sales and increase the amount of cash that comes in for futher development</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1000ms">
-						<div class="ori-service-inner-item-5">
-							<div class="service-icon d-flex justify-content-center align-items-center">
-								<i class="fal fa-money-check-alt"></i>
-							</div>
-							<div class="service-text pera-content">
-								<h3><a href="#">cheaper and provide the best quality</a></h3>
-								<p>Increase product sales and increase the amount of cash that comes in for futher development</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <div class="container">
+        <div class="ori-section-title-5 text-uppercase text-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+            <h2>The Heart of Fashion Innovation</h2>
+        </div>
+        <div class="ori-service-content-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                    <div class="ori-service-inner-item-5">
+                        <div class="service-icon d-flex justify-content-center align-items-center">
+                            <i class="fas fa-camera-retro"></i>
+                        </div>
+                        <div class="service-text pera-content">
+                            <h3><a href="#">Latest from the Runway</a></h3>
+                            <p>Get a front-row seat to the future of style. We showcase the debut of groundbreaking collections from today's most visionary designers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+                    <div class="ori-service-inner-item-5">
+                        <div class="service-icon d-flex justify-content-center align-items-center">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="service-text pera-content">
+                            <h3><a href="#">Top 5 Trends We Saw at Our Last Event</a></h3>
+                            <p>Stay ahead of the curve with our expert analysis of the key looks, colors, and silhouettes that are defining the next season in fashion.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1000ms">
+                    <div class="ori-service-inner-item-5">
+                        <div class="service-icon d-flex justify-content-center align-items-center">
+                            <i class="fas fa-user-edit"></i>
+                        </div>
+                        <div class="service-text pera-content">
+                            <h3><a href="#">Designer Spotlights</a></h3>
+                            <p>Meet the creative minds behind the collections. We feature in-depth interviews and profiles of the brilliant talent showcased at our events.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- End of Service Section 
 	============================================= -->
-
-<!-- Start of Fun Fact Section 
+<!-- Start of Fun Fact Section
 	============================================= -->
-	<section id="ori-ins-fun-fact" class="ori-ins-fan-fact-section" data-background="assets/img/bg/ser-bg2.png">
-		<div class="container">
-			<div class="ori-ins-fun-fact-content d-flex justify-content-end position-relative">
-				<span class="ori-ins-fun-fact-img position-absolute wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms"><img src="assets/img/service/fun-ft.png" alt=""></span>
-				<div class="ori-ins-fun-fact-item-area d-flex flex-wrap justify-content-between">
-					<div class="ori-ins-fun-fact-item d-flex align-items-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-						<div class="ori-ins-fun-fact-icon d-flex align-items-center justify-content-center">
-							<i class="fas fa-users"></i>
-						</div>
-						<div class="ori-ins-fun-fact-text">
-							<h3><span class="counter">3500</span> Client who have joined us</h3>
-						</div>
-					</div>
-					<div class="ori-ins-fun-fact-item d-flex align-items-center wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
-						<div class="ori-ins-fun-fact-icon d-flex align-items-center justify-content-center">
-							<i class="fas fa-hands-heart"></i>
-						</div>
-						<div class="ori-ins-fun-fact-text">
-							<h3><span class="counter">200</span>+ Types of services choose from</h3>
-						</div>
-					</div>
-					<div class="ori-ins-fun-fact-item d-flex align-items-center wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
-						<div class="ori-ins-fun-fact-icon d-flex align-items-center justify-content-center">
-							<i class="fas fa-home-lg"></i>
-						</div>
-						<div class="ori-ins-fun-fact-text">
-							<h3><span class="counter">160</span>+ Partner institutions cooperate</h3>
-						</div>
-					</div>
-					<div class="ori-ins-fun-fact-item d-flex align-items-center wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1000ms">
-						<div class="ori-ins-fun-fact-icon d-flex align-items-center justify-content-center">
-							<i class="fas fa-user-headset"></i>
-						</div>
-						<div class="ori-ins-fun-fact-text">
-							<h3><span class="counter">40</span>+ of country we provide our service</h3>
-						</div>
-					</div>
-					<div class="ori-ins-fun-fact-item d-flex align-items-center wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms">
-						<div class="ori-ins-fun-fact-icon d-flex align-items-center justify-content-center">
-							<i class="fas fa-globe"></i>
-						</div>
-						<div class="ori-ins-fun-fact-text">
-							<h3><span class="counter">160</span>+ Partner institutions cooperate</h3>
-						</div>
-					</div>
-					<div class="ori-ins-fun-fact-item d-flex align-items-center wow fadeInUp" data-wow-delay="700ms" data-wow-duration="1000ms">
-						<div class="ori-ins-fun-fact-icon d-flex align-items-center justify-content-center">
-							<i class="fas fa-radar"></i>
-						</div>
-						<div class="ori-ins-fun-fact-text">
-							<h3><span class="counter">40</span>+ of country we provide our service</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-<!-- End of Fun Fact Section 
-	============================================= -->	
 
-<!-- Start of service Section 
+	<section id="ori-ins-fun-fact" class="ori-ins-fan-fact-section" data-background="assets/img/bg/ser-bg2.png">
+    <div class="container">
+        <div class="ori-ins-fun-fact-content d-flex justify-content-end position-relative">
+            <span class="ori-ins-fun-fact-img position-absolute wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms"><img src="assets/img/service/fun-ft.png" alt="Fashion Model Image"></span>
+            <div class="ori-ins-fun-fact-item-area d-flex flex-wrap justify-content-between">
+                <div class="ori-ins-fun-fact-item d-flex align-items-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                    <div class="ori-ins-fun-fact-icon d-flex align-items-center justify-content-center">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <div class="ori-ins-fun-fact-text">
+                        <h3><span class="counter">3000</span>+ Outfits on the Runway</h3>
+                    </div>
+                </div>
+                <div class="ori-ins-fun-fact-item d-flex align-items-center wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                    <div class="ori-ins-fun-fact-icon d-flex align-items-center justify-content-center">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <div class="ori-ins-fun-fact-text">
+                        <h3><span class="counter">10</span>M+ Social Media Impressions</h3>
+                    </div>
+                </div>
+                <div class="ori-ins-fun-fact-item d-flex align-items-center wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+                    <div class="ori-ins-fun-fact-icon d-flex align-items-center justify-content-center">
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                    <div class="ori-ins-fun-fact-text">
+                        <h3><span class="counter">200</span>+ Accredited Press & Media</h3>
+                    </div>
+                </div>
+                <div class="ori-ins-fun-fact-item d-flex align-items-center wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1000ms">
+                    <div class="ori-ins-fun-fact-icon d-flex align-items-center justify-content-center">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="ori-ins-fun-fact-text">
+                        <h3><span class="counter">50</span>+ Emerging Talents Discovered</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Fun Fact Section
+	============================================= -->
+<!-- Start of Service Section 
 	============================================= -->
 	<section id="ori-service-6" class="ori-service-section-6">
-		<div class="container">
-			<div class="ori-section-title-5 text-uppercase text-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-				<h2>provide the best service</h2>
-			</div>
-			<div class="ori-service-content-6">
-				<div class="row justify-content-center">
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
-						<div class="ori-service-inner-item-5">
-							<div class="service-icon d-flex justify-content-center align-items-center">
-								<i class="fas fa-home-lg-alt"></i>
-							</div>
-							<div class="service-text pera-content">
-								<h3><a href="#">Home insurance</a></h3>
-								<p>Increase product sales and increase the amount of cash that comes in for futher development</p>
-								<a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="350ms" data-wow-duration="1000ms">
-						<div class="ori-service-inner-item-5">
-							<div class="service-icon d-flex justify-content-center align-items-center">
-								<i class="fas fa-plane-departure"></i>
-							</div>
-							<div class="service-text pera-content">
-								<h3><a href="#">Travel insurance</a></h3>
-								<p>Increase product sales and increase the amount of cash that comes in for futher development</p>
-								<a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
-						<div class="ori-service-inner-item-5">
-							<div class="service-icon d-flex justify-content-center align-items-center">
-								<i class="fas fa-user-graduate"></i>
-							</div>
-							<div class="service-text pera-content">
-								<h3><a href="#">Education Insurance</a></h3>
-								<p>Increase product sales and increase the amount of cash that comes in for futher development</p>
-								<a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="450ms" data-wow-duration="1000ms">
-						<div class="ori-service-inner-item-5">
-							<div class="service-icon d-flex justify-content-center align-items-center">
-								<i class="fas fa-user-shield"></i>
-							</div>
-							<div class="service-text pera-content">
-								<h3><a href="#">Retired Insurance</a></h3>
-								<p>Increase product sales and increase the amount of cash that comes in for futher development</p>
-								<a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1000ms">
-						<div class="ori-service-inner-item-5">
-							<div class="service-icon d-flex justify-content-center align-items-center">
-								<i class="fas fa-briefcase-medical"></i>
-							</div>
-							<div class="service-text pera-content">
-								<h3><a href="#">Health Insurance</a></h3>
-								<p>Increase product sales and increase the amount of cash that comes in for futher development</p>
-								<a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="550ms" data-wow-duration="1000ms">
-						<div class="ori-service-inner-item-5">
-							<div class="service-icon d-flex justify-content-center align-items-center">
-								<i class="fas fa-car"></i>
-							</div>
-							<div class="service-text pera-content">
-								<h3><a href="#">Car insurance</a></h3>
-								<p>Increase product sales and increase the amount of cash that comes in for futher development</p>
-								<a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms">
-						<div class="ori-service-inner-item-5">
-							<div class="service-icon d-flex justify-content-center align-items-center">
-								<i class="fas fa-briefcase"></i>
-							</div>
-							<div class="service-text pera-content">
-								<h3><a href="#">Business insurance</a></h3>
-								<p>Increase product sales and increase the amount of cash that comes in for futher development</p>
-								<a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="650ms" data-wow-duration="1000ms">
-						<div class="ori-service-inner-item-5">
-							<div class="service-icon d-flex justify-content-center align-items-center">
-								<i class="fas fa-rings-wedding"></i>
-							</div>
-							<div class="service-text pera-content">
-								<h3><a href="#">Marriage insurance</a></h3>
-								<p>Increase product sales and increase the amount of cash that comes in for futher development</p>
-								<a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-						<div class="ori-service-inner-item-5">
-							<div class="more-service-btn-area text-center">
-								<a class="more-service-btn text-uppercase"  href="#">More Services</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-<!-- End of service Section 
-	============================================= -->
+    <div class="container">
+        <div class="ori-section-title-5 text-uppercase text-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+            <h2>The FashionVogue Experience</h2>
+        </div>
+        <div class="ori-service-content-6">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                    <div class="ori-service-inner-item-5">
+                        <div class="service-icon d-flex justify-content-center align-items-center">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="service-text pera-content">
+                            <h3><a href="#">Runway Shows</a></h3>
+                            <p>Experience the energy of our main-stage runway productions, showcasing the future of style from visionary designers.</p>
+                            <a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="350ms" data-wow-duration="1000ms">
+                    <div class="ori-service-inner-item-5">
+                        <div class="service-icon d-flex justify-content-center align-items-center">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="service-text pera-content">
+                            <h3><a href="#">Designer Spotlights</a></h3>
+                            <p>Get exclusive insights in our intimate Q&A sessions, where featured designers reveal their creative process and inspiration.</p>
+                            <a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+                    <div class="ori-service-inner-item-5">
+                        <div class="service-icon d-flex justify-content-center align-items-center">
+                            <i class="fas fa-hands-sparks"></i>
+                        </div>
+                        <div class="service-text pera-content">
+                            <h3><a href="#">Styling Workshops</a></h3>
+                            <p>Learn the art of the perfect look from industry masters in our hands-on workshops on trend-setting and personal styling.</p>
+                            <a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="450ms" data-wow-duration="1000ms">
+                    <div class="ori-service-inner-item-5">
+                        <div class="service-icon d-flex justify-content-center align-items-center">
+                            <i class="fas fa-walking"></i>
+                        </div>
+                        <div class="service-text pera-content">
+                            <h3><a href="#">Model Castings</a></h3>
+                            <p>We provide a platform for aspiring talent to shine, connecting the next generation of models with leading designers.</p>
+                            <a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1000ms">
+                    <div class="ori-service-inner-item-5">
+                        <div class="service-icon d-flex justify-content-center align-items-center">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="service-text pera-content">
+                            <h3><a href="#">Networking Mixers</a></h3>
+                            <p>Connect with the industry's elite—from stylists to influencers—at our exclusive, curated networking events.</p>
+                            <a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="550ms" data-wow-duration="1000ms">
+                    <div class="ori-service-inner-item-5">
+                        <div class="service-icon d-flex justify-content-center align-items-center">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <div class="service-text pera-content">
+                            <h3><a href="#">Pop-Up Boutiques</a></h3>
+                            <p>Shop limited-edition collections and exclusive pieces directly from the designers featured on our runways.</p>
+                            <a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms">
+                    <div class="ori-service-inner-item-5">
+                        <div class="service-icon d-flex justify-content-center align-items-center">
+                            <i class="fas fa-camera-retro"></i>
+                        </div>
+                        <div class="service-text pera-content">
+                            <h3><a href="#">Press & Media Hub</a></h3>
+                            <p>Gain unparalleled access to cover our events, with dedicated resources for accredited media professionals.</p>
+                            <a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="650ms" data-wow-duration="1000ms">
+                    <div class="ori-service-inner-item-5">
+                        <div class="service-icon d-flex justify-content-center align-items-center">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="service-text pera-content">
+                            <h3><a href="#">Sponsorship Packages</a></h3>
+                            <p>Align your brand with the cutting edge of fashion. Explore our partnership opportunities for powerful brand visibility.</p>
+                            <a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                    <div class="ori-service-inner-item-5">
+                        <div class="more-service-btn-area text-center">
+                            <a class="more-service-btn text-uppercase"  href="#">More Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Service Section 
+	============================================= -->	
 
 <!-- Start of Contact Section 
 	============================================= -->
 	<section id="ori-contact-1" class="ori-contact-section-1" data-background="assets/img/bg/contact-bg.png">
-		<div class="container">
-			<div class="ori-contact-form-contant">
-				<div class="ori-section-title-5 text-uppercase wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-					<h2>Get an insurance quote
-					to get started!</h2>
-				</div>
-				<div class="ori-contact-form-area wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
-					<form action="#" method="get">
-						<div class="row">
-							<div class="col-md-6">
-								<input type="text" name="name" placeholder="Enter Name">
-							</div>
-							<div class="col-md-6">
-								<input type="email" name="email" placeholder="Enter Mail">
-							</div>
-							<div class="col-md-6">
-								<input type="text" name="insurance" placeholder="Insurance">
-							</div>
-							<div class="col-md-6">
-								<input type="text" name="reason" placeholder="Reason">
-							</div>
-							<div class="col-md-12">
-								<textarea name="message" placeholder="Enter Message"></textarea>
-							</div>
-							<div class="col-md-12">
-								<button type="submit">Submit Massage</button>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>		
+    <div class="container">
+        <div class="ori-contact-form-contant">
+            <div class="ori-section-title-5 text-uppercase wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                <h2>Step into
+                the Spotlight!</h2>
+            </div>
+            <div class="ori-contact-form-area wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+                <form action="#" method="get">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" name="name" placeholder="Your Full Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" name="email" placeholder="Your Email Address">
+                        </div>
+                        <div class="col-md-6">
+                            <select name="inquiry_type">
+                                <option value="" selected disabled>Reason for Contacting</option>
+                                <option value="Model Audition">Model Audition</option>
+                                <option value="Designer Application">Designer Application</option>
+                                <option value="Press Inquiry">Press Inquiry</option>
+                                <option value="Sponsorship">Sponsorship</option>
+                                <option value="General Question">General Question</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="portfolio_link" placeholder="Portfolio or Social Media Link (Optional)">
+                        </div>
+                        <div class="col-md-12">
+                            <textarea name="message" placeholder="Tell us about yourself or your brand..."></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit">Send Application</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- End of Contact Section 
 	============================================= -->
 
 <!-- Start of Testimonial section
 	============================================= -->
 	<section id="ori-testimonial-5" class="ori-testimonial-section-5 position-relative">
-		<div class="ori-testimonial-circle-img position-absolute">
-			<span class="ori-testi-circle-img"><img src="assets/img/testimonial/tc8.png" alt=""></span>
-			<span class="ori-testi-circle-img"><img src="assets/img/testimonial/tc9.png" alt=""></span>
-			<span class="ori-testi-circle-img"><img src="assets/img/testimonial/tc10.png" alt=""></span>
-			<span class="ori-testi-circle-img"><img src="assets/img/testimonial/tc11.png" alt=""></span>
-			<span class="ori-testi-circle-img"><img src="assets/img/testimonial/tc12.png" alt=""></span>
-			<span class="ori-testi-circle-img"><img src="assets/img/testimonial/tc13.png" alt=""></span>
-			<span class="ori-testi-circle-img"><img src="assets/img/testimonial/tc14.png" alt=""></span>
-		</div>
-		<div class="container">
-			<div class="ori-testimonial-content-1 position-relative">
-				<div class="ori-vector-bg position-absolute">
-					<img src="assets/img/vector/tst-vector1.png" alt="">
-				</div>
-				<div class="ori-testimonial-title text-center text-uppercase">
-					<h3>What our Client say</h3>
-				</div>
-				<div class="ori-testimonial-slider-1">
-					<div class="ori-testimonial-item-area">
-						<div class="ori-testimonial-item-1">
-							<div class="ori-testimonial-text text-center pera-content">
-								<p>“Our office is something we are pleased with. We consider it the little magnet; it is wanting to come here and afterward difficult to leave it. Our office is additionally a big name.”
-								</p>
-								<div class="ori-testimonial-author text-center text-uppercase">
-									<h4>Hahimlam Dirat</h4>
-									<span>ui/ux Designer</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="ori-testimonial-item-area">
-						<div class="ori-testimonial-item-1">
-							<div class="ori-testimonial-text text-center pera-content">
-								<p>“Our office is something we are pleased with. We consider it the little magnet; it is wanting to come here and afterward difficult to leave it. Our office is additionally a big name.”
-								</p>
-								<div class="ori-testimonial-author text-center text-uppercase">
-									<h4>Hahimlam Dirat</h4>
-									<span>ui/ux Designer</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="ori-testimonial-item-area">
-						<div class="ori-testimonial-item-1">
-							<div class="ori-testimonial-text text-center pera-content">
-								<p>“Our office is something we are pleased with. We consider it the little magnet; it is wanting to come here and afterward difficult to leave it. Our office is additionally a big name.”
-								</p>
-								<div class="ori-testimonial-author text-center text-uppercase">
-									<h4>Hahimlam Dirat</h4>
-									<span>ui/ux Designer</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="carousel_nav">
-					<button type="button" class="testi-left_arrow"><img src="assets/img/vector/prev4.png" alt=""></button>
-					<button type="button" class="testi-right_arrow"><img src="assets/img/vector/next4.png" alt=""></button>
-				</div>
-			</div>
-		</div>
-	</section>
+    <div class="ori-testimonial-circle-img position-absolute">
+        <span class="ori-testi-circle-img"><img src="assets/img/testimonial/designer_portrait.png" alt="Portrait of a fashion designer"></span>
+        <span class="ori-testi-circle-img"><img src="assets/img/testimonial/model_portrait_1.png" alt="Portrait of a runway model"></span>
+        <span class="ori-testi-circle-img"><img src="assets/img/testimonial/photographer_portrait.png" alt="Portrait of a fashion photographer"></span>
+        <span class="ori-testi-circle-img"><img src="assets/img/testimonial/attendee_portrait_1.png" alt="Portrait of an event attendee"></span>
+        <span class="ori-testi-circle-img"><img src="assets/img/testimonial/model_portrait_2.png" alt="Portrait of another runway model"></span>
+        <span class="ori-testi-circle-img"><img src="assets/img/testimonial/stylist_portrait.png" alt="Portrait of a fashion stylist"></span>
+        <span class="ori-testi-circle-img"><img src="assets/img/testimonial/attendee_portrait_2.png" alt="Portrait of another event attendee"></span>
+    </div>
+    <div class="container">
+        <div class="ori-testimonial-content-1 position-relative">
+            <div class="ori-vector-bg position-absolute">
+                <img src="assets/img/vector/tst-vector1.png" alt="">
+            </div>
+            <div class="ori-testimonial-title text-center text-uppercase">
+                <h3>Voices from the Runway</h3>
+            </div>
+            <div class="ori-testimonial-slider-1">
+                <div class="ori-testimonial-item-area">
+                    <div class="ori-testimonial-item-1">
+                        <div class="ori-testimonial-text text-center pera-content">
+                            <p>“Showcasing my collection with FashionVogue was a game-changer. The platform gave me incredible exposure and connected me with key buyers and press. The entire production was flawless.”
+                            </p>
+                            <div class="ori-testimonial-author text-center text-uppercase">
+                                <h4>Elena Rodriguez</h4>
+                                <span>Fashion Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ori-testimonial-item-area">
+                    <div class="ori-testimonial-item-1">
+                        <div class="ori-testimonial-text text-center pera-content">
+                            <p>“Walking for FashionVogue is an unforgettable experience. The energy backstage is electric, and the team makes you feel like a star. It’s a career-defining moment for any model.”
+                            </p>
+                            <div class="ori-testimonial-author text-center text-uppercase">
+                                <h4>Marcus Thorne</h4>
+                                <span>Runway Model</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ori-testimonial-item-area">
+                    <div class="ori-testimonial-item-1">
+                        <div class="ori-testimonial-text text-center pera-content">
+                            <p>“As a photographer, FashionVogue events are a dream to shoot. The lighting, the curation, the access—everything is perfectly orchestrated to capture iconic moments. It's where I get my best work.”
+                            </p>
+                            <div class="ori-testimonial-author text-center text-uppercase">
+                                <h4>Jia Li</h4>
+                                <span>Fashion Photographer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel_nav">
+                <button type="button" class="testi-left_arrow"><img src="assets/img/vector/prev4.png" alt=""></button>
+                <button type="button" class="testi-right_arrow"><img src="assets/img/vector/next4.png" alt=""></button>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- End of Testimonial section
-	============================================= -->
+	============================================= -->	
 
 <!-- Start of Sponsor section
 	============================================= -->
@@ -501,7 +489,7 @@ protection
 		<div class="ori-banner-sponsor-section-4">
 			<div class="container">
 				<div class="ori-banner-sponsor-content-4 text-center pera-content">
-					<p>We are Already Build Solution for...</p>
+					<p>We are Already Flaunting Fashion with...</p>
 					<div class="ori-banner-sponsor-slide-4">
 						<div class="ori-sponsor-item">
 							<div class="ori-sponsor-img">
@@ -555,63 +543,62 @@ protection
 	</section>
 <!-- End of Sponsor section
 	============================================= -->
-
-<!-- Start of Blog section
+<!-- Start of Blog Section
 	============================================= -->
 	<section id="ori-blog-5" class="ori-blog-section-5">
-		<div class="container">
-			<div class="ori-blog-top-content-5 d-flex justify-content-between">
-				<div class="ori-section-title-5 text-uppercase wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
-					<h2>Read Our News Blog</h2>
-				</div>
-				<div class="ori-btn-4 wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1000ms">
-					<a class="text-uppercase" href="#">See More Blog</a>
-				</div>
-			</div>
-			<div class="ori-blog-content-5">
-				<div class="row justify-content-center">
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-						<div class="ori-blog-inner-item-5">
-							<div class="ori-blog-img">
-								<img src="assets/img/blog/blg5.1.png" alt="">
-							</div>
-							<div class="ori-blog-text pera-content">
-								<span class="blog-category text-uppercase"><a href="#">Medical</a></span>
-								<h3><a href="#">Which allows you to pay down insurance bills</a></h3>
-								<p>Nam eget dui vel quam sodales semper quis porttitor tortor. Vivamus quis ex nulla ...</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
-						<div class="ori-blog-inner-item-5">
-							<div class="ori-blog-img">
-								<img src="assets/img/blog/blg5.2.png" alt="">
-							</div>
-							<div class="ori-blog-text pera-content">
-								<span class="blog-category text-uppercase"><a href="#">Insurance</a></span>
-								<h3><a href="#">Leverage agile frameworks to provide</a></h3>
-								<p>Nam eget dui vel quam sodales semper quis porttitor tortor. Vivamus quis ex nulla ...</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
-						<div class="ori-blog-inner-item-5">
-							<div class="ori-blog-img">
-								<img src="assets/img/blog/blg5.3.png" alt="">
-							</div>
-							<div class="ori-blog-text pera-content">
-								<span class="blog-category text-uppercase"><a href="#">Medical</a></span>
-								<h3><a href="#">Bring to the table win-win survival strategis</a></h3>
-								<p>Nam eget dui vel quam sodales semper quis porttitor tortor. Vivamus quis ex nulla ...</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>	s
-<!-- End of Fun Fact section
-
+    <div class="container">
+        <div class="ori-blog-top-content-5 d-flex justify-content-between">
+            <div class="ori-section-title-5 text-uppercase wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
+                <h2>The Vogue Edit</h2>
+            </div>
+            <div class="ori-btn-4 wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1000ms">
+                <a class="text-uppercase" href="#">See More Stories</a>
+            </div>
+        </div>
+        <div class="ori-blog-content-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                    <div class="ori-blog-inner-item-5">
+                        <div class="ori-blog-img">
+                            <img src="assets/img/blog/blg5.1.png" alt="Stylish outfits from a recent runway show">
+                        </div>
+                        <div class="ori-blog-text pera-content">
+                            <span class="blog-category text-uppercase"><a href="#">Trends</a></span>
+                            <h3><a href="#">5 Must-Have Trends from Our Latest Showcase</a></h3>
+                            <p>From bold silhouettes to sustainable fabrics, we break down the key looks that are defining this season's style...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                    <div class="ori-blog-inner-item-5">
+                        <div class="ori-blog-img">
+                            <img src="assets/img/blog/blg5.2.png" alt="A fashion designer being interviewed backstage">
+                        </div>
+                        <div class="ori-blog-text pera-content">
+                            <span class="blog-category text-uppercase"><a href="#">Designer Spotlight</a></span>
+                            <h3><a href="#">An Interview with Visionary Designer, Marco Chen</a></h3>
+                            <p>We sit down with the creative mind behind the 'Ethereal' collection to discuss his inspiration, process, and what's next...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+                    <div class="ori-blog-inner-item-5">
+                        <div class="ori-blog-img">
+                            <img src="assets/img/blog/blg5.3.png" alt="A behind-the-scenes shot of models preparing for a show">
+                        </div>
+                        <div class="ori-blog-text pera-content">
+                            <span class="blog-category text-uppercase"><a href="#">Behind the Scenes</a></span>
+                            <h3><a href="#">The Making of a Runway Show: A Photo Essay</a></h3>
+                            <p>Go beyond the runway and see the organized chaos, the artistry, and the teamwork that bring a fashion show to life...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Blog Section
+	============================================= -->
 <?php include __DIR__ . '/includes/footer.php'; ?>
 
 </body>
