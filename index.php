@@ -197,7 +197,7 @@
 								</div>
 								<div class="ori-service-img-title position-relative">
 									<div class="ori-service-img">
-										<img src="ppt (1)/about us.jpg" alt="">
+										<img src="assets/images/homepage/about us.jpg" alt="">
 									</div>
 									<div class="ori-service-title text-center position-absolute">
 										<h3>About us  <i class="fal fa-arrow-right"></i></h3>
@@ -212,7 +212,7 @@
 								</div>
 								<div class="ori-service-img-title position-relative">
 									<div class="ori-service-img">
-										<img src="ppt (1)/mission.jpg" alt="">
+										<img src="assets/images/homepage/mission.jpg" alt="">
 									</div>
 									<div class="ori-service-title text-center position-absolute">
 										<h3>Our Mission  <i class="fal fa-arrow-right"></i></h3>
@@ -227,7 +227,7 @@
 								</div>
 								<div class="ori-service-img-title position-relative">
 									<div class="ori-service-img">
-										<img src="ppt (1)/approach.jpg" alt="">
+										<img src="assets/images/homepage/approach.jpg" alt="">
 									</div>
 									<div class="ori-service-title text-center position-absolute">
 										<h3>Our approach  <i class="fal fa-arrow-right"></i></h3>
