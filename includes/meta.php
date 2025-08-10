@@ -31,6 +31,14 @@ $SEO_META = [
         'image' => 'assets/img/logos/fashionvogue_colour_logo.png',
         'robots' => 'index,follow'
     ],
+    'events' => [
+        'title' => 'Events - Fashion Vogue',
+        'description' => 'Discover exciting fashion events and opportunities with Fashion Vogue.',
+        'keywords' => 'fashion events, fashion shows, fashion opportunities, fashion vogue events',
+        'url' => 'events',
+        'image' => 'assets/img/logos/fashionvogue_colour_logo.png',
+        'robots' => 'index,follow'
+    ],
 ];
 
 
