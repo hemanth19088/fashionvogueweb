@@ -1,5 +1,5 @@
 <?php
-$page_id = 'app';
+$page_id = 'events';
 $body_class = 'ori-app-landing';
 include __DIR__ . '/includes/head.php';
 ?>
