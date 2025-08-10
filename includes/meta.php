@@ -39,6 +39,14 @@ $SEO_META = [
         'image' => 'assets/img/logos/fashionvogue_colour_logo.png',
         'robots' => 'index,follow'
     ],
+    'opportunities' => [
+        'title' => 'Opportunities - Fashion Vogue',
+        'description' => 'Explore exciting fashion opportunities with Fashion Vogue.',
+        'keywords' => 'fashion opportunities, fashion jobs, fashion careers, fashion vogue opportunities',
+        'url' => 'opportunities',
+        'image' => 'assets/img/logos/fashionvogue_colour_logo.png',
+        'robots' => 'index,follow'
+    ]
 ];
 
 
