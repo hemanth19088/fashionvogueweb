@@ -6,7 +6,7 @@ include __DIR__ . '/includes/head.php';
 <?php include __DIR__ . '/includes/header.php'; ?>
 
 <!-- End of header section
-hello	============================================= -->
+hello hi ============================================= -->
 	
 <!-- Start of breadcrumb section
 	============================================= -->
