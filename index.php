@@ -412,7 +412,7 @@
 		   <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
 			   <p class="text-uppercase brand-accent font-semibold tracking-widest mb-2">WHAT YOU'LL DISCOVER</p>
 			   <h2 class="section-title mb-4">
-				   <span class="text-dark-Green">Key Features of the </span><span class="brand-accent">VogueVerse</span>
+				   <span class="text-dark-Green">Key Features of the </span><span class="brand-accent">FashionVogue</span>
 			   </h2>
 		   </div>
 
@@ -473,69 +473,70 @@
 	<!-- Start of Testimonial section
 	============================================= -->
 	<section id="ori-testimonial-1" class="ori-testimonial-section-1 position-relative">
-		<div class="ori-vector-bg position-absolute wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-			<img src="assets/img/vector/tst-vector1.png" alt="">
-		</div>
-		<div class="container">
-			<div class="ori-testimonial-content-1 position-relative">
-				<div class="ori-testimonial-title text-center text-uppercase">
-					<h3>What our Client say</h3>
-				</div>
-				<div class="ori-testimonial-slider-1">
-					<div class="ori-testimonial-item-area">
-						<div class="ori-testimonial-item-1">
-							<div class="ori-testimonial-text text-center pera-content">
-								<p>“A high level of professionalism and creativity has been consistently experienced through our collaboration with Fashion Vogue. Opportunities have been created, careers have been launched, and talent has been showcased with excellence. Being associated with a brand that is reshaping the future of fashion in India is genuinely appreciated.
-								</p>
-								<div class="ori-testimonial-author text-center text-uppercase">
-									<h4>Lasya Gouda</h4>
-									<span>CLIENT</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="ori-testimonial-item-area">
-						<div class="ori-testimonial-item-1">
-							<div class="ori-testimonial-text text-center pera-content">
-								<p>“Exceptional planning and execution have been witnessed in every event conducted by Fashion Vogue. Through their platform, fresh talent has been introduced and industry engagement has been greatly enhanced.
-								</p>
-								<div class="ori-testimonial-author text-center text-uppercase">
-									<h4>Ramya </h4>
-									<span>CLIENT</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="ori-testimonial-item-area">
-						<div class="ori-testimonial-item-1">
-							<div class="ori-testimonial-text text-center pera-content">
-								<p>“Exceptional planning and execution have been witnessed in every event conducted by Fashion Vogue. Through their platform, fresh talent has been introduced and industry engagement has been greatly enhanced.”
-								</p>
-								<div class="ori-testimonial-author text-center text-uppercase">
-									<h4>Lalitha</h4>
-									<span>Client<Span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="carousel_nav">
-					<button type="button" class="testi-left_arrow"><img src="assets/img/vector/prev.png" alt=""></button>
-					<button type="button" class="testi-right_arrow"><img src="assets/img/vector/next.png" alt=""></button>
-				</div>
-			</div>
-		</div>
-		<div class="line_animation">
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-		</div>
-	</section>				
+    <div class="ori-vector-bg position-absolute wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+        <img src="assets/img/vector/tst-vector1.png" alt="">
+    </div>
+    <div class="container">
+        <div class="ori-testimonial-content-1 position-relative">
+            <div class="ori-testimonial-title text-center text-uppercase">
+                <h3>What Our Clients Say</h3>
+            </div>
+            <div class="ori-testimonial-slider-1">
+
+                <div class="ori-testimonial-item-area">
+                    <div class="ori-testimonial-item-1">
+                        <div class="ori-testimonial-text text-center pera-content">
+                            <p>“A high level of professionalism and creativity has been consistently experienced through our collaboration with Fashion Vogue. Opportunities have been created, careers have been launched, and talent has been showcased with excellence. Being associated with a brand that is reshaping the future of fashion in India is genuinely appreciated.”</p>
+                            <div class="ori-testimonial-author text-center text-uppercase">
+                                <h4>Lasya Gouda</h4>
+                                <span>CLIENT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ori-testimonial-item-area">
+                    <div class="ori-testimonial-item-1">
+                        <div class="ori-testimonial-text text-center pera-content">
+                            <p>“Exceptional planning and execution have been witnessed in every event conducted by Fashion Vogue. Through their platform, fresh talent has been introduced and industry engagement has been greatly enhanced.”</p>
+                            <div class="ori-testimonial-author text-center text-uppercase">
+                                <h4>Ramya</h4>
+                                <span>CLIENT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ori-testimonial-item-area">
+                    <div class="ori-testimonial-item-1">
+                        <div class="ori-testimonial-text text-center pera-content">
+                            <p>“Exceptional planning and execution have been witnessed in every event conducted by Fashion Vogue. Through their platform, fresh talent has been introduced and industry engagement has been greatly enhanced.”</p>
+                            <div class="ori-testimonial-author text-center text-uppercase">
+                                <h4>Lalitha</h4>
+                                <span>Client</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel_nav">
+                <button type="button" class="testi-left_arrow"><img src="assets/img/vector/prev.png" alt="Previous Testimonial"></button>
+                <button type="button" class="testi-right_arrow"><img src="assets/img/vector/next.png" alt="Next Testimonial"></button>
+            </div>
+        </div>
+    </div>
+    <div class="line_animation">
+        <div class="line_area"></div>
+        <div class="line_area"></div>
+        <div class="line_area"></div>
+        <div class="line_area"></div>
+        <div class="line_area"></div>
+        <div class="line_area"></div>
+        <div class="line_area"></div>
+        <div class="line_area"></div>
+    </div>
+</section>
 <!-- End of Testimonial section
 	============================================= -->	 
 <section id="ori-blog-5" class="ori-blog-section-5">
