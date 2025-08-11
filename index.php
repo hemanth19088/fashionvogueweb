@@ -136,54 +136,393 @@
 
 <!-- Start of App Launch Section -->
   <style>
-    /* --- Styles for the announcement and new button --- */
-    .ori-app-launch-text .announcement-text {
-        font-size: 1.2rem;
-        line-height: 1.7;
-        margin-bottom: 40px; /* Increased space for the button */
-    }
+        /* Optional: Import stylish fonts from Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Poppins:wght@300;400;600&display=swap');
 
-    /* A stylish, theme-friendly button */
-    .ori-btn-app-launch {
-        display: inline-block;
-        padding: 12px 35px;
-        border: 2px solid; /* Uses the current text color */
-        color: inherit; /* Inherits text color */
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: 600;
-        letter-spacing: 1px;
-        transition: all 0.3s ease;
-    }
+        /* Basic body reset */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0d0d0d; /* Setting body background for standalone viewing */
+        }
 
-    .ori-btn-app-launch:hover {
-        background-color: white; /* Example hover effect */
-        color: black;
-        opacity: 1;
-    }
-</style>
+        .hero-section {
+            /* Full screen setup */
+            height: 100vh;
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            color: #ffffff;
+        }
 
-<section id="ori-app-launch" class="ori-app-launch-section-1 position-relative">
-    <div class="container">
-        <div class="ori-section-title-1 text-center text-uppercase wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-            <h2>Our App is <span>Launching Soon</span></h2>
+        .hero-background {
+            /* Background image setup */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /* Orange/Green/Black blend image */
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+        }
+
+        /* Dark overlay for text readability */
+        .hero-background::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.65);
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            padding: 20px;
+        }
+
+        .hero-phrase {
+            font-family: 'Cormorant', serif; /* Using the elegant serif font */
+            font-size: 7vw; /* Responsive font size */
+            font-weight: 700;
+            line-height: 1.1;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin: 0;
+            opacity: 0; /* Start hidden for animation */
+            animation: fadeInUp 1.5s ease-out forwards;
+        }
+
+        /* Staggered animation delays for each phrase */
+        .hero-phrase.p1 {
+            animation-delay: 0.5s;
+        }
+        .hero-phrase.p2 {
+            font-size: 3vw;
+            letter-spacing: 3px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            animation-delay: 1.5s;
+            margin-top: 10px;
+        }
+        
+        /* --- Email Form Styling --- */
+        .hero-form {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0; /* Start hidden */
+            animation: fadeInUp 1.5s ease-out forwards;
+            animation-delay: 2.5s; /* Appears last */
+        }
+
+        .hero-email-input {
+            flex-grow: 1; /* Takes up available space */
+            padding: 18px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .hero-email-input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .hero-email-input:focus {
+            border-color: #D4A392; /* Highlight color on focus */
+        }
+
+        .hero-submit-btn {
+            padding: 18px 35px;
+            border: none;
+            border-radius: 8px;
+            background-color: #D4A392; /* Brand color */
+            color: #000000;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background-color 0.4s;
+        }
+        
+        .hero-submit-btn:hover {
+            background-color: #E2B2A2; /* Lighter hover color */
+        }
+        
+        /* Animation keyframes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* --- MODIFIED: Responsive Design for Smaller Screens --- */
+        @media (max-width: 768px) {
+            /* Make the section height flexible on mobile */
+            .hero-section {
+                height: auto; /* Allows the section to fit its content */
+                min-height: 90vh; /* Ensures it still feels immersive */
+                padding: 60px 0; /* Adds vertical spacing */
+            }
+
+            /* Reduce font sizes to prevent text from being too large */
+            .hero-phrase {
+                font-size: 11vw;
+                letter-spacing: 3px;
+            }
+            .hero-phrase.p2 {
+                font-size: 5.5vw;
+                letter-spacing: 2px;
+                margin-top: 5px;
+            }
+
+            /* Make the form more compact */
+            .hero-form {
+                flex-direction: column; /* Stack form elements */
+                width: 90%;
+                margin-top: 35px; /* Reduced space above the form */
+            }
+            .hero-email-input, .hero-submit-btn {
+                width: 100%;
+                padding: 16px; /* Unified padding */
+                font-size: 15px;
+            }
+        }
+
+    </style>
+
+    <section class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1 class="hero-phrase p1">A New Era of Fashion</h1>
+            <h2 class="hero-phrase p2">Is Coming Soon</h2>
+            
+			  <a href="https://wa.me/9196766199848?text=I'm%20interested%20in%20your%20content!" target="_blank" style="background-color: #000; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 5px;">I'm Interested</a>		  </div>
         </div>
-        <div class="row align-items-center">
-            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
-                <div class="ori-app-launch-img text-center">
-                    <img src="https://placehold.co/550x580/1A202C/FFFFFF?text=FashionVogue&font=playfairdisplay" alt="A creative preview of the FashionVogue app">
-                </div>
+    </section>
+
+        
+<!-- End of App Launch Section -->
+ <!-- Google Fonts: Cormorant Garamond for headings, Inter for body text -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+   
+   <!-- Tailwind CSS for utility-first styling -->
+   <script src="https://cdn.tailwindcss.com"></script>
+   
+   <style>
+	   /* Custom styles to complement Tailwind */
+	   body {
+		   font-family: 'Inter', sans-serif;
+		   background-color: #000000; /* A very light, almost white background */
+		   color: #1C1C1C;
+	   }
+	   h1, h2, h3, h4, h5, h6 {
+		   font-family: 'Cormorant Garamond', serif;
+		   font-weight: 700;
+	   }
+	   .section-title {
+		   font-size: 3.5rem; /* 56px */
+		   letter-spacing: -0.025em;
+		   line-height: 1.1;
+	   }
+	   .section-subtitle {
+		   font-size: 1.125rem; /* 18px */
+		   line-height: 1.7;
+		   color: #525252; /* A softer gray for text */
+	   }
+	   .brand-accent {
+		   color: #A18A70; /* A sophisticated, muted gold/tan */
+	   }
+	   .btn-primary {
+		   background-color: #1C1C1C;
+		   color: #FFFFFF;
+		   font-family: 'Inter', sans-serif;
+		   font-weight: 500;
+		   padding: 0.875rem 2rem; /* 14px 32px */
+		   border-radius: 9999px; /* pill shape */
+		   transition: background-color 0.3s ease, transform 0.3s ease;
+	   }
+	   .btn-primary:hover {
+		   background-color: #333333;
+		   transform: scale(1.05);
+	   }
+	   .form-input {
+		   border: 1px solid #000000;
+		   border-radius: 0.5rem;
+		   padding: 0.75rem 1rem;
+		   width: 100%;
+		   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+	   }
+	   .form-input:focus {
+		   outline: none;
+		   border-color: #A18A70;
+		   box-shadow: 0 0 0 2px rgba(161, 138, 112, 0.2);
+	   }
+	   .feature-card {
+		   background-color: #ffffff;
+		   border: 1px solid #F0EAE4;
+		   border-radius: 0.75rem;
+		   padding: 2.5rem;
+		   text-align: center;
+		   transition: transform 0.3s ease, box-shadow 0.3s ease;
+	   }
+	   .feature-card:hover {
+		   transform: translateY(-8px);
+		   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+	   }
+
+	   /* Responsive adjustments */
+	   @media (max-width: 768px) {
+		   .section-title {
+			   font-size: 2.5rem;
+		   }
+	   }
+   </style>
+<body class="bg-gray-50">
+   <!-- Section 2: Key Features -->
+   <section class="py-16 md:py-28 bg-gray-200">
+	   <div class="container mx-auto px-6 bg-black rounded-2xl text-white py-12 md:py-20">
+		   <!-- Section Header -->
+		   <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+			   <p class="text-uppercase brand-accent font-semibold tracking-widest mb-2">WHAT YOU'LL DISCOVER</p>
+			   <h2 class="section-title mb-4">
+				   <span class="text-dark-Green">Key Features of the </span><span class="brand-accent">FashionVogue</span>
+			   </h2>
+		   </div>
+
+		   <!-- Features Grid -->
+		   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+			   <!-- Feature 1: Virtual Fashion Week -->
+			   <div class="feature-card">
+				   <div class="w-10 h-10 mx-auto mb-6 text-[#A18A70]">
+					   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.82m5.84-2.56a16.95 16.95 0 00-2.58-.22m2.58 2.78a16.92 16.92 0 01-2.58-.22m0 0A16.92 16.92 0 015.63 12a16.95 16.95 0 015.58-6.84m-5.58 6.84a6 6 0 01-2.28 2.58m-2.28-2.58a6 6 0 015.84-7.38v4.82m-5.84 2.56a16.95 16.95 0 002.58.22m-2.58-2.78a16.92 16.92 0 002.58.22m0 0A16.92 16.92 0 0018.37 12a16.95 16.95 0 00-5.58-6.84m5.58 6.84a6 6 0 002.28-2.58m2.28 2.58a6 6 0 00-5.84 7.38v-4.82" /></svg>
+				   </div>
+				   <h3 class="text-2xl mb-3">Virtual Fashion Week</h3>
+				   <p class="section-subtitle !text-base">Be front row at fully immersive 3D catwalks—couture reveals from visionary designers in breathtaking digital environments.</p>
+			   </div>
+			   <!-- Feature 2: Digital Couture Closet -->
+			   <div class="feature-card">
+				   <div class="w-10 h-10 mx-auto mb-6 text-[#A18A70]">
+					   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" /></svg>
+				   </div>
+				   <h3 class="text-2xl mb-3">Digital Couture Closet</h3>
+				   <p class="section-subtitle !text-base">Collect, style, and showcase exclusive fashion wearables—your signature looks for the new digital era.</p>
+			   </div>
+			   <!-- Feature 3: Atelier Access -->
+			   <div class="feature-card">
+				   <div class="w-10 h-10 mx-auto mb-6 text-[#A18A70]">
+					   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.311a15.045 15.045 0 01-7.5 0C4.508 17.627 2.25 14.454 2.25 10.5 2.25 6.546 4.508 3.373 7.5 1.5c3.679 1.873 6.168 5.046 6.168 9.046a12.06 12.06 0 01-1.25 5.25m3.75-5.25a12.06 12.06 0 00-1.25-5.25m0 0a15.045 15.045 0 00-7.5 0" /></svg>
+				   </div>
+				   <h3 class="text-2xl mb-3">Atelier Access</h3>
+				   <p class="section-subtitle !text-base">Connect with designers and stylists, attend exclusive talks, and go behind the scenes of collection-making.</p>
+			   </div>
+			   <!-- Feature 4: AR Fitting Rooms -->
+			   <div class="feature-card">
+				   <div class="w-10 h-10 mx-auto mb-6 text-[#A18A70]">
+					   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zm-7.518-.267A8.25 8.25 0 1120.25 10.5M8.288 14.212A5.25 5.25 0 1117.25 10.5" /></svg>
+				   </div>
+				   <h3 class="text-2xl mb-3">AR Fitting Rooms</h3>
+				   <p class="section-subtitle !text-base">Try on digital garments virtually and see how they move, fit, and flow with cutting‑edge AR technology.</p>
+			   </div>
+			   <!-- Feature 5: Limited Edition Drops -->
+			   <div class="feature-card">
+				   <div class="w-10 h-10 mx-auto mb-6 text-[#A18A70]">
+					   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+				   </div>
+				   <h3 class="text-2xl mb-3">Limited Edition Drops</h3>
+				   <p class="section-subtitle !text-base">Secure rare runway pieces and time-limited digital looks from leading fashion houses before anyone else.</p>
+			   </div>
+			   <!-- Feature 6: Style Socials -->
+			   <div class="feature-card">
+				   <div class="w-10 h-10 mx-auto mb-6 text-[#A18A70]">
+					   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" /></svg>
+				   </div>
+				   <h3 class="text-2xl mb-3">Style Socials</h3>
+				   <p class="section-subtitle !text-base">Join virtual shows, styling challenges, and live community events with creators and fans from across the globe.</p>
+			   </div>
+		   </div>
+	   </div>
+   </section>
+
+	<!-- Start of Testimonial section
+	============================================= -->
+	<section id="ori-testimonial-1" class="ori-testimonial-section-1 position-relative">
+    <div class="ori-vector-bg position-absolute wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+        <img src="assets/img/vector/tst-vector1.png" alt="">
+    </div>
+    <div class="container">
+        <div class="ori-testimonial-content-1 position-relative">
+            <div class="ori-testimonial-title text-center text-uppercase">
+                <h3>What Our Clients Say</h3>
             </div>
-            <div class="col-lg-6 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="1500ms">
-                <div class="ori-app-launch-text">
-                    <p class="announcement-text">
-                        Get ready to enter a new world of style. Our exclusive mobile app for iOS and Android is preparing for takeoff. More details will be revealed soon!
-                    </p>
-                    
-                    <a href="app.php" class="ori-btn-app-launch">
-                        Learn More
-                    </a>
+            <div class="ori-testimonial-slider-1">
+
+                <div class="ori-testimonial-item-area">
+                    <div class="ori-testimonial-item-1">
+                        <div class="ori-testimonial-text text-center pera-content">
+                            <p>“A high level of professionalism and creativity has been consistently experienced through our collaboration with Fashion Vogue. Opportunities have been created, careers have been launched, and talent has been showcased with excellence. Being associated with a brand that is reshaping the future of fashion in India is genuinely appreciated.”</p>
+                            <div class="ori-testimonial-author text-center text-uppercase">
+                                <h4>Lasya Gouda</h4>
+                                <span>CLIENT</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="ori-testimonial-item-area">
+                    <div class="ori-testimonial-item-1">
+                        <div class="ori-testimonial-text text-center pera-content">
+                            <p>“Exceptional planning and execution have been witnessed in every event conducted by Fashion Vogue. Through their platform, fresh talent has been introduced and industry engagement has been greatly enhanced.”</p>
+                            <div class="ori-testimonial-author text-center text-uppercase">
+                                <h4>Ramya</h4>
+                                <span>CLIENT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ori-testimonial-item-area">
+                    <div class="ori-testimonial-item-1">
+                        <div class="ori-testimonial-text text-center pera-content">
+                            <p>“Exceptional planning and execution have been witnessed in every event conducted by Fashion Vogue. Through their platform, fresh talent has been introduced and industry engagement has been greatly enhanced.”</p>
+                            <div class="ori-testimonial-author text-center text-uppercase">
+                                <h4>Lalitha</h4>
+                                <span>Client</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel_nav">
+                <button type="button" class="testi-left_arrow"><img src="assets/img/vector/prev.png" alt="Previous Testimonial"></button>
+                <button type="button" class="testi-right_arrow"><img src="assets/img/vector/next.png" alt="Next Testimonial"></button>
             </div>
         </div>
     </div>
@@ -198,170 +537,6 @@
         <div class="line_area"></div>
     </div>
 </section>
-        
-<!-- End of App Launch Section -->
-
-<!-- Start of Service section
-	============================================= -->
-	<style>
-    /* --- Styles for the Narrative Service Layout --- */
-    .narrative-service-container {
-        /* Adjusted padding for when there's no top heading */
-        padding-top: 0;
-    }
-
-    .service-process-list {
-        padding-right: 30px; /* Space between text and image */
-    }
-
-    .service-step {
-        display: flex;
-        padding: 35px 0;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        gap: 30px;
-    }
-    .service-step:first-child {
-        padding-top: 0;
-    }
-    .service-step:last-child {
-        border-bottom: none;
-    }
-
-    .step-number {
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: #333;
-        line-height: 1.2;
-    }
-
-    .step-content h3 {
-        font-size: 2rem;
-        margin-top: 0;
-        margin-bottom: 15px;
-    }
-    .step-content p {
-        font-size: 1.1rem;
-        line-height: 1.7;
-        margin-bottom: 0;
-        opacity: 0.8;
-    }
-
-    .service-visual {
-        height: 100%;
-        min-height: 500px; /* Ensure it has height on smaller viewports */
-        background-size: cover;
-        background-position: center;
-        border-radius: 8px;
-    }
-</style>
-
-<section id="ori-service-1" class="ori-service-section-1">
-    <div class="container">
-        <div class="narrative-service-container">
-            <div class="row">
-                <div class="col-lg-7 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-                    <div class="service-process-list">
-                        <div class="service-step">
-                            <div class="step-number">01</div>
-                            <div class="step-content">
-                                <h3>Discovery & Strategy</h3>
-                                <p>Every great design begins with a deep understanding. We partner with you to uncover your brand's core narrative, audience, and goals, crafting a strategic foundation for everything that follows.</p>
-                            </div>
-                        </div>
-                        <div class="service-step">
-                            <div class="step-number">02</div>
-                            <div class="step-content">
-                                <h3>Brand Identity & Design</h3>
-                                <p>We translate your story into a compelling visual identity. From logos and color palettes to typography, we create a cohesive and memorable brand that resonates with your customers and stands out in the market.</p>
-                            </div>
-                        </div>
-                        <div class="service-step">
-                            <div class="step-number">03</div>
-                            <div class="step-content">
-                                <h3>Digital Experience & Launch</h3>
-                                <p>We bring your brand's story to life online. Our team designs and develops beautiful, intuitive websites and digital platforms that engage users and drive results, ensuring a flawless launch into the digital world.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                < <div class="col-lg-5 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="1500ms">
-    <img src="assets/images/home page/about.jpg" alt="A visual representation of a creative journey in design" class="service-visual-img">
-</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End of Service section
-	============================================= -->
-
-	<!-- Start of Testimonial section
-	============================================= -->
-	<section id="ori-testimonial-1" class="ori-testimonial-section-1 position-relative">
-		<div class="ori-vector-bg position-absolute wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-			<img src="assets/img/vector/tst-vector1.png" alt="">
-		</div>
-		<div class="container">
-			<div class="ori-testimonial-content-1 position-relative">
-				<div class="ori-testimonial-title text-center text-uppercase">
-					<h3>What our Client say</h3>
-				</div>
-				<div class="ori-testimonial-slider-1">
-					<div class="ori-testimonial-item-area">
-						<div class="ori-testimonial-item-1">
-							<div class="ori-testimonial-text text-center pera-content">
-								<p>“A high level of professionalism and creativity has been consistently experienced through our collaboration with Fashion Vogue. Opportunities have been created, careers have been launched, and talent has been showcased with excellence. Being associated with a brand that is reshaping the future of fashion in India is genuinely appreciated.
-								</p>
-								<div class="ori-testimonial-author text-center text-uppercase">
-									<h4>Lasya Gouda</h4>
-									<span>CLIENT</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="ori-testimonial-item-area">
-						<div class="ori-testimonial-item-1">
-							<div class="ori-testimonial-text text-center pera-content">
-								<p>“Exceptional planning and execution have been witnessed in every event conducted by Fashion Vogue. Through their platform, fresh talent has been introduced and industry engagement has been greatly enhanced.
-								</p>
-								<div class="ori-testimonial-author text-center text-uppercase">
-									<h4>Ramya </h4>
-									<span>CLIENT</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="ori-testimonial-item-area">
-						<div class="ori-testimonial-item-1">
-							<div class="ori-testimonial-text text-center pera-content">
-								<p>“Exceptional planning and execution have been witnessed in every event conducted by Fashion Vogue. Through their platform, fresh talent has been introduced and industry engagement has been greatly enhanced.”
-								</p>
-								<div class="ori-testimonial-author text-center text-uppercase">
-									<h4>Lalitha</h4>
-									<span>Client<Span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="carousel_nav">
-					<button type="button" class="testi-left_arrow"><img src="assets/img/vector/prev.png" alt=""></button>
-					<button type="button" class="testi-right_arrow"><img src="assets/img/vector/next.png" alt=""></button>
-				</div>
-			</div>
-		</div>
-		<div class="line_animation">
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-		</div>
-	</section>				
 <!-- End of Testimonial section
 	============================================= -->	 
 <section id="ori-blog-5" class="ori-blog-section-5">
@@ -416,139 +591,10 @@
 </section>
 <!-- End of Blog Section
 	============================================= -->
-    <!-- Start of Opportunities Section -->             
-    <style>
-    /* --- Styles for the Narrative Service Layout --- */
-    #ori-service-1 .narrative-service-container {
-        padding-top: 0;
-    }
-    #ori-service-1 .service-process-list {
-        padding-right: 30px;
-    }
-    #ori-service-1 .service-step {
-        display: flex;
-        padding: 35px 0;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        gap: 30px;
-    }
-    #ori-service-1 .service-step:first-child {
-        padding-top: 0;
-    }
-    #ori-service-1 .service-step:last-child {
-        border-bottom: none;
-    }
-    #ori-service-1 .step-number {
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: #333;
-        line-height: 1.2;
-    }
-    #ori-service-1 .step-content h3 {
-        font-size: 2rem;
-        margin-top: 0;
-        margin-bottom: 15px;
-    }
-    #ori-service-1 .step-content p {
-        font-size: 1.1rem;
-        line-height: 1.7;
-        margin-bottom: 0;
-        opacity: 0.8;
-    }
-    #ori-service-1 .service-visual {
-        height: 100%;
-        min-height: 500px;
-        background-size: cover;
-        background-position: center;
-        border-radius: 8px;
-    }
-</style>
+  
 
-<section id="ori-service-1" class="ori-service-section-1">
-    <div class="container">
-        <div class="narrative-service-container">
-            <div class="row">
-                <div class="col-lg-7 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-                    <div class="service-process-list">
-                        <div class="service-step">
-                            <div class="step-number">01</div>
-                            <div class="step-content">
-                                <h3>Discovery & Strategy</h3>
-                                <p>Every great design begins with a deep understanding. We partner with you to uncover your brand's core narrative, audience, and goals, crafting a strategic foundation for everything that follows.</p>
-                            </div>
-                        </div>
-                        <div class="service-step">
-                            <div class="step-number">02</div>
-                            <div class="step-content">
-                                <h3>Brand Identity & Design</h3>
-                                <p>We translate your story into a compelling visual identity. From logos and color palettes to typography, we create a cohesive and memorable brand that resonates with your customers and stands out in the market.</p>
-                            </div>
-                        </div>
-                        <div class="service-step">
-                            <div class="step-number">03</div>
-                            <div class="step-content">
-                                <h3>Digital Experience & Launch</h3>
-                                <p>We bring your brand's story to life online. Our team designs and develops beautiful, intuitive websites and digital platforms that engage users and drive results, ensuring a flawless launch into the digital world.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-               <div class="col-lg-5 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="1500ms">
-    <img src="assets/images/home page/about.jpg" alt="A visual representation of a creative journey in design" class="service-visual-img">
-</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<style>
-    /* --- Minimal CSS for the Opportunities Section --- */
-    #ori-opportunities {
-        padding: 80px 0; /* Standard vertical spacing */
-    }
-    .opportunity-card {
-        border: 1px solid #e9ecef; /* A light, subtle border */
-        padding: 2rem;
-        height: 100%; /* Ensures cards in the same row have equal height */
-        border-radius: 8px;
-    }
-    .opportunity-card h3 {
-        font-size: 1.75rem;
-    }
-    .opportunity-card .role-description {
-        opacity: 0.8;
-        margin-bottom: 1.5rem;
-    }
-</style>
-
-<section id="ori-opportunities">
-    <div class="container">
-        <div class="ori-section-title-1 text-center text-uppercase wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="margin-bottom: 50px;">
-            <h2>Join Our <span>Journey</span></h2>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-                <div class="opportunity-card">
-                    <h3>Fashion Curator & Archivist</h3>
-                    <p class="role-description">
-                        Become a storyteller of style. In this role, you will manage our digital fashion archives, curate collections for online exhibitions, and preserve the legacy of iconic designs for a new generation of fashion enthusiasts.
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
-                <div class="opportunity-card">
-                    <h3>Lead Stylist & Trend Forecaster</h3>
-                    <p class="role-description">
-                        Shape the future of fashion. As our lead stylist, you will create breathtaking editorial looks, identify emerging global trends, and guide the creative direction of our content to inspire our audience.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End of Opportunities Section -->           
+           
 
     <?php include __DIR__ . '/includes/footer.php'; ?>
 

@@ -341,94 +341,158 @@ include __DIR__ . '/includes/header.php';
         </div>
     </div>
 </section>
-<section id="ori-service-7" class="ori-service-section-7">
-    <div class="container">
-        <div class="ori-section-title-7 text-center wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
-            <div class="sub-title text-uppercase">What You'll Discover</div>
-            <h2>Key Features of the <span>Showverse</span> </h2>
-        </div>
-        <div class="ori-service-content-7 position-relative">
-            <div class="ori-service-silider-7">
-                <div class="ori-service-item-7 position-relative">
-                    <div class="ori-service-inner-item-7 position-relative">
-                        <span class="service-shape1 position-absolute"> </span>
-                        <div class="ori-service-icon">
-                            <i class="fal fa-pencil-ruler"></i>
-                        </div>
-                        <div class="ori-service-text pera-content">
-                            <h3><a href="service-single.html">Virtual Fashion Week</a></h3>
-                            <p>Be front row at fully immersive 3D catwalks — couture reveals from visionary designers in breathtaking digital environments.</p>
-                        </div>
+ <!-- Google Fonts: Cormorant Garamond for headings, Inter for body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS for utility-first styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* Custom styles to complement Tailwind */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FDFDFD; /* A very light, almost white background */
+            color: #1C1C1C;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+        }
+        .section-title {
+            font-size: 3.5rem; /* 56px */
+            letter-spacing: -0.025em;
+            line-height: 1.1;
+        }
+        .section-subtitle {
+            font-size: 1.125rem; /* 18px */
+            line-height: 1.7;
+            color: #525252; /* A softer gray for text */
+        }
+        .brand-accent {
+            color: #A18A70; /* A sophisticated, muted gold/tan */
+        }
+        .btn-primary {
+            background-color: #1C1C1C;
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            padding: 0.875rem 2rem; /* 14px 32px */
+            border-radius: 9999px; /* pill shape */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #333333;
+            transform: scale(1.05);
+        }
+        .form-input {
+            border: 1px solid #D1D5DB;
+            border-radius: 0.5rem;
+            padding: 0.75rem 1rem;
+            width: 100%;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #A18A70;
+            box-shadow: 0 0 0 2px rgba(161, 138, 112, 0.2);
+        }
+        .feature-card {
+            background-color: #ffffff;
+            border: 1px solid #F0EAE4;
+            border-radius: 0.75rem;
+            padding: 2.5rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .feature-icon {
+            width: 2.5rem; /* Changed from 3.5rem */
+            height: 2.5rem; /* Changed from 3.5rem */
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1.5rem;
+            color: #A18A70;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+
+
+
+
+    <!-- Section 2: Key Features -->
+    <section class="py-16 md:py-28 bg-[#F8F4F1]">
+        <div class="container mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-12 md:mb-20">
+                <p class="text-uppercase brand-accent font-semibold tracking-widest mb-2">WHAT YOU'LL DISCOVER</p>
+                <h2 class="section-title mb-4">Key Features of the <span class="brand-accent">VogueVerse</span></h2>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1: Virtual Fashion Week -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.82m5.84-2.56a16.95 16.95 0 00-2.58-.22m2.58 2.78a16.92 16.92 0 01-2.58-.22m0 0A16.92 16.92 0 015.63 12a16.95 16.95 0 015.58-6.84m-5.58 6.84a6 6 0 01-2.28 2.58m-2.28-2.58a6 6 0 015.84-7.38v4.82m-5.84 2.56a16.95 16.95 0 002.58.22m-2.58-2.78a16.92 16.92 0 002.58.22m0 0A16.92 16.92 0 0018.37 12a16.95 16.95 0 00-5.58-6.84m5.58 6.84a6 6 0 002.28-2.58m2.28 2.58a6 6 0 00-5.84 7.38v-4.82" /></svg>
                     </div>
+                    <h3 class="text-2xl mb-3">Virtual Fashion Week</h3>
+                    <p class="section-subtitle !text-base">Be front row at fully immersive 3D catwalks—couture reveals from visionary designers in breathtaking digital environments.</p>
                 </div>
-                <div class="ori-service-item-7 position-relative">
-                    <div class="ori-service-inner-item-7 ser-color-2 position-relative">
-                        <span class="service-shape1 position-absolute"> </span>
-                        <div class="ori-service-icon">
-                            <i class="fal fa-computer-speaker"></i>
-                        </div>
-                        <div class="ori-service-text pera-content">
-                            <h3><a href="service-single.html">Digital Couture Closet</a></h3>
-                            <p>Collect, style, and showcase exclusive fashion wearables — your signature looks for the digital era.</p>
-                        </div>
+                <!-- Feature 2: Digital Couture Closet -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" /></svg>
                     </div>
+                    <h3 class="text-2xl mb-3">Digital Couture Closet</h3>
+                    <p class="section-subtitle !text-base">Collect, style, and showcase exclusive fashion wearables—your signature looks for the new digital era.</p>
                 </div>
-                <div class="ori-service-item-7 position-relative">
-                    <div class="ori-service-inner-item-7 ser-color-3 position-relative">
-                        <span class="service-shape1 position-absolute"> </span>
-                        <div class="ori-service-icon">
-                            <i class="fal fa-briefcase"></i>
-                        </div>
-                        <div class="ori-service-text pera-content">
-                            <h3><a href="service-single.html">Atelier Access</a></h3>
-                            <p>Connect with designers and stylists, attend exclusive talks, and go behind the scenes of collection-making.</p>
-                        </div>
+                <!-- Feature 3: Atelier Access -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.311a15.045 15.045 0 01-7.5 0C4.508 17.627 2.25 14.454 2.25 10.5 2.25 6.546 4.508 3.373 7.5 1.5c3.679 1.873 6.168 5.046 6.168 9.046a12.06 12.06 0 01-1.25 5.25m3.75-5.25a12.06 12.06 0 00-1.25-5.25m0 0a15.045 15.045 0 00-7.5 0" /></svg>
                     </div>
+                    <h3 class="text-2xl mb-3">Atelier Access</h3>
+                    <p class="section-subtitle !text-base">Connect with designers and stylists, attend exclusive talks, and go behind the scenes of collection-making.</p>
                 </div>
-                <div class="ori-service-item-7 position-relative">
-                    <div class="ori-service-inner-item-7 ser-color-4 position-relative">
-                        <span class="service-shape1 position-absolute"> </span>
-                        <div class="ori-service-icon">
-                            <i class="fal fa-mouse-pointer"></i>
-                        </div>
-                        <div class="ori-service-text pera-content">
-                            <h3><a href="#">AR Fitting Rooms</a></h3>
-                            <p>Try on digital garments virtually and see how they move, fit, and flow with cutting‑edge AR technology.</p>
-                        </div>
+                <!-- Feature 4: AR Fitting Rooms -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zm-7.518-.267A8.25 8.25 0 1120.25 10.5M8.288 14.212A5.25 5.25 0 1117.25 10.5" /></svg>
                     </div>
+                    <h3 class="text-2xl mb-3">AR Fitting Rooms</h3>
+                    <p class="section-subtitle !text-base">Try on digital garments virtually and see how they move, fit, and flow with cutting‑edge AR technology.</p>
                 </div>
-                <div class="ori-service-item-7 position-relative">
-                    <div class="ori-service-inner-item-7 ser-color-3 position-relative">
-                        <span class="service-shape1 position-absolute"> </span>
-                        <div class="ori-service-icon">
-                            <i class="fal fa-pencil-ruler"></i>
-                        </div>
-                        <div class="ori-service-text pera-content">
-                            <h3><a href="service-single.html">Limited Edition Drops</a></h3>
-                            <p>Secure rare runway pieces and time-limited digital looks from leading fashion houses.</p>
-                        </div>
+                <!-- Feature 5: Limited Edition Drops -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                     </div>
+                    <h3 class="text-2xl mb-3">Limited Edition Drops</h3>
+                    <p class="section-subtitle !text-base">Secure rare runway pieces and time-limited digital looks from leading fashion houses before anyone else.</p>
                 </div>
-                <div class="ori-service-item-7 position-relative">
-                    <div class="ori-service-inner-item-7 ser-color-2 position-relative">
-                        <span class="service-shape1 position-absolute"> </span>
-                        <div class="ori-service-icon">
-                            <i class="fal fa-pencil-ruler"></i>
-                        </div>
-                        <div class="ori-service-text pera-content">
-                            <h3><a href="service-single.html">FashionVogue Socials</a></h3>
-                            <p>Join virtual shows, styling challenges, and live community events with creators and fans worldwide.</p>
-                        </div>
+                <!-- Feature 6: Style Socials -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" /></svg>
                     </div>
+                    <h3 class="text-2xl mb-3">Style Socials</h3>
+                    <p class="section-subtitle !text-base">Join virtual shows, styling challenges, and live community events with creators and fans from across the globe.</p>
                 </div>
             </div>
-            <div class="carousel_nav">
-                <button type="button" class="ser7-left_arrow"><i class="far fa-angle-left"></i></button>
-                <button type="button" class="ser7-right_arrow"><i class="far fa-angle-right"></i></button>
-            </div>
         </div>
-    </div>
-</section>
+    </section>
+
 <section id="ori-video-skill-7" class="ori-video-skill-section-7">
     <div class="ori-video-skill-content-7 d-flex">
         <div class="ori-video-play-7 position-relative" data-background="assets/img/bg/video-bg.jpg">
