@@ -75,6 +75,7 @@ $baseHref = rtrim($scriptDir, '/') . '/';
     <?php endif; ?>
 
     <!-- Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome-all.css">
     <link rel="stylesheet" href="assets/css/animate.css">

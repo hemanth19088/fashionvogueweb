@@ -7,20 +7,6 @@ include __DIR__ . '/includes/head.php';
 
 <!-- End of header section
 hello hi ============================================= -->
-	
-<!-- Start of breadcrumb section
-	============================================= -->
-	<section id="ori-breadcrumb-5" class="ori-breadcrumb-section-5">
-		<div class="container">
-			<div class="ori-breadcrumb-content-5 text-center">
-				<h2>Events</h2>
-				<ul class="ori-breadcrumb-list-5 d-flex justify-content-center">
-					<li><a href="#">Home</a></li>
-					<li><span>Events</span></li>
-				</ul>
-			</div>
-		</div>
-	</section>
 <!-- Start of Slider section
 	============================================= -->
 	<section id="ori-banner-5" class="ori-banner-section-5">
@@ -141,20 +127,6 @@ FashionVogue
 <!-- End of Slider section
 	============================================= -->
 
-<!-- Start of Search section
-	============================================= -->
-	<section id="ori-ins-search" class="ori-ins-search-section">
-		<div class="container">
-			<div class="ori-ins-search-content wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-				<form action="#" method="get">
-					<input type="text" name="search" placeholder="Tell us what you need for">
-					<button type="submit">Submit</button>
-				</form>
-			</div>
-		</div>
-	</section>		
-<!-- End of Search section
-	============================================= -->
 
 <!-- Start of Service Section 
 	============================================= -->
@@ -267,7 +239,6 @@ FashionVogue
                         <div class="service-text pera-content">
                             <h3><a href="#">Runway Shows</a></h3>
                             <p>Experience the energy of our main-stage runway productions, showcasing the future of style from visionary designers.</p>
-                            <a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
                         </div>
                     </div>
                 </div>
@@ -279,7 +250,6 @@ FashionVogue
                         <div class="service-text pera-content">
                             <h3><a href="#">Designer Spotlights</a></h3>
                             <p>Get exclusive insights in our intimate Q&A sessions, where featured designers reveal their creative process and inspiration.</p>
-                            <a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
                         </div>
                     </div>
                 </div>
@@ -291,7 +261,6 @@ FashionVogue
                         <div class="service-text pera-content">
                             <h3><a href="#">Styling Workshops</a></h3>
                             <p>Learn the art of the perfect look from industry masters in our hands-on workshops on trend-setting and personal styling.</p>
-                            <a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
                         </div>
                     </div>
                 </div>
@@ -303,7 +272,6 @@ FashionVogue
                         <div class="service-text pera-content">
                             <h3><a href="#">Model Castings</a></h3>
                             <p>We provide a platform for aspiring talent to shine, connecting the next generation of models with leading designers.</p>
-                            <a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
                         </div>
                     </div>
                 </div>
@@ -315,7 +283,6 @@ FashionVogue
                         <div class="service-text pera-content">
                             <h3><a href="#">Networking Mixers</a></h3>
                             <p>Connect with the industry's elite—from stylists to influencers—at our exclusive, curated networking events.</p>
-                            <a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
                         </div>
                     </div>
                 </div>
@@ -327,7 +294,6 @@ FashionVogue
                         <div class="service-text pera-content">
                             <h3><a href="#">Pop-Up Boutiques</a></h3>
                             <p>Shop limited-edition collections and exclusive pieces directly from the designers featured on our runways.</p>
-                            <a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
                         </div>
                     </div>
                 </div>
@@ -339,7 +305,6 @@ FashionVogue
                         <div class="service-text pera-content">
                             <h3><a href="#">Press & Media Hub</a></h3>
                             <p>Gain unparalleled access to cover our events, with dedicated resources for accredited media professionals.</p>
-                            <a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
                         </div>
                     </div>
                 </div>
@@ -351,14 +316,17 @@ FashionVogue
                         <div class="service-text pera-content">
                             <h3><a href="#">Sponsorship Packages</a></h3>
                             <p>Align your brand with the cutting edge of fashion. Explore our partnership opportunities for powerful brand visibility.</p>
-                            <a class="read-more text-uppercase" href="#"><img src="assets/img/vector/arrow-2.png" alt=""> <span>Read More</span></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-                    <div class="ori-service-inner-item-5">
-                        <div class="more-service-btn-area text-center">
-                            <a class="more-service-btn text-uppercase"  href="#">More Services</a>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1000ms">
+            <div class="ori-service-inner-item-5">
+                 <div class="service-icon d-flex justify-content-center align-items-center">
+                     <i class="fas fa-palette"></i>
+                </div>
+                     <div class="service-text pera-content">
+                         <h3><a href="#">Creative Direction & Branding</a></h3>
+                             <p>We shape your brand's narrative, from campaign concepts to a complete visual identity, crafting an aesthetic that defines your place in the market.</p>
                         </div>
                     </div>
                 </div>
@@ -369,51 +337,7 @@ FashionVogue
 <!-- End of Service Section 
 	============================================= -->	
 
-<!-- Start of Contact Section 
-	============================================= -->
-	<section id="ori-contact-1" class="ori-contact-section-1" data-background="assets/img/bg/contact-bg.png">
-    <div class="container">
-        <div class="ori-contact-form-contant">
-            <div class="ori-section-title-5 text-uppercase wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-                <h2>Step into
-                the Spotlight!</h2>
-            </div>
-            <div class="ori-contact-form-area wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
-                <form action="#" method="get">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input type="text" name="name" placeholder="Your Full Name">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="email" name="email" placeholder="Your Email Address">
-                        </div>
-                        <div class="col-md-6">
-                            <select name="inquiry_type">
-                                <option value="" selected disabled>Reason for Contacting</option>
-                                <option value="Model Audition">Model Audition</option>
-                                <option value="Designer Application">Designer Application</option>
-                                <option value="Press Inquiry">Press Inquiry</option>
-                                <option value="Sponsorship">Sponsorship</option>
-                                <option value="General Question">General Question</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" name="portfolio_link" placeholder="Portfolio or Social Media Link (Optional)">
-                        </div>
-                        <div class="col-md-12">
-                            <textarea name="message" placeholder="Tell us about yourself or your brand..."></textarea>
-                        </div>
-                        <div class="col-md-12">
-                            <button type="submit">Send Application</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End of Contact Section 
-	============================================= -->
+
 
 <!-- Start of Testimonial section
 	============================================= -->
@@ -543,62 +467,7 @@ FashionVogue
 	</section>
 <!-- End of Sponsor section
 	============================================= -->
-<!-- Start of Blog Section
-	============================================= -->
-	<section id="ori-blog-5" class="ori-blog-section-5">
-    <div class="container">
-        <div class="ori-blog-top-content-5 d-flex justify-content-between">
-            <div class="ori-section-title-5 text-uppercase wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
-                <h2>The Vogue Edit</h2>
-            </div>
-            <div class="ori-btn-4 wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1000ms">
-                <a class="text-uppercase" href="#">See More Stories</a>
-            </div>
-        </div>
-        <div class="ori-blog-content-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-                    <div class="ori-blog-inner-item-5">
-                        <div class="ori-blog-img">
-                            <img src="assets/img/blog/blg5.1.png" alt="Stylish outfits from a recent runway show">
-                        </div>
-                        <div class="ori-blog-text pera-content">
-                            <span class="blog-category text-uppercase"><a href="#">Trends</a></span>
-                            <h3><a href="#">5 Must-Have Trends from Our Latest Showcase</a></h3>
-                            <p>From bold silhouettes to sustainable fabrics, we break down the key looks that are defining this season's style...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
-                    <div class="ori-blog-inner-item-5">
-                        <div class="ori-blog-img">
-                            <img src="assets/img/blog/blg5.2.png" alt="A fashion designer being interviewed backstage">
-                        </div>
-                        <div class="ori-blog-text pera-content">
-                            <span class="blog-category text-uppercase"><a href="#">Designer Spotlight</a></span>
-                            <h3><a href="#">An Interview with Visionary Designer, Marco Chen</a></h3>
-                            <p>We sit down with the creative mind behind the 'Ethereal' collection to discuss his inspiration, process, and what's next...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
-                    <div class="ori-blog-inner-item-5">
-                        <div class="ori-blog-img">
-                            <img src="assets/img/blog/blg5.3.png" alt="A behind-the-scenes shot of models preparing for a show">
-                        </div>
-                        <div class="ori-blog-text pera-content">
-                            <span class="blog-category text-uppercase"><a href="#">Behind the Scenes</a></span>
-                            <h3><a href="#">The Making of a Runway Show: A Photo Essay</a></h3>
-                            <p>Go beyond the runway and see the organized chaos, the artistry, and the teamwork that bring a fashion show to life...</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End of Blog Section
-	============================================= -->
+
 <?php include __DIR__ . '/includes/footer.php'; ?>
 
 </body>

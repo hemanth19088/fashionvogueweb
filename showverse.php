@@ -239,7 +239,6 @@ body.ori-digital-studio {
 </style>
 
 
-<!-- Start of banner section -->
 <section id="ori-banner-7" class="ori-banner-section-7 position-relative">
     <span class="ori-banner-shape1 position-absolute wow fadeInRight" data-wow-delay="400ms" data-wow-duration="1500ms"><img src="assets/img/vector/banner-shape1.png" alt=""></span>
     <span class="ori-banner-shape2 position-absolute wow fadeInRight" data-wow-delay="600ms" data-wow-duration="1500ms"><img src="assets/img/vector/banner-shape2.png" alt=""></span>
@@ -273,7 +272,7 @@ body.ori-digital-studio {
                 <i class="fal fa-users"></i>
             </div>
             <div class="inner-text pera-content">
-                <p>We have a awesome <span>Team</span></p>
+                <p>Meet our Featured <span>Designers</span></p>
                 <div class="inner-img-list ul-li d-flex align-items-center">
                     <ul>
                         <li><img src="assets/img/slider/tmb1.jpg" alt=""></li>
@@ -289,32 +288,28 @@ body.ori-digital-studio {
         <div class="ori-banner-content-7">
             <div class="ori-banner-text-wrap-7 pera-content">
                 <div class="banner-slug text-uppercase wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-                    We are Responsive to build success
+                    The Future of Fashion is Here
                 </div>
                 <h1 class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
-                    Build <span>Digital</span>
-                    Product Brand
+                    Welcome to the <span>Showverse</span>
                 </h1>
-                <p class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">Our employees are our biggest strength. Through the combination of experience, loyalty and up-and-coming young prospects.</p>
+                <p class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">Step into a new dimension of style. Explore immersive digital runways, discover avant-garde collections, and connect with the creators shaping tomorrow's trends.</p>
                 <div class="banner-play-btn d-flex wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1000ms">
                     <div class="ori-btn-7">
-                        <a href="contact">Get Started</a>
+                        <a href="contact">Explore Now</a>
                     </div>
                     <div class="banner-play">
-                        <a class="d-flex video_box align-items-center" href="https://www.youtube.com/watch?v=bIoPkZRVll"><i class="fas fa-play-circle"></i> <span>Check Video</span></a>
+                        <a class="d-flex video_box align-items-center" href="https://www.youtube.com/watch?v=bIoPkZRVll"><i class="fas fa-play-circle"></i> <span>Watch the Trailer</span></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- End of Banner section -->
-
-<!-- Start of Sponsor section -->
 <section id="ori-sponsor-7" class="ori-sponsor-section-7">
     <div class="container">
         <div class="ori-sponsor-content-7 position-relative">
-            <h3>Over 400+ Companise Worldwide joined with <span>Orixy</span></h3>
+            <h3>Featuring Digital Collections From Top <span>Designers & Brands</span></h3>
             <div class="ori-sponsor-slider-7">
                 <div class="ori-sponsor-img">
                     <div class="inner-img">
@@ -355,9 +350,6 @@ body.ori-digital-studio {
         </div>
     </div>
 </section>
-<!-- End of Sponsor section -->
-
-<!-- Start of About section -->
 <section id="ori-about-7" class="ori-about-section-7">
     <div class="container">
         <div class="ori-about-img-wrapper-7">
@@ -378,17 +370,17 @@ body.ori-digital-studio {
                 <div class="col-lg-7">
                     <div class="ori-about-text-area-7 wow fadeInRight" data-wow-delay="500ms" data-wow-duration="1500ms">
                         <div class="ori-section-title-7">
-                            <div class="sub-title text-uppercase">About our Company</div>
-                            <h2>Beyond a coworking
-                                space with <span>Orixy</span>
+                            <div class="sub-title text-uppercase">About The Platform</div>
+                            <h2>More Than a Runway.
+                                It's a <span>Revolution.</span>
                             </h2>
                         </div>
                         <div class="ori-about-text-wrap-7 pera-content">
-                            <p>When it comes to making multiple business decisions, it's easy to get caught up in the weeds.</p>
-                            <p>Your workspace should provide you more tools and resources to conquer everyday work challenges and prepare you for your best. A virtual office is the smartest way to establish a presence in a new market</p>
-                            <p>Choose a plan with phone and virtual receptionist support.</p>
+                            <p>Showverse redefines the fashion experience. We bridge the gap between physical craftsmanship and digital innovation, offering a space for designers to push boundaries and for enthusiasts to engage with fashion like never before.</p>
+                            <p>Our platform provides the tools and resources to explore, collect, and showcase digital couture, preparing you for the future of style. A virtual wardrobe is the smartest way to curate your identity in the new digital age.</p>
+                            <p>Choose a plan with exclusive access and early collection previews.</p>
                             <div class="ori-btn-7">
-                                <a href="contact">Contact us</a>
+                                <a href="contact">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -397,15 +389,11 @@ body.ori-digital-studio {
         </div>
     </div>
 </section>
-<!-- End of About section -->
-
-<!-- Start of Service section -->
 <section id="ori-service-7" class="ori-service-section-7">
     <div class="container">
         <div class="ori-section-title-7 text-center wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
-            <div class="sub-title text-uppercase">Our Services</div>
-            <h2>Beyond a coworking
-                space with <span>Orixy</span>
+            <div class="sub-title text-uppercase">What You'll Discover</div>
+            <h2>Key Features of the <span>Showverse</span>
             </h2>
         </div>
         <div class="ori-service-content-7 position-relative">
@@ -417,8 +405,8 @@ body.ori-digital-studio {
                             <i class="fal fa-pencil-ruler"></i>
                         </div>
                         <div class="ori-service-text pera-content">
-                            <h3><a href="service-single.html">Web design</a></h3>
-                            <p>In the performance of our tasks and duties, we are faithful.</p>
+                            <h3><a href="service-single.html">Immersive Runways</a></h3>
+                            <p>Experience the latest collections in stunning, fully interactive 3D environments.</p>
                         </div>
                     </div>
                 </div>
@@ -429,8 +417,8 @@ body.ori-digital-studio {
                             <i class="fal fa-computer-speaker"></i>
                         </div>
                         <div class="ori-service-text pera-content">
-                            <h3><a href="service-single.html">Branding</a></h3>
-                            <p>In the performance of our tasks and duties, we are faithful.</p>
+                            <h3><a href="service-single.html">Digital Wardrobe</a></h3>
+                            <p>Collect, style, and showcase your favorite digital fashion pieces and assets.</p>
                         </div>
                     </div>
                 </div>
@@ -441,8 +429,8 @@ body.ori-digital-studio {
                             <i class="fal fa-briefcase"></i>
                         </div>
                         <div class="ori-service-text pera-content">
-                            <h3><a href="service-single.html">Web developmnt</a></h3>
-                            <p>In the performance of our tasks and duties, we are faithful.</p>
+                            <h3><a href="service-single.html">Creator Hubs</a></h3>
+                            <p>Connect with designers, attend exclusive talks, and go behind the scenes.</p>
                         </div>
                     </div>
                 </div>
@@ -453,8 +441,8 @@ body.ori-digital-studio {
                             <i class="fal fa-mouse-pointer"></i>
                         </div>
                         <div class="ori-service-text pera-content">
-                            <h3><a href="#">Pay-Per-Click</a></h3>
-                            <p>In the performance of our tasks and duties, we are faithful.</p>
+                            <h3><a href="#">Virtual Try-On</a></h3>
+                            <p>Visualize how digital garments fit and flow with our cutting-edge AR technology.</p>
                         </div>
                     </div>
                 </div>
@@ -465,8 +453,8 @@ body.ori-digital-studio {
                             <i class="fal fa-pencil-ruler"></i>
                         </div>
                         <div class="ori-service-text pera-content">
-                            <h3><a href="service-single.html">Web design</a></h3>
-                            <p>In the performance of our tasks and duties, we are faithful.</p>
+                            <h3><a href="service-single.html">Exclusive Drops</a></h3>
+                            <p>Gain early access to limited edition digital wearables from top designers.</p>
                         </div>
                     </div>
                 </div>
@@ -477,8 +465,8 @@ body.ori-digital-studio {
                             <i class="fal fa-pencil-ruler"></i>
                         </div>
                         <div class="ori-service-text pera-content">
-                            <h3><a href="service-single.html">Web design</a></h3>
-                            <p>In the performance of our tasks and duties, we are faithful.</p>
+                            <h3><a href="service-single.html">Community Events</a></h3>
+                            <p>Participate in virtual fashion shows, styling competitions, and live Q&As.</p>
                         </div>
                     </div>
                 </div>
@@ -490,9 +478,6 @@ body.ori-digital-studio {
         </div>
     </div>
 </section>
-<!-- End of Service section -->
-
-<!-- Start of Video Skill section -->
 <section id="ori-video-skill-7" class="ori-video-skill-section-7">
     <div class="ori-video-skill-content-7 d-flex">
         <div class="ori-video-play-7 position-relative" data-background="assets/img/bg/video-bg.jpg">
@@ -503,29 +488,29 @@ body.ori-digital-studio {
         <div class="ori-skill-content-7">
             <div class="ori-skill-content-progress">
                 <div class="ori-section-title-7 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                    <div class="sub-title text-uppercase">Our Skill</div>
+                    <div class="sub-title text-uppercase">The Technology</div>
                     <h2>
-                        <span>Orixy</span>is the best company for skills
+                        Powered by Cutting-Edge <span>Innovation</span>
                     </h2>
                 </div>
                 <div class="ori-skill-text-progress-bar wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                    <p>Your workspace should provide you more tools and resources to conquer everyday work challenges and prepare you for your best. A virtual office is the smartest way to establish new market. </p>
+                    <p>Our platform is built on a foundation of real-time 3D rendering, blockchain for digital ownership, and advanced streaming protocols to deliver a seamless, high-fidelity experience.</p>
                     <div class="ori-skill-progress-7">
                         <div class="skill-progress-bar">
                             <div class="skill-set-percent headline">
-                                <h4>Crativity</h4>
+                                <h4>3D Real-time Rendering</h4>
                                 <div class="progress">
                                     <div class="progress-bar" data-percent="92"></div>
                                 </div>
                             </div>
                             <div class="skill-set-percent headline">
-                                <h4>Work Management</h4>
+                                <h4>AR Integration</h4>
                                 <div class="progress">
                                     <div class="progress-bar" data-percent="85"></div>
                                 </div>
                             </div>
                             <div class="skill-set-percent headline">
-                                <h4>Skill</h4>
+                                <h4>Decentralized Assets</h4>
                                 <div class="progress">
                                     <div class="progress-bar" data-percent="99"></div>
                                 </div>
@@ -540,7 +525,7 @@ body.ori-digital-studio {
                                 <li><img src="assets/img/slider/tmb3.jpg" alt=""></li>
                             </ul>
                             <div class="more-btn">
-                                2k+ Real Clients. <a href="about.html"><span>Explor now</span> <i class="far fa-arrow-right"></i></a>
+                                2k+ Active Users. <a href="about.html"><span>Explore now</span> <i class="far fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -549,6 +534,4 @@ body.ori-digital-studio {
         </div>
     </div>
 </section>
-<!-- End of Video Skill section -->
-
 <?php include __DIR__ . '/includes/footer.php'; ?>
