@@ -61,7 +61,7 @@
 		</div>
 		<div class="ori-footer-copyright d-flex justify-content-between">
 			<div class="ori-copyright-text">
-				© 2022 All Right Recived - Orixy - Themexriver
+				© 2022 All Right Recived -Fashionvogue
 			</div>
 			<div class="ori-copyright-social">
 				<a href="#"><i class="fab fa-facebook-f"></i></a>

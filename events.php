@@ -132,9 +132,9 @@ FashionVogue
 	============================================= -->
 	<section id="ori-service-5" class="ori-service-section-5">
     <div class="container">
-        <div class="ori-section-title-5 text-uppercase text-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-            <h2>The Heart of Fashion Innovation</h2>
-        </div>
+    <div class="ori-section-title-5 text-uppercase text-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+    <h2 style="color: #ffffff;">The Heart of Fashion Innovation</h2>
+</div>
         <div class="ori-service-content-5">
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
@@ -325,8 +325,8 @@ FashionVogue
                      <i class="fas fa-palette"></i>
                 </div>
                      <div class="service-text pera-content">
-                         <h3><a href="#">Creative Direction & Branding</a></h3>
-                             <p>We shape your brand's narrative, from campaign concepts to a complete visual identity, crafting an aesthetic that defines your place in the market.</p>
+                         <h3><a href="#">Creative Direction</a></h3>
+                             <p>We shape your brand's narrative, from campaign concepts to a complete visual identity, crafting an aesthetic that defines you in market.</p>
                         </div>
                     </div>
                 </div>
