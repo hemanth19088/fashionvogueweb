@@ -11,193 +11,83 @@
 
     <?php include __DIR__ . '/includes/header.php'; ?>
 
-	<!-- Start of Slider section
-	============================================= -->
 	<section id="ori-slider-1" class="ori-slider-section-1 position-relative">
-		<div class="ori-slider-content-wrapper-1 postion-relative">
-			<div class="ori-slider-social position-absolute text-uppercase ul-li">
-				<ul>
-					<li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-					<li><a href="#"><i class="fab fa-youtube"></i> Youtube</a></li>
-					<li><a href="#"><i class="fab fa-twitter"></i>twitter</a></li>
-				</ul>
-			</div>
-			<div class="ori-slider-wrap-1">
-			<style>
-    /* Main container for the slider content. 
-       position: relative is essential for containing the video.
-       overflow: hidden prevents scrollbars from the cropped video.
-    */
-    .ori-slider-content-1 {
-        position: relative;
-        overflow: hidden;
-        min-height: 80vh; /* Example height, adjust as needed */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+    
+    <style>
+        /* NOTE: For this section to display correctly, you may need to define
+           the utility classes used (e.g., .position-relative, .position-absolute,
+           .text-uppercase, .text-center, .ul-li) in your main stylesheet.
+        */
 
-    /* The container for the video.
-       It's set to cover the entire parent element.
-    */
-    .ori-slider-img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1; /* Sits behind the text */
-    }
+        /* Main container for the slider content. */
+        .ori-slider-content-1 {
+            position: relative;
+            overflow: hidden; /* Prevents scrollbars from the cropped video */
+            min-height: 80vh; /* Example height, adjust as needed */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-    /* Core styles for the responsive video.
-       object-fit: cover is the key to making it fill the space without distortion.
-    */
-    .ori-slider-img video {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
+        /* The container for the background video. */
+        .ori-slider-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1; /* Sits behind the text content */
+        }
 
-    /* Ensures your text is visible on top of the video.
-    */
-    .ori-slider-text {
-        position: relative;
-        z-index: 2; /* Sits on top of the video */
-    }
-</style>
+        /* Core styles for the responsive video. */
+        .ori-slider-img video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
 
-<div class="ori-slider-content-1 position-relative">
+        /* Ensures your text is visible on top of the video. */
+        .ori-slider-text {
+            position: relative;
+            z-index: 2; /* Sits on top of the video */
+            /* Basic styling for visibility - adjust as needed */
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+    </style>
 
-    <div class="ori-slider-img position-absolute">
-        <video autoplay loop muted playsinline src="assets/images/demo video.mp4"></video>
+    <div class="ori-slider-content-wrapper-1 position-relative">
+        <div class="ori-slider-social position-absolute text-uppercase ul-li">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i> Youtube</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            </ul>
+        </div>
+
+        <div class="ori-slider-wrap-1">
+            <div class="ori-slider-content-1 position-relative">
+                <div class="ori-slider-img position-absolute">
+                    <video autoplay loop muted playsinline src="assets/images/demo video.mp4"></video>
+                </div>
+                <div class="ori-slider-text text-center text-uppercase">
+                    <h1>Discover Your <span>Aesthetic</span> <i class="fas fa-arrow-right"></i></h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="line_animation">
+            <div class="line_area"></div>
+            <div class="line_area"></div>
+            <div class="line_area"></div>
+            <div class="line_area"></div>
+            <div class="line_area"></div>
+            <div class="line_area"></div>
+            <div class="line_area"></div>
+            <div class="line_area"></div>
+        </div>
     </div>
-
-    <div class="ori-slider-text text-center text-uppercase">
-        <h1>Discover Your <span>Aesthetic</span> <i class="fas fa-arrow-right"></i></h1>
-    </div>
-
-</div>
-				<style>
-    /* Main container for the slider content. 
-       position: relative is essential for containing the video.
-       overflow: hidden prevents scrollbars from the cropped video.
-    */
-    .ori-slider-content-1 {
-        position: relative;
-        overflow: hidden;
-        min-height: 80vh; /* Example height, adjust as needed */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    /* The container for the video.
-       It's set to cover the entire parent element.
-    */
-    .ori-slider-img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1; /* Sits behind the text */
-    }
-
-    /* Core styles for the responsive video.
-       object-fit: cover is the key to making it fill the space without distortion.
-    */
-    .ori-slider-img video {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
-
-    /* Ensures your text is visible on top of the video.
-    */
-    .ori-slider-text {
-        position: relative;
-        z-index: 2; /* Sits on top of the video */
-    }
-</style>
-
-<div class="ori-slider-content-1 position-relative">
-
-    <div class="ori-slider-img position-absolute">
-        <video autoplay loop muted playsinline src="assets/images/demo video.mp4"></video>
-    </div>
-
-    <div class="ori-slider-text text-center text-uppercase">
-        <h1>Discover Your <span>Aesthetic</span> <i class="fas fa-arrow-right"></i></h1>
-    </div>
-
-</div>
-<style>
-    /* Main container for the slider content. 
-       position: relative is essential for containing the video.
-       overflow: hidden prevents scrollbars from the cropped video.
-    */
-    .ori-slider-content-1 {
-        position: relative;
-        overflow: hidden;
-        min-height: 80vh; /* Example height, adjust as needed */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    /* The container for the video.
-       It's set to cover the entire parent element.
-    */
-    .ori-slider-img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1; /* Sits behind the text */
-    }
-
-    /* Core styles for the responsive video.
-       object-fit: cover is the key to making it fill the space without distortion.
-    */
-    .ori-slider-img video {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
-
-    /* Ensures your text is visible on top of the video.
-    */
-    .ori-slider-text {
-        position: relative;
-        z-index: 2; /* Sits on top of the video */
-    }
-</style>
-
-<div class="ori-slider-content-1 position-relative">
-
-    <div class="ori-slider-img position-absolute">
-        <video autoplay loop muted playsinline src="assets/images/demo video.mp4"></video>
-    </div>
-
-    <div class="ori-slider-text text-center text-uppercase">
-        <h1>Discover Your <span>Aesthetic</span> <i class="fas fa-arrow-right"></i></h1>
-    </div>
-
-</div>
-			</div>
-			<div class="line_animation">
-				<div class="line_area"></div>
-				<div class="line_area"></div>
-				<div class="line_area"></div>
-				<div class="line_area"></div>
-				<div class="line_area"></div>
-				<div class="line_area"></div>
-				<div class="line_area"></div>
-				<div class="line_area"></div>
-			</div>
-		</div>
-	</section>              
+</section>
 <!-- End of Slider section
 	============================================= -->
 
@@ -269,7 +159,7 @@
 								</div>
 								<div class="ori-service-img-title position-relative">
 									<div class="ori-service-img">
-										<img src="assets/images/home page/about us.jpg alt="">
+										<img src="assets/images/home page/about us.jpg" alt="">
 									</div>
 									<div class="ori-service-title text-center position-absolute">
 										<h3>About us  <i class="fal fa-arrow-right"></i></h3>
@@ -383,56 +273,57 @@
 	</section>				
 <!-- End of Testimonial section
 	============================================= -->	 
-	<section id="ori-blog-5" class="ori-blog-section-5">
-    <div class="container">
-        <div class="ori-blog-top-content-5 d-flex justify-content-between">
-            <div class="ori-section-title-5 text-uppercase wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
-    <h2 style="color: #ffffff;">The Vogue Edit</h2>
-</div>
-           <div class="ori-btn-4 wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1000ms">
-  			 <a class="text-uppercase" href="#">See More Stories</a>
-            </div>
-        </div>
-        <div class="ori-blog-content-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-                    <div class="ori-blog-inner-item-5">
-                        <div class="ori-blog-img">
-                            <img src="assets/images/home page/blog.jpg" alt="A model in a minimalist Sabyasachi bridal lehenga">
-                        </div>
-                        <div class="ori-blog-text pera-content">
-                            <span class="blog-category text-uppercase"><a href="#">Trends</a></span>
-                            <h3><a href="#">The New Indian Bride: Sabyasachi's Quiet Revolution</a></h3>
-                            <p>Sabyasachi's latest bridal collection redefines wedding wear with a focus on 'stillness over spectacle'. We explore how this move towards minimalism and meaning is shaping the future of Indian bridal fashion...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
-                    <div class="ori-blog-inner-item-5">
-                        <div class="ori-blog-img">
-                            <img src="assets/images/home page/blog1.jpg" alt="Designer JJ Valaya on the ramp at his India Couture Week show">
-                        </div>
-                        <div class="ori-blog-text pera-content">
-                            <span class="blog-category text-uppercase"><a href="#">Designer Spotlight</a></span>
-                            <h3><a href="#">JJ Valaya: A 33-Year Legacy of Couture</a></h3>
-                            <p>We delve into JJ Valaya's spectacular India Couture Week finale, a show that was more than just fashion – it was a cinematic journey through heritage, craftsmanship, and the designer's enduring vision...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
-                    <div class="ori-blog-inner-item-5">
-                        <div class="ori-blog-img">
-                            <img src="assets/images/home page/blog2.jpg" alt="A collage of Indian models with a quote about fair pay">
-                        </div>
-                        <div class="ori-blog-text pera-content">
-						<span class="blog-category text-uppercase"><a href="#">Style Forecast</a></span>
-<h3><a href="#">The Edit: Top 5 Trends Defining Autumn/Winter 2025</a></h3>
-<p>From the resurgence of '70s-inspired faux fur to the dominance of digital lavender, the upcoming season is a blend of nostalgic comfort and futuristic optimism. We break down the essential looks, textures, and tech-infused accessories you need to know about...</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<section id="ori-blog-5" class="ori-blog-section-5">
+    <div class="container">
+        <div class="ori-blog-top-content-5 d-flex justify-content-between">
+            <div class="ori-section-title-5 text-uppercase wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
+                <h2 style="color: #ffffff;">The Vogue Edit</h2>
+            </div>
+            <div class="ori-btn-4 wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1000ms">
+                <a class="text-uppercase" href="#">See More Stories</a>
+            </div>
+        </div>
+        <div class="ori-blog-content-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                    <div class="ori-blog-inner-item-5">
+                        <div class="ori-blog-img">
+                            <img src="assets/images/home page/blog.jpg" alt="A model in a minimalist Sabyasachi bridal lehenga">
+                        </div>
+                        <div class="ori-blog-text pera-content">
+                            <span class="blog-category text-uppercase"><a href="#">Trends</a></span>
+                            <h3><a href="#">The New Indian Bride: Sabyasachi's Quiet Revolution</a></h3>
+                            <p>Sabyasachi's latest bridal collection redefines wedding wear with a focus on 'stillness over spectacle'. We explore how this move towards minimalism and meaning is shaping the future of Indian bridal fashion...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                    <div class="ori-blog-inner-item-5">
+                        <div class="ori-blog-img">
+                            <img src="assets/images/home page/blog1.jpg" alt="Designer JJ Valaya on the ramp at his India Couture Week show">
+                        </div>
+                        <div class="ori-blog-text pera-content">
+                            <span class="blog-category text-uppercase"><a href="#">Designer Spotlight</a></span>
+                            <h3><a href="#">JJ Valaya: A 33-Year Legacy of Couture</a></h3>
+                            <p>We delve into JJ Valaya's spectacular India Couture Week finale, a show that was more than just fashion – it was a cinematic journey through heritage, craftsmanship, and the designer's enduring vision...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+                    <div class="ori-blog-inner-item-5">
+                        <div class="ori-blog-img">
+                            <img src="assets/images/home page/blog2.jpg" alt="A collage of Indian models with a quote about fair pay">
+                        </div>
+                        <div class="ori-blog-text pera-content">
+                            <span class="blog-category text-uppercase"><a href="#">Style Forecast</a></span>
+                            <h3><a href="#">The Edit: Top 5 Trends Defining Autumn/Winter 2025</a></h3>
+                            <p>From the resurgence of '70s-inspired faux fur to the dominance of digital lavender, the upcoming season is a blend of nostalgic comfort and futuristic optimism. We break down the essential looks, textures, and tech-infused accessories you need to know about...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <!-- End of Blog Section
 	============================================= -->
