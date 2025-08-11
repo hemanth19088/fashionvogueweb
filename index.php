@@ -25,7 +25,7 @@
 			<div class="ori-slider-wrap-1">
 				<div class="ori-slider-content-1 position-relative">
 					<div class="ori-slider-text text-center text-uppercase">
-						<h1>Your Spotlight <span>Awaits</span> <i class="fas fa-arrow-right"></i></h1>
+					<h1>Discover Your <span>Aesthetic</span> <i class="fas fa-arrow-right"></i></h1>
 						<div class="ori-slider-img position-absolute">
 							<video autoplay loop muted playsinline src="assets/images/demo video.mp4"></video>
 						</div>
@@ -33,7 +33,7 @@
 				</div>
 				<div class="ori-slider-content-1 position-relative">
 					<div class="ori-slider-text text-center text-uppercase">
-						<h1>Your Spotlight<span>Awaits</span> <i class="fas fa-arrow-right"></i></h1>
+					<h1>Discover Your <span>Aesthetic</span> <i class="fas fa-arrow-right"></i></h1>
 						<div class="slider-play-btn">
 							<a class="video_box d-flex align-items-center justify-content-center text-uppercase" href="https://www.youtube.com/watch?v=O0pLvLtoESc">PLAY</a>
 						</div>
@@ -44,8 +44,9 @@
 				</div>
 				<div class="ori-slider-content-1 position-relative">
 					<div class="ori-slider-text text-center text-uppercase">
-						<h1>Your Spotlight<span>Awaits</span> <i class="fas fa-arrow-right"></i></h1>
-						<div class="ori-slider-img position-absolute">
+					<h1>Discover Your <span>Aesthetic</span> <i class="fas fa-arrow-right"></i></h1>
+
+							<div class="ori-slider-img position-absolute">
 							<video autoplay loop muted playsinline src="assets/images/demo video.mp4"></video>
 						</div>
 					</div>
@@ -66,73 +67,6 @@
 <!-- End of Slider section
 	============================================= -->
 
-<!-- Start of Sponsor section
-	============================================= -->
-	<section id="ori-sponsor-1" class="ori-sponsor-section-1 position-relative">
-		<div class="container">
-			<div class="ori-sponsor-title text-uppercase text-center">
-				<h3><i></i> <span>Sponsored by</span> <i></i> </h3>
-			</div>
-			<div class="ori-sponsor-content">
-				<div class="ori-sponsor-slider">
-					<div class="ori-sponsor-item">
-						<div class="ori-sponsor-img">
-							<a href="#">
-								<img src="https://qwikhire.ai/static/media/capgemini.bf7462c5a851f529b7a4.webp" alt="logo-0">
-							</a>
-						</div>
-					</div>
-					<div class="ori-sponsor-item">
-						<div class="ori-sponsor-img">
-							<a href="#">
-								<img src="https://qwikhire.ai/static/media/googlelogo.9c402c4962e3f1c29390.webp" alt="logo-1">
-							</a>
-						</div>
-					</div>
-					<div class="ori-sponsor-item">
-						<div class="ori-sponsor-img">
-							<a href="#">
-								<img src="https://qwikhire.ai/static/media/concentrixlogo.3d12f3c300896b8af9e7.png" alt="logo-2">
-							</a>
-						</div>
-					</div>
-					<div class="ori-sponsor-item">
-						<div class="ori-sponsor-img">
-							<a href="#">
-								<img src="https://qwikhire.ai/static/media/IBM_logo.f5fe10bab49b0743f8b1.png" alt="logo-3">
-							</a>
-						</div>
-					</div>
-					<div class="ori-sponsor-item">
-						<div class="ori-sponsor-img">
-							<a href="#">
-								<img src="https://qwikhire.ai/static/media/techmlogo.be30f9988957a077ad43.png" alt="logo-4">
-							</a>
-						</div>
-					</div>
-					<div class="ori-sponsor-item">
-						<div class="ori-sponsor-img">
-							<a href="#">
-								<img src="https://qwikhire.ai/static/media/PayPal.d18fb4f8b8629dc0a814.png" alt="logo-5">
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="line_animation">
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-		</div>
-	</section>              
-<!-- End of Sponsor section
-	============================================= -->
 
 <!-- Start of App Launch Section -->
 <section id="ori-app-launch" class="ori-app-launch-section-1 position-relative">
@@ -143,7 +77,7 @@
 		<div class="row align-items-center">
 			<div class="col-lg-6 wow fadeInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
 				<div class="ori-app-launch-img text-center">
-					<img src="images/app launch.jpg" alt="App Launch">
+					<img src="assets/images/homepage/app launch.jpg" alt="App Launch">
 				</div>
 			</div>
 			<div class="col-lg-6 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="1500ms">
@@ -182,8 +116,9 @@
 			<div class="container">
 				<div class="ori-service-top-content-1 d-flex justify-content-between align-items-center">
 					<div class="ori-section-title-1 text-uppercase wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
-						<h2>Modern digital <span> design experience</span></h2>
-					</div>
+					<h2>Design That <span>Tells a Story</span></h2>
+
+</div>
 					<div class="ori-btn-1 text-uppercase wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
 						<a href="service.html">Our services</a>
 					</div>
@@ -243,6 +178,128 @@
 <!-- End of Service section
 	============================================= -->
 
+	<!-- Start of Testimonial section
+	============================================= -->
+	<section id="ori-testimonial-1" class="ori-testimonial-section-1 position-relative">
+		<div class="ori-vector-bg position-absolute wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+			<img src="assets/img/vector/tst-vector1.png" alt="">
+		</div>
+		<div class="container">
+			<div class="ori-testimonial-content-1 position-relative">
+				<div class="ori-testimonial-title text-center text-uppercase">
+					<h3>What our Client say</h3>
+				</div>
+				<div class="ori-testimonial-slider-1">
+					<div class="ori-testimonial-item-area">
+						<div class="ori-testimonial-item-1">
+							<div class="ori-testimonial-text text-center pera-content">
+								<p>“A high level of professionalism and creativity has been consistently experienced through our collaboration with Fashion Vogue. Opportunities have been created, careers have been launched, and talent has been showcased with excellence. Being associated with a brand that is reshaping the future of fashion in India is genuinely appreciated.
+								</p>
+								<div class="ori-testimonial-author text-center text-uppercase">
+									<h4>Hahimlam Dirat</h4>
+									<span>CLIENT</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ori-testimonial-item-area">
+						<div class="ori-testimonial-item-1">
+							<div class="ori-testimonial-text text-center pera-content">
+								<p>“Exceptional planning and execution have been witnessed in every event conducted by Fashion Vogue. Through their platform, fresh talent has been introduced and industry engagement has been greatly enhanced.
+								</p>
+								<div class="ori-testimonial-author text-center text-uppercase">
+									<h4>Hahimlam Dirat</h4>
+									<span>CLIENT</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ori-testimonial-item-area">
+						<div class="ori-testimonial-item-1">
+							<div class="ori-testimonial-text text-center pera-content">
+								<p>“Exceptional planning and execution have been witnessed in every event conducted by Fashion Vogue. Through their platform, fresh talent has been introduced and industry engagement has been greatly enhanced.”
+								</p>
+								<div class="ori-testimonial-author text-center text-uppercase">
+									<h4>NIRMALA SITHARAMAN</h4>
+									<span>Client<Span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel_nav">
+					<button type="button" class="testi-left_arrow"><img src="assets/img/vector/prev.png" alt=""></button>
+					<button type="button" class="testi-right_arrow"><img src="assets/img/vector/next.png" alt=""></button>
+				</div>
+			</div>
+		</div>
+		<div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+		</div>
+	</section>				
+<!-- End of Testimonial section
+	============================================= -->	 
+	<section id="ori-blog-5" class="ori-blog-section-5">
+    <div class="container">
+        <div class="ori-blog-top-content-5 d-flex justify-content-between">
+            <div class="ori-section-title-5 text-uppercase wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
+                <h2>The Vogue Edit</h2>
+            </div>
+           <div class="ori-btn-4 wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1000ms">
+  			 <a class="text-uppercase" href="#">See More Stories</a>
+            </div>
+        </div>
+        <div class="ori-blog-content-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                    <div class="ori-blog-inner-item-5">
+                        <div class="ori-blog-img">
+                            <img src="assets/img/blog/blg5.1.png" alt="A model in a minimalist Sabyasachi bridal lehenga">
+                        </div>
+                        <div class="ori-blog-text pera-content">
+                            <span class="blog-category text-uppercase"><a href="#">Trends</a></span>
+                            <h3><a href="#">The New Indian Bride: Sabyasachi's Quiet Revolution</a></h3>
+                            <p>Sabyasachi's latest bridal collection redefines wedding wear with a focus on 'stillness over spectacle'. We explore how this move towards minimalism and meaning is shaping the future of Indian bridal fashion...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                    <div class="ori-blog-inner-item-5">
+                        <div class="ori-blog-img">
+                            <img src="assets/img/blog/blg5.2.png" alt="Designer JJ Valaya on the ramp at his India Couture Week show">
+                        </div>
+                        <div class="ori-blog-text pera-content">
+                            <span class="blog-category text-uppercase"><a href="#">Designer Spotlight</a></span>
+                            <h3><a href="#">JJ Valaya: A 33-Year Legacy of Couture</a></h3>
+                            <p>We delve into JJ Valaya's spectacular India Couture Week finale, a show that was more than just fashion – it was a cinematic journey through heritage, craftsmanship, and the designer's enduring vision...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+                    <div class="ori-blog-inner-item-5">
+                        <div class="ori-blog-img">
+                            <img src="assets/img/blog/blg5.3.png" alt="A collage of Indian models with a quote about fair pay">
+                        </div>
+                        <div class="ori-blog-text pera-content">
+						 <span class="blog-category text-uppercase"><a href="#">Behind the Scenes</a></span>
+                            <h3><a href="#">Beyond the Ramp: The Unseen Struggle for Fair Pay</a></h3>
+                            <p>A recent viral post by model Roshni Sharma has ignited a conversation about the realities of working in the Indian fashion industry. We look at the calls for fair compensation and the hidden challenges faced by models...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Blog Section
+	============================================= -->
 
 
     <?php include __DIR__ . '/includes/footer.php'; ?>
