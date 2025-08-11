@@ -12,51 +12,67 @@
     <?php include __DIR__ . '/includes/header.php'; ?>
 
 	<section id="ori-slider-1" class="ori-slider-section-1 position-relative">
-    
+
     <style>
+        /* --- Main Slider Styles --- */
         /* NOTE: For this section to display correctly, you may need to define
            the utility classes used (e.g., .position-relative, .position-absolute,
            .text-uppercase, .text-center, .ul-li) in your main stylesheet.
         */
-
-        /* Main container for the slider content. */
         .ori-slider-content-1 {
             position: relative;
-            overflow: hidden; /* Prevents scrollbars from the cropped video */
-            min-height: 80vh; /* Example height, adjust as needed */
+            overflow: hidden;
+            min-height: 80vh;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-
-        /* The container for the background video. */
         .ori-slider-img {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: 1; /* Sits behind the text content */
+            z-index: 1; 
         }
-
-        /* Core styles for the responsive video. */
         .ori-slider-img video {
             object-fit: cover;
             width: 100%;
             height: 100%;
         }
-
-        /* Ensures your text is visible on top of the video. */
         .ori-slider-text {
             position: relative;
-            z-index: 2; /* Sits on top of the video */
-            /* Basic styling for visibility - adjust as needed */
+            z-index: 2; 
             color: white;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        /* --- Audio Button Styles --- */
+        .audio-toggle-btn {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            z-index: 10;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: 1px solid white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+        }
+        .audio-toggle-btn:hover {
+            background-color: rgba(0, 0, 0, 0.8);
         }
     </style>
 
     <div class="ori-slider-content-wrapper-1 position-relative">
+        
         <div class="ori-slider-social position-absolute text-uppercase ul-li">
             <ul>
                 <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
@@ -64,18 +80,7 @@
                 <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
             </ul>
         </div>
-
-        <div class="ori-slider-wrap-1">
-            <div class="ori-slider-content-1 position-relative">
-                <div class="ori-slider-img position-absolute">
-                    <video autoplay loop muted playsinline src="assets/images/demo video.mp4"></video>
-                </div>
-                <div class="ori-slider-text text-center text-uppercase">
-                    <h1>Discover Your <span>Aesthetic</span> <i class="fas fa-arrow-right"></i></h1>
-                </div>
-            </div>
-        </div>
-
+        
         <div class="line_animation">
             <div class="line_area"></div>
             <div class="line_area"></div>
@@ -86,13 +91,78 @@
             <div class="line_area"></div>
             <div class="line_area"></div>
         </div>
+
+        <div class="ori-slider-wrap-1">
+            <div class="ori-slider-content-1 position-relative">
+                <div class="ori-slider-img position-absolute">
+                    <video id="background-video" autoplay loop muted playsinline src="assets/images/demo video.mp4"></video>
+                </div>
+                <div class="ori-slider-text text-center text-uppercase">
+                    <h1>Discover Your <span>Aesthetic</span> <i class="fas fa-arrow-right"></i></h1>
+                </div>
+                <button id="audio-btn" class="audio-toggle-btn" aria-label="Toggle Audio">
+                    <i class="fas fa-volume-off"></i>
+                </button>
+            </div>
+        </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.getElementById('background-video');
+            const audioBtn = document.getElementById('audio-btn');
+            
+            // Check if the button actually exists before adding a listener
+            if (audioBtn) {
+                const audioIcon = audioBtn.querySelector('i');
+                audioBtn.addEventListener('click', function() {
+                    if (video.muted) {
+                        video.muted = false;
+                        audioIcon.classList.remove('fa-volume-off');
+                        audioIcon.classList.add('fa-volume-high');
+                    } else {
+                        video.muted = true;
+                        audioIcon.classList.remove('fa-volume-high');
+                        audioIcon.classList.add('fa-volume-off');
+                    }
+                });
+            }
+        });
+    </script>
 </section>
 <!-- End of Slider section
 	============================================= -->
 
 
 <!-- Start of App Launch Section -->
+  <style>
+    /* --- Styles for the announcement and new button --- */
+    .ori-app-launch-text .announcement-text {
+        font-size: 1.2rem;
+        line-height: 1.7;
+        margin-bottom: 40px; /* Increased space for the button */
+    }
+
+    /* A stylish, theme-friendly button */
+    .ori-btn-app-launch {
+        display: inline-block;
+        padding: 12px 35px;
+        border: 2px solid; /* Uses the current text color */
+        color: inherit; /* Inherits text color */
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+    }
+
+    .ori-btn-app-launch:hover {
+        background-color: white; /* Example hover effect */
+        color: black;
+        opacity: 1;
+    }
+</style>
+
 <section id="ori-app-launch" class="ori-app-launch-section-1 position-relative">
     <div class="container">
         <div class="ori-section-title-1 text-center text-uppercase wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
@@ -101,24 +171,18 @@
         <div class="row align-items-center">
             <div class="col-lg-6 wow fadeInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
                 <div class="ori-app-launch-img text-center">
-                    <img src="assets/images/homepage/app launch.jpg" alt="App Launch">
+                    <img src="https://placehold.co/550x580/1A202C/FFFFFF?text=FashionVogue&font=playfairdisplay" alt="A creative preview of the FashionVogue app">
                 </div>
             </div>
             <div class="col-lg-6 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="1500ms">
                 <div class="ori-app-launch-text">
-                    <h3>Be the First to Know.</h3>
-                    <p>
-                        The exclusive FashionVogue mobile app is coming soon to iOS and Android. Prepare to enter a new world of style.
+                    <p class="announcement-text">
+                        Get ready to enter a new world of style. Our exclusive mobile app for iOS and Android is preparing for takeoff. More details will be revealed soon!
                     </p>
-                    <p>
-                        Join the waitlist for exclusive updates, early access, and a special launch day offer.
-                    </p>
-
-                    <form class="launch-form">
-                        <input type="email" class="launch-email-input" placeholder="Enter your email" required>
-                        <button type="submit" class="launch-submit-btn">Notify Me</button>
-                    </form>
-
+                    
+                    <a href="app.php" class="ori-btn-app-launch">
+                        Learn More
+                    </a>
                 </div>
             </div>
         </div>
@@ -134,74 +198,101 @@
         <div class="line_area"></div>
     </div>
 </section>
+        
 <!-- End of App Launch Section -->
 
 <!-- Start of Service section
 	============================================= -->
-	<section id="ori-service-1" class="ori-service-section-1">
-		<div class="ori-service-wrapper-1">
-			<div class="container">
-				<div class="ori-service-top-content-1 d-flex justify-content-between align-items-center">
-					<div class="ori-section-title-1 text-uppercase wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
-					<h2>Design That <span>Tells a Story</span></h2>
+	<style>
+    /* --- Styles for the Narrative Service Layout --- */
+    .narrative-service-container {
+        /* Adjusted padding for when there's no top heading */
+        padding-top: 0;
+    }
 
+    .service-process-list {
+        padding-right: 30px; /* Space between text and image */
+    }
+
+    .service-step {
+        display: flex;
+        padding: 35px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        gap: 30px;
+    }
+    .service-step:first-child {
+        padding-top: 0;
+    }
+    .service-step:last-child {
+        border-bottom: none;
+    }
+
+    .step-number {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #333;
+        line-height: 1.2;
+    }
+
+    .step-content h3 {
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    .step-content p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        margin-bottom: 0;
+        opacity: 0.8;
+    }
+
+    .service-visual {
+        height: 100%;
+        min-height: 500px; /* Ensure it has height on smaller viewports */
+        background-size: cover;
+        background-position: center;
+        border-radius: 8px;
+    }
+</style>
+
+<section id="ori-service-1" class="ori-service-section-1">
+    <div class="container">
+        <div class="narrative-service-container">
+            <div class="row">
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                    <div class="service-process-list">
+                        <div class="service-step">
+                            <div class="step-number">01</div>
+                            <div class="step-content">
+                                <h3>Discovery & Strategy</h3>
+                                <p>Every great design begins with a deep understanding. We partner with you to uncover your brand's core narrative, audience, and goals, crafting a strategic foundation for everything that follows.</p>
+                            </div>
+                        </div>
+                        <div class="service-step">
+                            <div class="step-number">02</div>
+                            <div class="step-content">
+                                <h3>Brand Identity & Design</h3>
+                                <p>We translate your story into a compelling visual identity. From logos and color palettes to typography, we create a cohesive and memorable brand that resonates with your customers and stands out in the market.</p>
+                            </div>
+                        </div>
+                        <div class="service-step">
+                            <div class="step-number">03</div>
+                            <div class="step-content">
+                                <h3>Digital Experience & Launch</h3>
+                                <p>We bring your brand's story to life online. Our team designs and develops beautiful, intuitive websites and digital platforms that engage users and drive results, ensuring a flawless launch into the digital world.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                < <div class="col-lg-5 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="1500ms">
+    <img src="assets/images/home page/about.jpg" alt="A visual representation of a creative journey in design" class="service-visual-img">
 </div>
-					<div class="ori-btn-1 text-uppercase wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
-						<a href="service.html">Our services</a>
-					</div>
-				</div>
-				<div class="ori-service-content-1">
-					<div class="row">
-						<div class="col-lg-4 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-							<div class="ori-service-inner-item position-relative">
-								<div class="ori-service-more position-absolute">
-									<a href="about.html"><i class="fas fa-arrow-right"></i></a>
-								</div>
-								<div class="ori-service-img-title position-relative">
-									<div class="ori-service-img">
-										<img src="assets/images/home page/about us.jpg" alt="">
-									</div>
-									<div class="ori-service-title text-center position-absolute">
-										<h3>About us  <i class="fal fa-arrow-right"></i></h3>
-									</div> 
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
-							<div class="ori-service-inner-item position-relative">
-								<div class="ori-service-more position-absolute">
-									<a href="mission.html"><i class="fas fa-arrow-right"></i></a>
-								</div>
-								<div class="ori-service-img-title position-relative">
-									<div class="ori-service-img">
-										<img src="assets/images/home page/mission.jpg" alt="">
-									</div>
-									<div class="ori-service-title text-center position-absolute">
-										<h3>Our Mission  <i class="fal fa-arrow-right"></i></h3>
-									</div> 
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1500ms">
-							<div class="ori-service-inner-item position-relative">
-								<div class="ori-service-more position-absolute">
-									<a href="service.html"><i class="fas fa-arrow-right"></i></a>
-								</div>
-								<div class="ori-service-img-title position-relative">
-									<div class="ori-service-img">
-										<img src="assets/images/home page/approach.jpg" alt="">
-									</div>
-									<div class="ori-service-title text-center position-absolute">
-										<h3>Our approach  <i class="fal fa-arrow-right"></i></h3>
-									</div> 
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- End of Service section
 	============================================= -->
 
@@ -279,8 +370,6 @@
             <div class="ori-section-title-5 text-uppercase wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
                 <h2 style="color: #ffffff;">The Vogue Edit</h2>
             </div>
-            <div class="ori-btn-4 wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1000ms">
-                <a class="text-uppercase" href="#">See More Stories</a>
             </div>
         </div>
         <div class="ori-blog-content-5">
@@ -327,7 +416,139 @@
 </section>
 <!-- End of Blog Section
 	============================================= -->
+    <!-- Start of Opportunities Section -->             
+    <style>
+    /* --- Styles for the Narrative Service Layout --- */
+    #ori-service-1 .narrative-service-container {
+        padding-top: 0;
+    }
+    #ori-service-1 .service-process-list {
+        padding-right: 30px;
+    }
+    #ori-service-1 .service-step {
+        display: flex;
+        padding: 35px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        gap: 30px;
+    }
+    #ori-service-1 .service-step:first-child {
+        padding-top: 0;
+    }
+    #ori-service-1 .service-step:last-child {
+        border-bottom: none;
+    }
+    #ori-service-1 .step-number {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #333;
+        line-height: 1.2;
+    }
+    #ori-service-1 .step-content h3 {
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    #ori-service-1 .step-content p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        margin-bottom: 0;
+        opacity: 0.8;
+    }
+    #ori-service-1 .service-visual {
+        height: 100%;
+        min-height: 500px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 8px;
+    }
+</style>
 
+<section id="ori-service-1" class="ori-service-section-1">
+    <div class="container">
+        <div class="narrative-service-container">
+            <div class="row">
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                    <div class="service-process-list">
+                        <div class="service-step">
+                            <div class="step-number">01</div>
+                            <div class="step-content">
+                                <h3>Discovery & Strategy</h3>
+                                <p>Every great design begins with a deep understanding. We partner with you to uncover your brand's core narrative, audience, and goals, crafting a strategic foundation for everything that follows.</p>
+                            </div>
+                        </div>
+                        <div class="service-step">
+                            <div class="step-number">02</div>
+                            <div class="step-content">
+                                <h3>Brand Identity & Design</h3>
+                                <p>We translate your story into a compelling visual identity. From logos and color palettes to typography, we create a cohesive and memorable brand that resonates with your customers and stands out in the market.</p>
+                            </div>
+                        </div>
+                        <div class="service-step">
+                            <div class="step-number">03</div>
+                            <div class="step-content">
+                                <h3>Digital Experience & Launch</h3>
+                                <p>We bring your brand's story to life online. Our team designs and develops beautiful, intuitive websites and digital platforms that engage users and drive results, ensuring a flawless launch into the digital world.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               <div class="col-lg-5 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="1500ms">
+    <img src="assets/images/home page/about.jpg" alt="A visual representation of a creative journey in design" class="service-visual-img">
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* --- Minimal CSS for the Opportunities Section --- */
+    #ori-opportunities {
+        padding: 80px 0; /* Standard vertical spacing */
+    }
+    .opportunity-card {
+        border: 1px solid #e9ecef; /* A light, subtle border */
+        padding: 2rem;
+        height: 100%; /* Ensures cards in the same row have equal height */
+        border-radius: 8px;
+    }
+    .opportunity-card h3 {
+        font-size: 1.75rem;
+    }
+    .opportunity-card .role-description {
+        opacity: 0.8;
+        margin-bottom: 1.5rem;
+    }
+</style>
+
+<section id="ori-opportunities">
+    <div class="container">
+        <div class="ori-section-title-1 text-center text-uppercase wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="margin-bottom: 50px;">
+            <h2>Join Our <span>Journey</span></h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                <div class="opportunity-card">
+                    <h3>Fashion Curator & Archivist</h3>
+                    <p class="role-description">
+                        Become a storyteller of style. In this role, you will manage our digital fashion archives, curate collections for online exhibitions, and preserve the legacy of iconic designs for a new generation of fashion enthusiasts.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                <div class="opportunity-card">
+                    <h3>Lead Stylist & Trend Forecaster</h3>
+                    <p class="role-description">
+                        Shape the future of fashion. As our lead stylist, you will create breathtaking editorial looks, identify emerging global trends, and guide the creative direction of our content to inspire our audience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Opportunities Section -->           
 
     <?php include __DIR__ . '/includes/footer.php'; ?>
 
