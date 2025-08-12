@@ -351,13 +351,12 @@ FashionVogue
 	============================================= -->
 	<section id="ori-testimonial-5" class="ori-testimonial-section-5 position-relative">
     <div class="ori-testimonial-circle-img position-absolute">
-        <span class="ori-testi-circle-img"><img src="assets/img/testimonial/designer_portrait.png" alt="Portrait of a fashion designer"></span>
-        <span class="ori-testi-circle-img"><img src="assets/img/testimonial/model_portrait_1.png" alt="Portrait of a runway model"></span>
-        <span class="ori-testi-circle-img"><img src="assets/img/testimonial/photographer_portrait.png" alt="Portrait of a fashion photographer"></span>
-        <span class="ori-testi-circle-img"><img src="assets/img/testimonial/attendee_portrait_1.png" alt="Portrait of an event attendee"></span>
-        <span class="ori-testi-circle-img"><img src="assets/img/testimonial/model_portrait_2.png" alt="Portrait of another runway model"></span>
-        <span class="ori-testi-circle-img"><img src="assets/img/testimonial/stylist_portrait.png" alt="Portrait of a fashion stylist"></span>
-        <span class="ori-testi-circle-img"><img src="assets/img/testimonial/attendee_portrait_2.png" alt="Portrait of another event attendee"></span>
+        <span class="ori-testi-circle-img"><img src="assets/images/events/model1.jpg"alt="Portrait of a fashion designer"></span>
+        <span class="ori-testi-circle-img"><img src="assets/images/events/model2.jpg" alt="Portrait of a runway model"></span>
+        <span class="ori-testi-circle-img"><img src="assets/images/events/model3.jpg" alt="Portrait of a fashion photographer"></span>
+        <span class="ori-testi-circle-img"><img src="assets/images/events/model4.jpg" alt="Portrait of an event attendee"></span>
+        <span class="ori-testi-circle-img"><img src="assets/images/events/model5.jpg" alt="Portrait of another runway model"></span>
+        <span class="ori-testi-circle-img"><img src="assets/images/events/model6.jpg" alt="Portrait of a fashion stylist"></span>
     </div>
     <div class="container">
         <div class="ori-testimonial-content-1 position-relative">
@@ -415,66 +414,7 @@ FashionVogue
 <!-- End of Testimonial section
 	============================================= -->	
 
-<!-- Start of Sponsor section
-	============================================= -->
-	<section id="ori-sponsor-5" class="ori-sponsor-section-5">
-		<div class="ori-banner-sponsor-section-4">
-			<div class="container">
-				<div class="ori-banner-sponsor-content-4 text-center pera-content">
-					<p>We are Already Flaunting Fashion with...</p>
-					<div class="ori-banner-sponsor-slide-4">
-						<div class="ori-sponsor-item">
-							<div class="ori-sponsor-img">
-								<img src="assets/img/sponsor/sp6.png" alt="">
-							</div>
-						</div>
-						<div class="ori-sponsor-item">
-							<div class="ori-sponsor-img">
-								<img src="assets/img/sponsor/sp7.png" alt="">
-							</div>
-						</div>
-						<div class="ori-sponsor-item">
-							<div class="ori-sponsor-img">
-								<img src="assets/img/sponsor/sp8.png" alt="">
-							</div>
-						</div>
-						<div class="ori-sponsor-item">
-							<div class="ori-sponsor-img">
-								<img src="assets/img/sponsor/sp9.png" alt="">
-							</div>
-						</div>
-						<div class="ori-sponsor-item">
-							<div class="ori-sponsor-img">
-								<img src="assets/img/sponsor/sp10.png" alt="">
-							</div>
-						</div>
-						<div class="ori-sponsor-item">
-							<div class="ori-sponsor-img">
-								<img src="assets/img/sponsor/sp11.png" alt="">
-							</div>
-						</div>
-						<div class="ori-sponsor-item">
-							<div class="ori-sponsor-img">
-								<img src="assets/img/sponsor/sp9.png" alt="">
-							</div>
-						</div>
-						<div class="ori-sponsor-item">
-							<div class="ori-sponsor-img">
-								<img src="assets/img/sponsor/sp10.png" alt="">
-							</div>
-						</div>
-						<div class="ori-sponsor-item">
-							<div class="ori-sponsor-img">
-								<img src="assets/img/sponsor/sp11.png" alt="">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-<!-- End of Sponsor section
-	============================================= -->
+
 
 <?php include __DIR__ . '/includes/footer.php'; ?>
 

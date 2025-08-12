@@ -198,7 +198,7 @@ include __DIR__ . '/includes/header.php';
     <span class="ori-banner-shape2 position-absolute wow fadeInRight" data-wow-delay="600ms" data-wow-duration="1500ms"><img src="assets/img/vector/banner-shape2.png" alt=""></span>
     <div class="ori-banner-circle-img1 banner-circle-img position-absolute wow zoomIn" data-wow-delay="700ms" data-wow-duration="1500ms">
         <div class="banner-circle">
-            <img src="assets/img/slider/b-cir1.jpg" alt="">
+            <img src="assets/images/showverse/sreeleela.jpg">
         </div>
         <div class="circle-icon d-flex align-items-center justify-content-center">
             <i class="fab fa-dribbble"></i>
@@ -206,7 +206,7 @@ include __DIR__ . '/includes/header.php';
     </div>
     <div class="ori-banner-circle-img2 banner-circle-img position-absolute wow zoomIn" data-wow-delay="900ms" data-wow-duration="1500ms">
         <div class="banner-circle">
-            <img src="assets/img/slider/b-cir2.jpg" alt="">
+            <img src="assets/images/showverse/celeb2.jpg" alt="">
         </div>
         <div class="circle-icon d-flex align-items-center justify-content-center">
             <i class="fab fa-facebook-f"></i>
@@ -214,7 +214,7 @@ include __DIR__ . '/includes/header.php';
     </div>
     <div class="ori-banner-circle-img3 banner-circle-img position-absolute wow zoomIn" data-wow-delay="1000ms" data-wow-duration="1500ms">
         <div class="banner-circle">
-            <img src="assets/img/slider/b-cir3.jpg" alt="">
+            <img src="assets/images/showverse/celeb1.jpg" alt="">
         </div>
         <div class="circle-icon d-flex align-items-center justify-content-center">
             <i class="fab fa-twitter"></i>
@@ -229,9 +229,9 @@ include __DIR__ . '/includes/header.php';
                 <p>Meet our Featured <span>Designers</span></p>
                 <div class="inner-img-list ul-li d-flex align-items-center">
                     <ul>
-                        <li><img src="assets/img/slider/tmb1.jpg" alt=""></li>
-                        <li><img src="assets/img/slider/tmb2.jpg" alt=""></li>
-                        <li><img src="assets/img/slider/tmb3.jpg" alt=""></li>
+                        <li><img src="assets/images/showverse/mini1.jpg"></li>
+                        <li><img src="assets/images/showverse/mini2.jpg" alt=""></li>
+                        <li><img src="assets/images/showverse/mini3.jpg"></li>
                     </ul>
                     <a href="team.html"><span>More</span> <i class="far fa-arrow-right"></i></a>
                 </div>
@@ -262,11 +262,12 @@ include __DIR__ . '/includes/header.php';
 </section>
 <!-- Banner Section End -->
 <!-- Sponsor Section -->
-<section id="ori-testimonial-7" class="ori-testimonial-section-7" style="background-color: #000000;">
+ 
+<section id="ori-service-7" class="ori-service-section-7">
     <div class="container">
         <div class="ori-section-title-7 text-center wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
-            <div class="sub-title text-uppercase" style="color: #cccccc;">Testimonials</div>
-            <h2 style="color: #ffffff;">Words From Our Community</h2>
+            <div class="sub-title text-uppercase" style="color: #120101ff;">Testimonials</div>
+            <h2 style="color: #0d0101ff;">Words From Our Community</h2>
         </div>
 
         <div class="ori-testimonial-content-7 position-relative">
@@ -276,9 +277,9 @@ include __DIR__ . '/includes/header.php';
                     <div class="ori-service-inner-item-7 position-relative" style="min-height: 450px; display: flex; flex-direction: column;">
                         <span class="service-shape1 position-absolute"> </span>
                         <div class="ori-service-icon">
-                            <img src="https://images.pexels.com/photos/3772510/pexels-photo-3772510.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Priya K.">
+                            <img src="assets/images/showverse/priya.jpg" alt="Priya K.">
                         </div>
-                        <div class="ori-service-text pera-content" style="color: #ffffff; flex: 1; display: flex; flex-direction: column;">
+                        <div class="ori-service-text pera-content" style="flex: 1; display: flex; flex-direction: column;">
                             <h3>"The exclusive digital drops are incredible!"</h3>
                             <p style="flex-grow: 1;">This platform completely changed how I discover fashion. I feel like I have access to the future of style before anyone else!</p>
                             <footer>— Priya K.</footer>
@@ -290,9 +291,9 @@ include __DIR__ . '/includes/header.php';
                      <div class="ori-service-inner-item-7 ser-color-2 position-relative" style="min-height: 450px; display: flex; flex-direction: column;">
                         <span class="service-shape1 position-absolute"> </span>
                         <div class="ori-service-icon">
-                             <img src="https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Rohan S.">
+                             <img src="assets/images/showverse/roshan.jpg" alt="Rohan S.">
                         </div>
-                        <div class="ori-service-text pera-content" style="color: #ffffff; flex: 1; display: flex; flex-direction: column;">
+                        <div class="ori-service-text pera-content" style="flex: 1; display: flex; flex-direction: column;">
                             <h3>"The virtual try-on is a game-changer."</h3>
                             <p style="flex-grow: 1;">Being able to see how pieces fit my digital avatar before purchasing is incredible. The technology works flawlessly.</p>
                              <footer>— Rohan S.</footer>
@@ -304,9 +305,9 @@ include __DIR__ . '/includes/header.php';
                     <div class="ori-service-inner-item-7 ser-color-3 position-relative" style="min-height: 450px; display: flex; flex-direction: column;">
                         <span class="service-shape1 position-absolute"> </span>
                         <div class="ori-service-icon">
-                            <img src="https://images.pexels.com/photos/762080/pexels-photo-762080.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Anjali M.">
+                            <img src="assets/images/showverse/anjali.jpg" alt="Anjali M.">
                         </div>
-                        <div class="ori-service-text pera-content" style="color: #ffffff; flex: 1; display: flex; flex-direction: column;">
+                        <div class="ori-service-text pera-content" style="flex: 1; display: flex; flex-direction: column;">
                             <h3>"True ownership of digital couture."</h3>
                             <p style="flex-grow: 1;">Owning a piece of authenticated digital couture feels amazing. The process was secure and seamless.</p>
                              <footer>— Anjali M.</footer>
@@ -318,12 +319,12 @@ include __DIR__ . '/includes/header.php';
                     <div class="ori-service-inner-item-7 ser-color-4 position-relative" style="min-height: 450px; display: flex; flex-direction: column;">
                         <span class="service-shape1 position-absolute"> </span>
                         <div class="ori-service-icon">
-                             <img src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Vikram">
+                             <img src="assets/images/showverse/geetha.jpg" alt="Geetha">
                         </div>
-                        <div class="ori-service-text pera-content" style="color: #ffffff; flex: 1; display: flex; flex-direction: column;">
+                        <div class="ori-service-text pera-content" style="flex: 1; display: flex; flex-direction: column;">
                            <h3>"Connecting with visionary designers."</h3>
-                           <p style="flex-grow: 1;">What I love most is learning the story behind each piece. This platform isn't just a marketplace; it's a cultural hub.</p>
-                           <footer>— Vikram</footer>
+                           <p style="flex-grow: 1;">What I love most is learning the story behind each piece. This platform isn't just a marketplace; it's a cultural hub that excites me more</p>
+                           <footer>— Geetha </footer>
                         </div>
                     </div>
                 </div>
@@ -336,7 +337,6 @@ include __DIR__ . '/includes/header.php';
         </div>
     </div>
 </section>
-<!--
 <!-- About Section End -->
  <!-- Google Fonts: Cormorant Garamond for headings, Inter for body text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -520,10 +520,8 @@ include __DIR__ . '/includes/header.php';
 </section>
 <section id="ori-video-skill-7" class="ori-video-skill-section-7">
     <div class="ori-video-skill-content-7 d-flex">
-        <div class="ori-video-play-7 position-relative" data-background="assets/img/bg/video-bg.jpg">
-            <div class="ori-play-video-play position-absolute">
-                <a class="video_box d-flex align-items-center justify-content-center" href="https://www.youtube.com/watch?v=bIoPkZRVll"><i class="fas fa-play"></i></a>
-            </div>
+        <div class="ori-video-play-7 position-relative" data-background="assets/images/showverse/bg2.jpg">>
+           
         </div>
         <div class="ori-skill-content-7">
             <div class="ori-skill-content-progress">
