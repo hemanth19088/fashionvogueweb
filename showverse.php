@@ -198,7 +198,7 @@ include __DIR__ . '/includes/header.php';
     <span class="ori-banner-shape2 position-absolute wow fadeInRight" data-wow-delay="600ms" data-wow-duration="1500ms"><img src="assets/img/vector/banner-shape2.png" alt=""></span>
     <div class="ori-banner-circle-img1 banner-circle-img position-absolute wow zoomIn" data-wow-delay="700ms" data-wow-duration="1500ms">
         <div class="banner-circle">
-            <img src="assets/img/slider/b-cir1.jpg" alt="">
+            <img src="assets/images/showverse/sreeleela.jpg">
         </div>
         <div class="circle-icon d-flex align-items-center justify-content-center">
             <i class="fab fa-dribbble"></i>
@@ -206,7 +206,7 @@ include __DIR__ . '/includes/header.php';
     </div>
     <div class="ori-banner-circle-img2 banner-circle-img position-absolute wow zoomIn" data-wow-delay="900ms" data-wow-duration="1500ms">
         <div class="banner-circle">
-            <img src="assets/img/slider/b-cir2.jpg" alt="">
+            <img src="assets/images/showverse/celeb2.jpg" alt="">
         </div>
         <div class="circle-icon d-flex align-items-center justify-content-center">
             <i class="fab fa-facebook-f"></i>
@@ -214,7 +214,7 @@ include __DIR__ . '/includes/header.php';
     </div>
     <div class="ori-banner-circle-img3 banner-circle-img position-absolute wow zoomIn" data-wow-delay="1000ms" data-wow-duration="1500ms">
         <div class="banner-circle">
-            <img src="assets/img/slider/b-cir3.jpg" alt="">
+            <img src="assets/images/showverse/celeb1.jpg" alt="">
         </div>
         <div class="circle-icon d-flex align-items-center justify-content-center">
             <i class="fab fa-twitter"></i>
@@ -229,9 +229,9 @@ include __DIR__ . '/includes/header.php';
                 <p>Meet our Featured <span>Designers</span></p>
                 <div class="inner-img-list ul-li d-flex align-items-center">
                     <ul>
-                        <li><img src="assets/img/slider/tmb1.jpg" alt=""></li>
-                        <li><img src="assets/img/slider/tmb2.jpg" alt=""></li>
-                        <li><img src="assets/img/slider/tmb3.jpg" alt=""></li>
+                        <li><img src="assets/images/showverse/mini1.jpg"></li>
+                        <li><img src="assets/images/showverse/mini2.jpg" alt=""></li>
+                        <li><img src="assets/images/showverse/mini3.jpg"></li>
                     </ul>
                     <a href="team.html"><span>More</span> <i class="far fa-arrow-right"></i></a>
                 </div>
@@ -250,7 +250,7 @@ include __DIR__ . '/includes/header.php';
                 <p class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">Step inside FashionVogue’s immersive fashion universe — virtual runways, exclusive digital couture drops, and visionary creators redefining tomorrow’s style.</p>
                 <div class="banner-play-btn d-flex wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1000ms">
                     <div class="ori-btn-7">
-                        <a href="contact">Explore Now</a>
+                        <a href="showverse">Explore Now</a>
                     </div>
                     <div class="banner-play">
                         <a class="d-flex video_box align-items-center" href="https://www.youtube.com/watch?v=bIoPkZRVll"><i class="fas fa-play-circle"></i> <span>Watch the Trailer</span></a>
@@ -260,87 +260,84 @@ include __DIR__ . '/includes/header.php';
         </div>
     </div>
 </section>
-<section id="ori-sponsor-7" class="ori-sponsor-section-7">
+<!-- Banner Section End -->
+<!-- Sponsor Section -->
+ 
+<section id="ori-service-7" class="ori-service-section-7">
     <div class="container">
-        <div class="ori-sponsor-content-7 position-relative">
-            <h3>Featuring Exclusive Digital Collections From Visionary <span>Designers & Fashion Houses</span></h3>
-            <div class="ori-sponsor-slider-7">
-                <div class="ori-sponsor-img">
-                    <div class="inner-img">
-                        <img src="assets/img/sponsor/sp12.png" alt="">
-                    </div>
-                </div>
-                <div class="ori-sponsor-img">
-                    <div class="inner-img">
-                        <img src="assets/img/sponsor/sp13.png" alt="">
-                    </div>
-                </div>
-                <div class="ori-sponsor-img">
-                    <div class="inner-img">
-                        <img src="assets/img/sponsor/sp14.png" alt="">
-                    </div>
-                </div>
-                <div class="ori-sponsor-img">
-                    <div class="inner-img">
-                        <img src="assets/img/sponsor/sp15.png" alt="">
-                    </div>
-                </div>
-                <div class="ori-sponsor-img">
-                    <div class="inner-img">
-                        <img src="assets/img/sponsor/sp16.png" alt="">
-                    </div>
-                </div>
-                <div class="ori-sponsor-img">
-                    <div class="inner-img">
-                        <img src="assets/img/sponsor/sp12.png" alt="">
-                    </div>
-                </div>
-                <div class="ori-sponsor-img">
-                    <div class="inner-img">
-                        <img src="assets/img/sponsor/sp13.png" alt="">
-                    </div>
-                </div>
-            </div>
+        <div class="ori-section-title-7 text-center wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+            <div class="sub-title text-uppercase" style="color: #120101ff;">Testimonials</div>
+            <h2 style="color: #0d0101ff;">Words From Our Community</h2>
         </div>
-    </div>
-</section>
-<section id="ori-about-7" class="ori-about-section-7">
-    <div class="container">
-        <div class="ori-about-img-wrapper-7">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="ori-about-img-item-wrap position-relative wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="1500ms">
-                        <div class="ori-about-inner-img1">
-                            <img src="assets/img/about/abs1.jpg" alt="">
+
+        <div class="ori-testimonial-content-7 position-relative">
+            <div class="ori-service-silider-7">
+
+                <div class="ori-service-item-7 position-relative">
+                    <div class="ori-service-inner-item-7 position-relative" style="min-height: 450px; display: flex; flex-direction: column;">
+                        <span class="service-shape1 position-absolute"> </span>
+                        <div class="ori-service-icon">
+                            <img src="assets/images/showverse/priya.jpg" alt="Priya K.">
                         </div>
-                        <div class="ori-about-inner-img2">
-                            <img src="assets/img/about/abs2.jpg" alt="">
-                        </div>
-                        <div class="ori-about-shape-circle">
-                            <img src="assets/img/about/abs-cir.png" alt="">
+                        <div class="ori-service-text pera-content" style="flex: 1; display: flex; flex-direction: column;">
+                            <h3>"The exclusive digital drops are incredible!"</h3>
+                            <p style="flex-grow: 1;">This platform completely changed how I discover fashion. I feel like I have access to the future of style before anyone else!</p>
+                            <footer>— Priya K.</footer>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7">
-                    <div class="ori-about-text-area-7 wow fadeInRight" data-wow-delay="500ms" data-wow-duration="1500ms">
-                        <div class="ori-section-title-7">
-                            <div class="sub-title text-uppercase">About The Platform</div>
-                            <h2>Beyond the Runway. It’s a <span>Digital Couture Revolution.</span> </h2>
+
+                <div class="ori-service-item-7 position-relative">
+                     <div class="ori-service-inner-item-7 ser-color-2 position-relative" style="min-height: 450px; display: flex; flex-direction: column;">
+                        <span class="service-shape1 position-absolute"> </span>
+                        <div class="ori-service-icon">
+                             <img src="assets/images/showverse/roshan.jpg" alt="Rohan S.">
                         </div>
-                        <div class="ori-about-text-wrap-7 pera-content">
-                            <p>Showverse by FashionVogue brings the world of couture into immersive, interactive digital spaces. Explore virtual fashion weeks, discover avant-garde collections, and experience the craft of style like never before.</p>
-                            <p>For designers, it’s a global stage to debut collections and connect with audiences in real time. For fashion lovers, it’s a front-row pass to exclusive drops, behind-the-scenes ateliers, and collectible digital garments.</p>
-                            <p>Curate your identity with a digital wardrobe and step into the future of fashion — bold, immersive, and boundaryless.</p>
-                            <div class="ori-btn-7">
-                                <a href="contact">Learn More</a>
-                            </div>
+                        <div class="ori-service-text pera-content" style="flex: 1; display: flex; flex-direction: column;">
+                            <h3>"The virtual try-on is a game-changer."</h3>
+                            <p style="flex-grow: 1;">Being able to see how pieces fit my digital avatar before purchasing is incredible. The technology works flawlessly.</p>
+                             <footer>— Rohan S.</footer>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ori-service-item-7 position-relative">
+                    <div class="ori-service-inner-item-7 ser-color-3 position-relative" style="min-height: 450px; display: flex; flex-direction: column;">
+                        <span class="service-shape1 position-absolute"> </span>
+                        <div class="ori-service-icon">
+                            <img src="assets/images/showverse/anjali.jpg" alt="Anjali M.">
+                        </div>
+                        <div class="ori-service-text pera-content" style="flex: 1; display: flex; flex-direction: column;">
+                            <h3>"True ownership of digital couture."</h3>
+                            <p style="flex-grow: 1;">Owning a piece of authenticated digital couture feels amazing. The process was secure and seamless.</p>
+                             <footer>— Anjali M.</footer>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ori-service-item-7 position-relative">
+                    <div class="ori-service-inner-item-7 ser-color-4 position-relative" style="min-height: 450px; display: flex; flex-direction: column;">
+                        <span class="service-shape1 position-absolute"> </span>
+                        <div class="ori-service-icon">
+                             <img src="assets/images/showverse/geetha.jpg" alt="Geetha">
+                        </div>
+                        <div class="ori-service-text pera-content" style="flex: 1; display: flex; flex-direction: column;">
+                           <h3>"Connecting with visionary designers."</h3>
+                           <p style="flex-grow: 1;">What I love most is learning the story behind each piece. This platform isn't just a marketplace; it's a cultural hub that excites me more</p>
+                           <footer>— Geetha </footer>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <div class="carousel_nav">
+                <button type="button" class="ser7-left_arrow"><i class="far fa-angle-left"></i></button>
+                <button type="button" class="ser7-right_arrow"><i class="far fa-angle-right"></i></button>
+            </div>
         </div>
     </div>
 </section>
+<!-- About Section End -->
  <!-- Google Fonts: Cormorant Garamond for headings, Inter for body text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -430,75 +427,101 @@ include __DIR__ . '/includes/header.php';
 
 
 
-    <!-- Section 2: Key Features -->
-    <section class="py-16 md:py-28 bg-[#F8F4F1]">
-        <div class="container mx-auto px-6">
-            <!-- Section Header -->
-            <div class="text-center max-w-3xl mx-auto mb-12 md:mb-20">
-                <p class="text-uppercase brand-accent font-semibold tracking-widest mb-2">WHAT YOU'LL DISCOVER</p>
-                <h2 class="section-title mb-4">Key Features of the <span class="brand-accent">VogueVerse</span></h2>
+   <section id="ori-service-7" class="ori-service-section-7">
+    <div class="container">
+        <div class="ori-section-title-7 text-center wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+            <div class="sub-title text-uppercase">Platform Features</div>
+            <h2>
+                Experience Fashion in a
+                <span>New Dimension</span>
+            </h2>
+        </div>
+        <div class="ori-service-content-7 position-relative">
+            <div class="ori-service-silider-7">
+                <div class="ori-service-item-7 position-relative">
+                    <div class="ori-service-inner-item-7 position-relative">
+                        <span class="service-shape1 position-absolute"> </span>
+                        <div class="ori-service-icon">
+                            <i class="fal fa-gem"></i>
+                        </div>
+                        <div class="ori-service-text pera-content">
+                            <h3><a href="#">Exclusive Digital Drops</a></h3>
+                            <p>Access limited-edition digital collections from leading Indian and global designers, available only here.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ori-service-item-7 position-relative">
+                    <div class="ori-service-inner-item-7 ser-color-2 position-relative">
+                        <span class="service-shape1 position-absolute"> </span>
+                        <div class="ori-service-icon">
+                            <i class="fal fa-magic"></i>
+                        </div>
+                        <div class="ori-service-text pera-content">
+                            <h3><a href="#">Immersive Virtual Try-On</a></h3>
+                            <p>Visualize how garments look on your digital avatar with our cutting-edge AR try-on technology.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ori-service-item-7 position-relative">
+                    <div class="ori-service-inner-item-7 ser-color-3 position-relative">
+                        <span class="service-shape1 position-absolute"> </span>
+                        <div class="ori-service-icon">
+                            <i class="fal fa-signature"></i>
+                        </div>
+                        <div class="ori-service-text pera-content">
+                            <h3><a href="#">Direct From The Designers</a></h3>
+                            <p>Explore the story and inspiration behind each collection, connecting you with visionary creators.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ori-service-item-7 position-relative">
+                    <div class="ori-service-inner-item-7 ser-color-4 position-relative">
+                        <span class="service-shape1 position-absolute"> </span>
+                        <div class="ori-service-icon">
+                            <i class="fal fa-shield-check"></i>
+                        </div>
+                        <div class="ori-service-text pera-content">
+                            <h3><a href="#">Verifiable Ownership</a></h3>
+                            <p>Own a piece of digital couture. Every item is authenticated on the blockchain for true ownership.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ori-service-item-7 position-relative">
+                    <div class="ori-service-inner-item-7 position-relative">
+                        <span class="service-shape1 position-absolute"> </span>
+                        <div class="ori-service-icon">
+                            <i class="fal fa-gem"></i>
+                        </div>
+                        <div class="ori-service-text pera-content">
+                            <h3><a href="#">Exclusive Digital Drops</a></h3>
+                            <p>Access limited-edition digital collections from leading Indian and global designers, available only here.</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="ori-service-item-7 position-relative">
+                    <div class="ori-service-inner-item-7 ser-color-2 position-relative">
+                        <span class="service-shape1 position-absolute"> </span>
+                        <div class="ori-service-icon">
+                            <i class="fal fa-magic"></i>
+                        </div>
+                        <div class="ori-service-text pera-content">
+                            <h3><a href="#">Immersive Virtual Try-On</a></h3>
+                            <p>Visualize how garments look on your digital avatar with our cutting-edge AR try-on technology.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <!-- Features Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Feature 1: Virtual Fashion Week -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.82m5.84-2.56a16.95 16.95 0 00-2.58-.22m2.58 2.78a16.92 16.92 0 01-2.58-.22m0 0A16.92 16.92 0 015.63 12a16.95 16.95 0 015.58-6.84m-5.58 6.84a6 6 0 01-2.28 2.58m-2.28-2.58a6 6 0 015.84-7.38v4.82m-5.84 2.56a16.95 16.95 0 002.58.22m-2.58-2.78a16.92 16.92 0 002.58.22m0 0A16.92 16.92 0 0018.37 12a16.95 16.95 0 00-5.58-6.84m5.58 6.84a6 6 0 002.28-2.58m2.28 2.58a6 6 0 00-5.84 7.38v-4.82" /></svg>
-                    </div>
-                    <h3 class="text-2xl mb-3">Virtual Fashion Week</h3>
-                    <p class="section-subtitle !text-base">Be front row at fully immersive 3D catwalks—couture reveals from visionary designers in breathtaking digital environments.</p>
-                </div>
-                <!-- Feature 2: Digital Couture Closet -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" /></svg>
-                    </div>
-                    <h3 class="text-2xl mb-3">Digital Couture Closet</h3>
-                    <p class="section-subtitle !text-base">Collect, style, and showcase exclusive fashion wearables—your signature looks for the new digital era.</p>
-                </div>
-                <!-- Feature 3: Atelier Access -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.311a15.045 15.045 0 01-7.5 0C4.508 17.627 2.25 14.454 2.25 10.5 2.25 6.546 4.508 3.373 7.5 1.5c3.679 1.873 6.168 5.046 6.168 9.046a12.06 12.06 0 01-1.25 5.25m3.75-5.25a12.06 12.06 0 00-1.25-5.25m0 0a15.045 15.045 0 00-7.5 0" /></svg>
-                    </div>
-                    <h3 class="text-2xl mb-3">Atelier Access</h3>
-                    <p class="section-subtitle !text-base">Connect with designers and stylists, attend exclusive talks, and go behind the scenes of collection-making.</p>
-                </div>
-                <!-- Feature 4: AR Fitting Rooms -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zm-7.518-.267A8.25 8.25 0 1120.25 10.5M8.288 14.212A5.25 5.25 0 1117.25 10.5" /></svg>
-                    </div>
-                    <h3 class="text-2xl mb-3">AR Fitting Rooms</h3>
-                    <p class="section-subtitle !text-base">Try on digital garments virtually and see how they move, fit, and flow with cutting‑edge AR technology.</p>
-                </div>
-                <!-- Feature 5: Limited Edition Drops -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                    </div>
-                    <h3 class="text-2xl mb-3">Limited Edition Drops</h3>
-                    <p class="section-subtitle !text-base">Secure rare runway pieces and time-limited digital looks from leading fashion houses before anyone else.</p>
-                </div>
-                <!-- Feature 6: Style Socials -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" /></svg>
-                    </div>
-                    <h3 class="text-2xl mb-3">Style Socials</h3>
-                    <p class="section-subtitle !text-base">Join virtual shows, styling challenges, and live community events with creators and fans from across the globe.</p>
-                </div>
+            <div class="carousel_nav">
+                <button type="button" class="ser7-left_arrow"><i class="far fa-angle-left"></i></button>
+                <button type="button" class="ser7-right_arrow"><i class="far fa-angle-right"></i></button>
             </div>
         </div>
-    </section>
-
+    </div>
+</section>
 <section id="ori-video-skill-7" class="ori-video-skill-section-7">
     <div class="ori-video-skill-content-7 d-flex">
-        <div class="ori-video-play-7 position-relative" data-background="assets/img/bg/video-bg.jpg">
-            <div class="ori-play-video-play position-absolute">
-                <a class="video_box d-flex align-items-center justify-content-center" href="https://www.youtube.com/watch?v=bIoPkZRVll"><i class="fas fa-play"></i></a>
-            </div>
+        <div class="ori-video-play-7 position-relative" data-background="assets/images/showverse/bg2.jpg">>
+           
         </div>
         <div class="ori-skill-content-7">
             <div class="ori-skill-content-progress">
@@ -533,9 +556,9 @@ include __DIR__ . '/includes/header.php';
                     <div class="ori-skill-client-more">
                         <div class="inner-img-list ul-li d-flex align-items-center">
                             <ul>
-                                <li><img src="assets/img/slider/tmb1.jpg" alt=""></li>
-                                <li><img src="assets/img/slider/tmb2.jpg" alt=""></li>
-                                <li><img src="assets/img/slider/tmb3.jpg" alt=""></li>
+                                <li><img src="assets/images/showverse/mini1.jpg" alt=""></li>
+                                <li><img src="assets/images/showverse/mini2.jpg" alt=""></li>
+                                <li><img src="assets/images/showverse/mini3.jpg" alt=""></li>
                             </ul>
                             <div class="more-btn">
                                 2k+ Fashion Enthusiasts. <a href="about.html"><span>Explore now</span> <i class="far fa-arrow-right"></i></a>

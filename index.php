@@ -576,7 +576,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
                     <div class="ori-blog-inner-item-5">
                         <div class="ori-blog-img">
-                            <img src="assets/images/home page/blog2.jpg" alt="A collage of Indian models with a quote about fair pay">
+                            <img src="assets/images/home page/blog 3.jpg" alt="">
                         </div>
                         <div class="ori-blog-text pera-content">
                             <span class="blog-category text-uppercase"><a href="#">Style Forecast</a></span>
