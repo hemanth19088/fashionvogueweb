@@ -48,7 +48,7 @@ FashionVogue
 							--><a
 							id="slider-7-slide-18-layer-2" 
 							class="rs-layer rev-btn"
-							href="#" target="_self"
+							href="opportunities"
 							data-type="button"
 							data-rsp_ch="on"
 							data-xy="xo:15px,11px,8px,4px;y:m;yo:175px,133px,101px,98px;"

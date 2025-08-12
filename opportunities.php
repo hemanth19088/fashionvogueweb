@@ -250,8 +250,8 @@ include __DIR__ . '/includes/head.php';
                         <li class="d-flex align-items-start mb-3"><i class="fas fa-check-circle text-success mr-3 mt-1"></i><span><strong>Retail Opportunities:</strong> Connect directly with buyers from luxury boutiques and department stores.</span></li>
                     </ul>
                     <div class="ori-btn-5 text-uppercase mt-4">
-                        <a href="#">Submit Your Portfolio</a>
-                    </div>
+                        <a href="portfolio">Submit Your Portfolio</a>
+					                    </div>
                 </div>
             </div>
         </div>
@@ -379,7 +379,7 @@ include __DIR__ . '/includes/head.php';
 			</div>
 		</div>
 		<div class="text-center mt-4 wow fadeInUp" data-wow-delay="600ms">
-			<p>Have something else in mind? <a href="#">Contact us</a> for custom partnership opportunities.</p>
+			<p>Have something else in mind? <a href="contact">Contact us</a> for custom partnership opportunities.</p>
 		</div>
 	</div>
 </section>

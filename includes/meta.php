@@ -46,7 +46,23 @@ $SEO_META = [
         'url' => 'opportunities',
         'image' => 'assets/img/logos/fashionvogue_colour_logo.png',
         'robots' => 'index,follow'
-    ]
+    ],
+    'portfolio' => [
+        'title' => 'Portfolio - Fashion Vogue',
+        'description' => 'Showcase your fashion designs and projects with Fashion Vogue.',
+        'keywords' => 'fashion portfolio, fashion designs, fashion projects, fashion vogue portfolio',
+        'url' => 'portfolio',
+        'image' => 'assets/img/logos/fashionvogue_colour_logo.png',
+        'robots' => 'index,follow'
+    ],
+    'media' => [
+        'title' => 'Media - Fashion Vogue',
+        'description' => 'Stay updated with the latest fashion news and trends with Fashion Vogue.',
+        'keywords' => 'fashion media, fashion news, fashion trends, fashion vogue media',
+        'url' => 'media',
+        'image' => 'assets/img/logos/fashionvogue_colour_logo.png',
+        'robots' => 'index,follow'
+    ],
 ];
 
 
