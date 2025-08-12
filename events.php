@@ -11,15 +11,15 @@ hello hi ============================================= -->
 	============================================= -->
 	<section id="ori-banner-5" class="ori-banner-section-5">
 		<rs-module-wrap id="rev_slider_7_1_wrapper" data-alias="slider-5" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
-			<rs-module id="rev_slider_7_1" style="" data-version="6.5.16">
+            <rs-module id="rev_slider_7_1" data-version="6.5.16">
 				<rs-slides>
 					<rs-slide style="position: absolute;" data-key="rs-18" data-title="Slide" data-in="o:0;" data-out="a:false;">
-						<img src="assets/img/slider/in-slider1.png" alt="" title="in-slider1" width="1920" height="960" class="rev-slidebg tp-rs-img" data-parallax="2" data-panzoom="d:10000;ss:100;se:115%;" data-no-retina>
+						<img src="assets/images/showverse/bg1.jpg" title="in-slider1" width="1920" height="960" class="rev-slidebg tp-rs-img" data-parallax="2" data-panzoom="d:10000;ss:100;se:115%;" data-no-retina>
 <!--
 --><rs-layer
 id="slider-7-slide-18-layer-0" 
 data-type="text"
-data-color="#131217"
+data-color="#f8f7fcff
 data-rsp_ch="on"
 data-xy="xo:15px,11px,8px,4px;yo:270px,206px,156px,96px;"
 data-text="w:normal;s:67,51,38,36;l:80,61,46,42;fw:600;"
@@ -34,7 +34,7 @@ FashionVogue
 							--><rs-layer
 							id="slider-7-slide-18-layer-1" 
 							data-type="text"
-							data-color="#131217"
+							data-color="#f8f7fcff"
 							data-rsp_ch="on"
 							data-xy="xo:15px,11px,8px,4px;y:m;yo:80px,61px,46px,28px;"
 							data-text="w:normal;s:22,16,12,16;l:34,25,18,26;"
@@ -75,24 +75,32 @@ FashionVogue
 							data-frame_1="st:550;sp:1500;"
 							data-frame_999="o:0;st:w;"
 							style="z-index:13;"
-							><img src="assets/img/slider/s-cir1.png" alt="" class="tp-rs-img" width="54" height="53" data-no-retina> 
-							</rs-layer><!--
+							><img src="assets/images/showverse/mini3.jpg" alt="" class="tp-rs-img" width="54" height="53" data-no-retina> 
+							</rs-layer>
 
-							--><rs-layer
-							id="slider-7-slide-18-layer-4" 
-							data-type="image"
-							data-rsp_ch="on"
-							data-xy="xo:50px,38px,28px,17px;y:b;yo:145px,110px,83px,51px;"
-							data-text="w:normal;s:20,15,11,6;l:0,19,14,8;"
-							data-dim="w:57px,43px,32px,19px;h:57px,43px,32px,19px;"
-							data-frame_0="x:50,38,28,17;"
-							data-frame_1="st:600;sp:1500;"
-							data-frame_999="o:0;st:w;"
-							style="z-index:12;"
-							><img src="assets/img/slider/s-cir2.png" alt="" class="tp-rs-img" width="57" height="57" data-no-retina> 
-							</rs-layer><!--
-
-							--><rs-layer
+						    <rs-layer
+    id="slider-7-slide-18-layer-3" 
+    data-type="image"
+    data-rsp_ch="on"
+    data-xy="xo:15px,11px,8px,4px;y:b;yo:145px,110px,83px,51px;"
+    data-text="w:normal;s:20,15,11,6;l:0,19,14,8;"
+    data-dim="w:54px,41px,31px,19px;h:53px,40px,30px,18px;"
+    data-frame_0="x:50,38,28,17;"
+    data-frame_1="st:550;sp:1500;"
+    data-frame_999="o:0;st:w;"
+    style="z-index:13;"
+>
+    <img 
+        src="assets/images/showverse/mini3.jpg" 
+        alt="" 
+        class="tp-rs-img" 
+        width="54" 
+        height="53" 
+        data-no-retina
+        style="border-radius: 50%; object-fit: cover;"
+    > 
+</rs-layer>
+							<rs-layer
 							id="slider-7-slide-18-layer-5" 
 							data-type="image"
 							data-rsp_ch="on"
@@ -103,13 +111,13 @@ FashionVogue
 							data-frame_1="st:650;sp:1500;"
 							data-frame_999="o:0;st:w;"
 							style="z-index:11;"
-							><img src="assets/img/slider/s-cir3.png" alt="" class="tp-rs-img" width="57" height="57" data-no-retina> 
+							><img src="assets/images/showverse/mini1.jpg"" class="tp-rs-img" width="57" height="57" data-no-retina> 
 							</rs-layer><!--
 
 							--><rs-layer
 							id="slider-7-slide-18-layer-6" 
 							data-type="text"
-							data-color="#0d0d0d"
+							data-color="#f8f7fcff
 							data-rsp_ch="on"
 							data-xy="xo:155px,118px,89px,54px;y:b;yo:160px,122px,92px,56px;"
 							data-text="w:normal;s:15,11,8,14;l:25,19,14,8;fw:700;"
@@ -182,7 +190,7 @@ FashionVogue
 	<section id="ori-ins-fun-fact" class="ori-ins-fan-fact-section" data-background="assets/img/bg/ser-bg2.png">
     <div class="container">
         <div class="ori-ins-fun-fact-content d-flex justify-content-end position-relative">
-            <span class="ori-ins-fun-fact-img position-absolute wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms"><img src="assets/img/service/fun-ft.png" alt="Fashion Model Image"></span>
+            <span class="ori-ins-fun-fact-img position-absolute wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms"><img src="assets/images/showverse/achivements.jpg" alt="Fashion Model Image"></span>
             <div class="ori-ins-fun-fact-item-area d-flex flex-wrap justify-content-between">
                 <div class="ori-ins-fun-fact-item d-flex align-items-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
                     <div class="ori-ins-fun-fact-icon d-flex align-items-center justify-content-center">
@@ -227,7 +235,7 @@ FashionVogue
 	<section id="ori-service-6" class="ori-service-section-6">
     <div class="container">
         <div class="ori-section-title-5 text-uppercase text-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-            <h2>The FashionVogue Experience</h2>
+         <h2 style="color: #ffffff;">The FashionVogue Experience</h2>
         </div>
         <div class="ori-service-content-6">
             <div class="row justify-content-center">
@@ -326,7 +334,7 @@ FashionVogue
                 </div>
                      <div class="service-text pera-content">
                          <h3><a href="#">Creative Direction</a></h3>
-                             <p>We shape your brand's narrative, from campaign concepts to a complete visual identity, crafting an aesthetic that defines you in market.</p>
+                             <p>We shape your brand's narrative, from campaign concepts to a complete identity, crafting an aesthetic that defines you.</p>
                         </div>
                     </div>
                 </div>
