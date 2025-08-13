@@ -11,7 +11,7 @@
 
     <?php include __DIR__ . '/includes/header.php'; ?>
 
-	<section id="ori-slider-1" class="ori-slider-section-1 position-relative">
+	<section id="ori-slider" class="ori-slider-section position-relative">
 
     <style>
         /* --- Main Slider Styles --- */
@@ -19,10 +19,10 @@
            the utility classes used (e.g., .position-relative, .position-absolute,
            .text-uppercase, .text-center, .ul-li) in your main stylesheet.
         */
-        .ori-slider-content-1 {
+        .ori-slider-content {
             position: relative;
             overflow: hidden;
-            min-height: 80vh;
+            min-height: 110vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -71,7 +71,7 @@
         }
     </style>
 
-    <div class="ori-slider-content-wrapper-1 position-relative">
+    <div class="ori-slider-content-wrapper position-relative">
         
         <div class="ori-slider-social position-absolute text-uppercase ul-li">
             <ul>
@@ -92,8 +92,8 @@
             <div class="line_area"></div>
         </div>
 
-        <div class="ori-slider-wrap-1">
-            <div class="ori-slider-content-1 position-relative">
+        <div class="ori-slider-wrap">
+            <div class="ori-slider-content position-relative">
                 <div class="ori-slider-img position-absolute">
                     <video id="background-video" autoplay loop muted playsinline src="assets/images/demo video.mp4"></video>
                 </div>
@@ -230,7 +230,188 @@
             </a>
         </div>
     </section>
+<title>In-House Collaboration Section</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        :root {
+            --dark-bg: #2d3436;
+            --primary-accent: #00a8ff; /* A vibrant blue as an accent */
+            --light-text: #f5f6fa;
+            --faded-text: #b2bec3;
+            --hexagon-bg: rgba(255, 255, 255, 0.05);
+            --hexagon-border: rgba(255, 255, 255, 0.2);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--dark-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .collaboration-section {
+            position: relative;
+            background: linear-gradient(45deg, #25282cff, #0f0f0fff);
+            color: var(--light-text);
+            padding: 80px 20px;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: var(--faded-text);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .collaboration-grid {
+            display: grid;
+            /* UPDATED: Changed to 5 columns for a single row layout */
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+
+        .collaboration-item {
+            /* This clip-path creates the hexagon shape */
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            background-color: var(--hexagon-bg);
+            border: 2px solid var(--hexagon-border);
+            aspect-ratio: 1 / 1.1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .collaboration-item:hover {
+            background-color: rgba(0, 168, 255, 0.1);
+            border-color: var(--primary-accent);
+        }
+
+        .item-icon {
+            font-size: 2.5rem;
+            color: var(--primary-accent);
+            margin-bottom: 15px;
+        }
+
+        .item-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 0;
+        }
+        
+        /* REMOVED: Specific grid placement rules are no longer needed */
+
+        .season-banner {
+            position: absolute;
+            top: 160px;
+            right: -55px;
+            background-color: var(--primary-accent);
+            color: var(--dark-bg);
+            padding: 10px 40px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transform: rotate(90deg);
+        }
+
+        /* --- Responsive Adjustments --- */
+        @media (max-width: 1200px) {
+            .collaboration-grid {
+                /* On tablets, wrap to 3 columns */
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section-header h2 {
+                font-size: 2rem;
+            }
+            .collaboration-grid {
+                /* On small tablets/large phones, wrap to 2 columns */
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .season-banner {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 500px) {
+             .collaboration-grid {
+                /* On small phones, stack into a single column */
+                grid-template-columns: 1fr;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<section class="collaboration-section">
+    <div class="container">
+        <header class="section-header">
+            <h2>A Premium In-House Collaboration</h2>
+            <p>India's most anticipated fashion platform, redefining brand activation and influencer reach — from the ramp to real-time content.</p>
+        </header>
+
+        <div class="collaboration-grid">
+            <div class="collaboration-item">
+                <div class="item-icon"><i class="fa-solid fa-clapperboard"></i></div>
+                <h3 class="item-title">Reels & Stories</h3>
+            </div>
+
+            <div class="collaboration-item">
+                <div class="item-icon"><i class="fa-solid fa-copyright"></i></div>
+                <h3 class="item-title">Event Branding & Visual Placement</h3>
+            </div>
+
+            <div class="collaboration-item">
+                <div class="item-icon"><i class="fa-solid fa-box-check"></i></div>
+                <h3 class="item-title">Authentic Product Integration</h3>
+            </div>
+
+            <div class="collaboration-item">
+                <div class="item-icon"><i class="fa-solid fa-camera-retro"></i></div>
+                <h3 class="item-title">Exclusive In-House Shoots with Models</h3>
+            </div>
+
+            <div class="collaboration-item">
+                <div class="item-icon"><i class="fa-solid fa-store"></i></div>
+                <h3 class="item-title">Stalls</h3>
+            </div>
+        </div>
+    </div>
+</section>
  <!-- Google Fonts: Cormorant Garamond for headings, Inter for body text -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -454,58 +635,7 @@
 </section>
 <!-- End of Testimonial section
 	============================================= -->	 
-<section id="ori-blog-5" class="ori-blog-section-5">
-    <div class="container">
-        <div class="ori-blog-top-content-5 d-flex justify-content-between">
-            <div class="ori-section-title-5 text-uppercase wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
-                <h2 style="color: #ffffff;">The Vogue Edit</h2>
-            </div>
-            </div>
-        </div>
-        <div class="ori-blog-content-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-                    <div class="ori-blog-inner-item-5">
-                        <div class="ori-blog-img">
-                            <img src="assets/images/home page/a kus.jpg" alt="">
-                        </div>
-                        <div class="ori-blog-text pera-content">
-                            <span class="blog-category text-uppercase"><a href="#">Agency Spotlight</a></span>
-                            <h3><a href="#">Scouted: How Top Agencies Discover the Next Supermodel</a></h3>
-                            <p>We go behind the scenes of the world's leading modeling agencies, a process that is more than just scouting – it's an intricate search for unique talent, runway potential, and the face that will define the next era of fashion...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
-                    <div class="ori-blog-inner-item-5">
-                        <div class="ori-blog-img">
-                            <img src="assets/images/home page/blog 3.jpg" alt="">
-                        </div>
-                        <div class="ori-blog-text pera-content">
-                            <span class="blog-category text-uppercase"><a href="#">Model Auditions</a></span>
-                            <h3><a href="#">From Casting Call to Runway: Your Modeling Journey Starts Here</a></h3>
-                            <p>We break down the essential steps for your next big modeling audition, a process that is more than just walking – it's a strategic journey through preparation, presentation, and making a lasting impression on casting directors...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
-                    <div class="ori-blog-inner-item-5">
-                        <div class="ori-blog-img">
-                            <img src="assets/images/home page/blog2.jpg" alt="">
-                        </div>
-                        <div class="ori-blog-text pera-content">
-                            <span class="blog-category text-uppercase"><a href="#">Style Forecast</a></span>
-                            <h3><a href="#">The Edit: Top 5 Trends Defining Autumn/Winter 2025</a></h3>
-                            <p>From the resurgence of '70s-inspired faux fur to the dominance of digital lavender, the upcoming season is a blend of nostalgic comfort and futuristic optimism. We break down the essential looks, textures, and tech-infused accessories you need to know about...</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End of Blog Section
-	============================================= -->
+
   
 
 

@@ -220,80 +220,8 @@ include __DIR__ . '/includes/header.php';
             </div>
         </div>
     </div>
-</section><section id="ori-service-7" class="ori-service-section-7">
-    <div class="container">
-        <div class="ori-section-title-7 text-center wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
-            <div class="sub-title text-uppercase" style="color: #120101ff;">Testimonials</div>
-            <h2 style="color: #0d0101ff;">Words From Our Community</h2>
-        </div>
-
-        <div class="ori-testimonial-content-7 position-relative">
-            <div class="ori-service-silider-7">
-
-                <div class="ori-service-item-7 position-relative">
-                    <div class="ori-service-inner-item-7 position-relative" style="min-height: 450px; display: flex; flex-direction: column;">
-                        <span class="service-shape1 position-absolute"> </span>
-                        <div class="ori-service-icon">
-                            <img src="assets/images/showverse/priya.jpg" alt="Aisha S.">
-                        </div>
-                        <div class="ori-service-text pera-content" style="flex: 1; display: flex; flex-direction: column;">
-                            <h3>"I landed my first audition in a week!"</h3>
-                            <p style="flex-grow: 1;">The Audition Alerts are amazing. I was tired of searching everywhere, but FashionVerge sent a perfect local casting call right to my phone. It felt like a dream!</p>
-                            <footer>— Aisha S.</footer>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ori-service-item-7 position-relative">
-                        <div class="ori-service-inner-item-7 ser-color-2 position-relative" style="min-height: 450px; display: flex; flex-direction: column;">
-                        <span class="service-shape1 position-absolute"> </span>
-                        <div class="ori-service-icon">
-                             <img src="assets/images/showverse/anjali.jpg" alt="Vikram R.">
-                        </div>
-                        <div class="ori-service-text pera-content" style="flex: 1; display: flex; flex-direction: column;">
-                            <h3>"The Portfolio Builder is a game-changer."</h3>
-                            <p style="flex-grow: 1;">I didn't know how to create a professional portfolio. With the builder, I made one in minutes and used the Agency Directory to send it out. An agency contacted me the next day!</p>
-                             <footer>— Ramya R.</footer>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ori-service-item-7 position-relative">
-                    <div class="ori-service-inner-item-7 ser-color-3 position-relative" style="min-height: 450px; display: flex; flex-direction: column;">
-                        <span class="service-shape1 position-absolute"> </span>
-                        <div class="ori-service-icon">
-                            <img src="assets/images/showverse/geetha.jpg" alt="Sneha P.">
-                        </div>
-                        <div class="ori-service-text pera-content" style="flex: 1; display: flex; flex-direction: column;">
-                            <h3>"The workshops gave me so much confidence."</h3>
-                            <p style="flex-grow: 1;">I was so nervous about walking and posing. The Skill Workshops with pro models taught me everything. I walked into my next audition feeling like a star.</p>
-                             <footer>— Sneha P.</footer>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ori-service-item-7 position-relative">
-                    <div class="ori-service-inner-item-7 ser-color-4 position-relative" style="min-height: 450px; display: flex; flex-direction: column;">
-                        <span class="service-shape1 position-absolute"> </span>
-                        <div class="ori-service-icon">
-                             <img src="assets/images/showverse/roshan.jpg" alt="Karan L.">
-                        </div>
-                        <div class="ori-service-text pera-content" style="flex: 1; display: flex; flex-direction: column;">
-                           <h3>"I finally feel like I'm not alone."</h3>
-                           <p style="flex-grow: 1;">The best part is the Community Hub. Connecting with other aspiring models who get it has been so helpful. We all support each other. It's my favorite feature!</p>
-                           <footer>— Roshan L.</footer>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="carousel_nav">
-                <button type="button" class="ser7-left_arrow"><i class="far fa-angle-left"></i></button>
-                <button type="button" class="ser7-right_arrow"><i class="far fa-angle-right"></i></button>
-            </div>
-        </div>
-    </div>
 </section>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
@@ -484,58 +412,265 @@ include __DIR__ . '/includes/header.php';
         </div>
     </div>
 </section>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #5a67d8;
+            --border-color: #e9ecef;
+            --card-bg: #ffffff;
+        }
+
+        /* Basic styling for demonstration */
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            margin: 0;
+            background-color: #f0f2f5;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+        .ori-video-skill-section-7 {
+            max-width: 1100px;
+            margin: auto;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            background-color: var(--card-bg);
+        }
+        .d-flex { display: flex; }
+
+        /* Left column: Image */
+        .ori-video-play-7 {
+            flex: 0 0 40%;
+            min-height: 600px;
+            background-size: cover;
+            background-position: center;
+            background-image: url('https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        }
+        
+        /* Right column: Content */
+        .ori-skill-content-7 {
+            flex: 1;
+            padding: 40px;
+        }
+        .ori-section-title-7 h2 {
+            font-size: 2.5em;
+            margin: 0 0 15px 0;
+        }
+        .ori-section-title-7 h2 span {
+            color: var(--primary-color);
+        }
+        .ori-section-title-7 .sub-title {
+            color: #6c757d;
+            font-weight: bold;
+        }
+        .ori-skill-text-progress-bar p {
+            line-height: 1.7;
+            color: #495057;
+        }
+
+        /* --- Robust Flowchart Styling --- */
+        .flowchart-container {
+            margin-top: 30px;
+        }
+        .flowchart-container h4 {
+            font-size: 1.4em;
+            margin-bottom: 20px;
+        }
+        .flowchart-list {
+            position: relative;
+            padding-left: 16px;
+        }
+        /* The main vertical line created with a pseudo-element */
+        .flowchart-list::before {
+            content: '';
+            position: absolute;
+            left: 16px;
+            top: 16px;
+            height: calc(100% - 32px);
+            width: 2px;
+            background-color: var(--border-color);
+        }
+        .flowchart-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding-left: 45px;
+            min-height: 32px;
+        }
+        .flowchart-item:not(:last-child) {
+            margin-bottom: 30px;
+        }
+        .flowchart-item i {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: var(--card-bg);
+            border: 2px solid var(--border-color);
+            color: var(--primary-color);
+            display: grid;
+            place-items: center;
+        }
+        .flowchart-item b {
+            font-size: 1.1em;
+        }
+        .flowchart-item span {
+            display: block;
+            color: #6c757d;
+            font-size: 0.9em;
+            font-weight: normal;
+            margin-top: 4px;
+        }
+
+        /* CTA Button */
+        .ori-skill-client-more {
+            margin-top: 40px;
+        }
+        .more-btn a {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+        .more-btn a:hover {
+            background-color: #3e4ab8;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .d-flex { flex-direction: column; }
+            .ori-video-play-7 { min-height: 250px; }
+        }
+    </style>
+</head>
+<body>
+
 <section id="ori-video-skill-7" class="ori-video-skill-section-7">
     <div class="ori-video-skill-content-7 d-flex">
-        <div class="ori-video-play-7 position-relative" data-background="assets/images/showverse/bg2.jpg">
-        </div>
+        <div class="ori-video-play-7 position-relative">
+            </div>
         <div class="ori-skill-content-7">
             <div class="ori-skill-content-progress">
-                <div class="ori-section-title-7 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <div class="ori-section-title-7">
                     <div class="sub-title text-uppercase">About &amp; Format</div>
                     <h2>The Journey to <span>Recognition</span></h2>
                 </div>
-                <div class="ori-skill-text-progress-bar wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                <div class="ori-skill-text-progress-bar">
                     <p>
                         Showverse is Fashion Vogue’s signature competitive showcase — a format that redefines how fashion talent is discovered, celebrated, and connected. It combines digital access, immersive virtual experiences, and live competitions into a single, seamless platform.
-                        <br><br>
-                        <b>The 4-Stage Process:</b><br>
-                        <b>1. Entry & Screening:</b> Register online, upload your portfolio, and pass the initial review.<br>
-                        <b>2. Themed Challenges:</b> Participate in creative rounds, photoshoots, and brand campaigns.<br>
-                        <b>3. The Main Event:</b> Experience a cinematic 3D showcase with live judging and voting.<br>
-                        <b>4. Recognition & Opportunities:</b> Earn awards, press, casting calls, and collaborations.
                     </p>
-                    <div class="ori-skill-progress-7">
-                        <div class="skill-progress-bar">
-                            <div class="skill-set-percent headline">
-                                <h4>Why Join: Gain Global Exposure</h4>
-                                <div class="progress"><div class="progress-bar" data-percent="95"></div></div>
+                    
+                    <div class="flowchart-container">
+                        <h4>The 4-Stage Process:</h4>
+                        <div class="flowchart-list">
+                            <div class="flowchart-item">
+                                <i class="fas fa-file-signature"></i>
+                                <div><b>1. Entry & Screening</b><span>Register, upload portfolio, and pass review.</span></div>
                             </div>
-                            <div class="skill-set-percent headline">
-                                <h4>Why Join: Collaborate with Top Professionals</h4>
-                                <div class="progress"><div class="progress-bar" data-percent="90"></div></div>
+                            <div class="flowchart-item">
+                                <i class="fas fa-camera-retro"></i>
+                                <div><b>2. Themed Challenges</b><span>Participate in photoshoots and campaigns.</span></div>
                             </div>
-                            <div class="skill-set-percent headline">
-                                <h4>Why Join: Build a Year-Round Online Portfolio</h4>
-                                <div class="progress"><div class="progress-bar" data-percent="100"></div></div>
+                            <div class="flowchart-item">
+                                <i class="fas fa-cube"></i>
+                                <div><b>3. The Main Event</b><span>Experience a cinematic 3D showcase.</span></div>
                             </div>
-                             <div class="skill-set-percent headline">
-                                <h4>Why Join: Get Discovered by Brands & Agencies</h4>
-                                <div class="progress"><div class="progress-bar" data-percent="92"></div></div>
-                            </div>
-                             <div class="skill-set-percent headline">
-                                <h4>Why Join: Access Real Paid Opportunities</h4>
-                                <div class="progress"><div class="progress-bar" data-percent="88"></div></div>
+                            <div class="flowchart-item">
+                                <i class="fas fa-award"></i>
+                                <div><b>4. Recognition & Opportunities</b><span>Earn awards, press, and collaborations.</span></div>
                             </div>
                         </div>
                     </div>
-                    <div class="ori-skill-client-more">
-                        <div class="more-btn">
-                            Your stage is no longer limited by walls or borders — <a href="#join"><span>step into Showverse</span> <i class="far fa-arrow-right"></i></a>
-                        </div>
+                </div>
+
+                <div class="ori-skill-client-more">
+                    <div class="more-btn">
+                        <a href="#join">Step into Showverse <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<section id="ori-service-7" class="ori-service-section-7">
+    <div class="container">
+        <div class="ori-section-title-7 text-center wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+            <div class="sub-title text-uppercase" style="color: #120101ff;">Testimonials</div>
+            <h2 style="color: #0d0101ff;">Words From Our Community</h2>
+        </div>
+
+        <div class="ori-testimonial-content-7 position-relative">
+            <div class="ori-service-silider-7">
+
+                <div class="ori-service-item-7 position-relative">
+                    <div class="ori-service-inner-item-7 position-relative" style="min-height: 450px; display: flex; flex-direction: column;">
+                        <span class="service-shape1 position-absolute"> </span>
+                        <div class="ori-service-icon">
+                            <img src="assets/images/showverse/priya.jpg" alt="Aisha S.">
+                        </div>
+                        <div class="ori-service-text pera-content" style="flex: 1; display: flex; flex-direction: column;">
+                            <h3>"I landed my first audition in a week!"</h3>
+                            <p style="flex-grow: 1;">The Audition Alerts are amazing. I was tired of searching everywhere, but FashionVerge sent a perfect local casting call right to my phone. It felt like a dream!</p>
+                            <footer>— Aisha S.</footer>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ori-service-item-7 position-relative">
+                        <div class="ori-service-inner-item-7 ser-color-2 position-relative" style="min-height: 450px; display: flex; flex-direction: column;">
+                        <span class="service-shape1 position-absolute"> </span>
+                        <div class="ori-service-icon">
+                             <img src="assets/images/showverse/anjali.jpg" alt="Vikram R.">
+                        </div>
+                        <div class="ori-service-text pera-content" style="flex: 1; display: flex; flex-direction: column;">
+                            <h3>"The Portfolio Builder is a game-changer."</h3>
+                            <p style="flex-grow: 1;">I didn't know how to create a professional portfolio. With the builder, I made one in minutes and used the Agency Directory to send it out. An agency contacted me the next day!</p>
+                             <footer>— Ramya R.</footer>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ori-service-item-7 position-relative">
+                    <div class="ori-service-inner-item-7 ser-color-3 position-relative" style="min-height: 450px; display: flex; flex-direction: column;">
+                        <span class="service-shape1 position-absolute"> </span>
+                        <div class="ori-service-icon">
+                            <img src="assets/images/showverse/geetha.jpg" alt="Sneha P.">
+                        </div>
+                        <div class="ori-service-text pera-content" style="flex: 1; display: flex; flex-direction: column;">
+                            <h3>"The workshops gave me so much confidence."</h3>
+                            <p style="flex-grow: 1;">I was so nervous about walking and posing. The Skill Workshops with pro models taught me everything. I walked into my next audition feeling like a star.</p>
+                             <footer>— Sneha P.</footer>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ori-service-item-7 position-relative">
+                    <div class="ori-service-inner-item-7 ser-color-4 position-relative" style="min-height: 450px; display: flex; flex-direction: column;">
+                        <span class="service-shape1 position-absolute"> </span>
+                        <div class="ori-service-icon">
+                             <img src="assets/images/showverse/roshan.jpg" alt="Karan L.">
+                        </div>
+                        <div class="ori-service-text pera-content" style="flex: 1; display: flex; flex-direction: column;">
+                           <h3>"I finally feel like I'm not alone."</h3>
+                           <p style="flex-grow: 1;">The best part is the Community Hub. Connecting with other aspiring models who get it has been so helpful. We all support each other. It's my favorite feature!</p>
+                           <footer>— Roshan L.</footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel_nav">
+                <button type="button" class="ser7-left_arrow"><i class="far fa-angle-left"></i></button>
+                <button type="button" class="ser7-right_arrow"><i class="far fa-angle-right"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php include __DIR__ . '/includes/footer.php'; ?>
