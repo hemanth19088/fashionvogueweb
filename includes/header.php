@@ -157,23 +157,50 @@
 				<div class="sidebar-info-contents headline pera-content">
 					<div class="content-inner">
 						<div class="logo">
-							<a href="index-1.html"><img src="assets/img/logo/logo1.png" alt=""></a>
+							<a href="index-1.html"><img src="assets/images/logos/fashionvogue_colour_logo.png" alt=""></a>
 						</div>
 						<div class="content-box">
 							<h5>About Us</h5>
-							<p class="text">The argument in favor of using filler text goes something like this: If you use real content in the Consulting Process, anytime you reach a review point you’ll end up reviewing and negotiating the content itself and not the design.</p>
+<p class="text">
+At FashionVogue, we believe first impressions are everything in the world of fashion and modeling. Our platform is designed to showcase your talent, style, and personality without distraction, allowing casting directors and agencies to focus on your unique look and potential. By creating a clean and professional presentation, we ensure your portfolio speaks for itself while keeping the spotlight exactly where it belongs—on you.
+</p>
 						</div>
-						<div class="gallery-box ul-li">
-							<h5>Gallery</h5>
-							<ul class="zoom-gallery">
-								<li><a href="assets/img/gallery/gl1.png" data-source="assets/img/gallery/gl1.png"><img src="assets/img/gallery/gl1.png" alt=""></a></li>
-								<li><a href="assets/img/gallery/gl2.png" data-source="assets/img/gallery/gl2.png"><img src="assets/img/gallery/gl2.png" alt=""></a></li>
-								<li><a href="assets/img/gallery/gl3.png" data-source="assets/img/gallery/gl3.png"><img src="assets/img/gallery/gl3.png" alt=""></a></li>
-								<li><a href="assets/img/gallery/gl4.png" data-source="assets/img/gallery/gl4.png"><img src="assets/img/gallery/gl4.png" alt=""></a></li>
-								<li><a href="assets/img/gallery/gl5.png" data-source="assets/img/gallery/gl4.png"><img src="assets/img/gallery/gl5.png" alt=""></a></li>
-								<li><a href="assets/img/gallery/gl6.png" data-source="assets/img/gallery/gl4.png"><img src="assets/img/gallery/gl6.png" alt=""></a></li>
-							</ul>
-						</div>
+						<div class="gallery-box fashion-bubbles">
+    <h5>Gallery</h5>
+    <div class="bubble-gallery">
+        <div class="bubble"><img src="assets/images/events/model1.jpg" alt="Fashion Look 1"></div>
+        <div class="bubble"><img src="assets/images/events/model2.jpg" alt="Fashion Look 2"></div>
+        <div class="bubble"><img src="assets/images/events/model3.jpg" alt="Fashion Look 3"></div>
+        <div class="bubble"><img src="assets/images/events/model7.jpg" alt="Fashion Look 4"></div>
+        <div class="bubble"><img src="assets/images/events/model5.jpg" alt="Fashion Look 5"></div>
+        <div class="bubble"><img src="assets/images/events/model6.jpg" alt="Fashion Look 6"></div>
+    </div>
+</div>
+
+<style>
+.fashion-bubbles .bubble-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+.fashion-bubbles .bubble {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #fff;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.fashion-bubbles .bubble img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+</style>
+
 						<div class="content-box">
 							<h5>Social Account</h5>
 							<ul class="social-box">
