@@ -282,60 +282,104 @@ FashionVogue
 </head>
 <body>
 
-    <section class="blog-section">
-        <div class="blog-container">
-            <div class="blog-header">
-                <p class="pre-title">From The Blog</p>
-                <h2 class="main-title">Your Guide to the Industry</h2>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: #f8f9fa;
+            padding: 40px 20px;
+        }
+        .blog-container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .blog-card {
+            background-color: #ffffff;
+            border: 1px solid #e9ecef;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+        .card-icon {
+            font-size: 2.5em; /* Icon size */
+            color: #5a67d8;   /* Icon color */
+            margin-bottom: 20px;
+        }
+        .card-category {
+            font-size: 0.9em;
+            font-weight: bold;
+            color: #6c757d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .card-title {
+            font-size: 1.4em;
+            color: #212529;
+            margin: 10px 0;
+        }
+        .card-description {
+            font-size: 1em;
+            color: #495057;
+            line-height: 1.6;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<section class="blog-section">
+    <div class="blog-container">
+        
+        <div class="blog-grid">
+            
+            <div class="blog-card">
+                <div class="card-icon">
+                    <i class="fas fa-list-check"></i>
+                </div>
+                <div class="card-content">
+                    <span class="card-category">Audition Prep</span>
+                    <h3 class="card-title">Nailing Your Next Audition</h3>
+                    <p class="card-description">Practical steps to prepare your look, your walk, and your mindset to stand out from the crowd.</p>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="card-icon">
+                    <i class="fas fa-magnifying-glass"></i>
+                </div>
+                <div class="card-content">
+                    <span class="card-category">Finding Work</span>
+                    <h3 class="card-title">How to Find Casting Calls</h3>
+                    <p class="card-description">Discover the best platforms and networking strategies to find legitimate modeling opportunities near you.</p>
+                </div>
             </div>
             
-            <div class="blog-grid">
-                
-                <div class="blog-card">
-                    <div class="card-svg-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                           <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.311a15.045 15.045 0 01-7.5 0C4.508 17.627 2.25 14.454 2.25 10.5 2.25 6.546 4.508 3.373 7.5 1.5c3.679 1.873 6.168 5.046 6.168 9.046a12.06 12.06 0 01-1.25 5.25m3.75-5.25a12.06 12.06 0 00-1.25-5.25m0 0a15.045 15.045 0 00-7.5 0" />
-                        </svg>
-                    </div>
-                    <div class="card-content">
-                        <span class="card-category">Audition Tips</span>
-                        <h3 class="card-title">How to Prepare for Your First Casting Call</h3>
-                        <p class="card-description">From your portfolio to your walk, we break down the essentials to help you make a lasting impression.</p>
-                       
-                    </div>
+            <div class="blog-card">
+                <div class="card-icon">
+                    <i class="fas fa-id-card"></i>
                 </div>
-
-                <div class="blog-card">
-                    <div class="card-svg-icon">
-                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h6.375M9 12h6.375m-6.375 5.25h6.375M5.25 9h.008v.008H5.25V9zm.75 3h.008v.008H6v-.008zm.75 3h.008v.008H6.75v-.008zm.75 3h.008v.008H7.5v-.008zm6-12h.008v.008H13.5V9zm.75 3h.008v.008H14.25v-.008zm.75 3h.008v.008H15v-.008zm.75 3h.008v.008H15.75v-.008z" />
-                       </svg>
-                    </div>
-                    <div class="card-content">
-                        <span class="card-category">Industry Insights</span>
-                        <h3 class="card-title">What Top Agencies *Really* Look For</h3>
-                        <p class="card-description">We talked to scouts to get the inside scoop on what makes an aspiring model stand out from the crowd.</p>
-                       
-                    </div>
+                <div class="card-content">
+                    <span class="card-category">Career Building</span>
+                    <h3 class="card-title">Your Portfolio as an Opportunity Magnet</h3>
+                    <p class="card-description">Learn how to build a professional digital portfolio that attracts brands and agencies 24/7.</p>
                 </div>
-                
-                <div class="blog-card">
-                    <div class="card-svg-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345h5.518a.562.562 0 01.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 21.03a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.562.562 0 01.321-.988h5.518a.563.563 0 00.475-.345L11.48 3.5z" />
-                        </svg>
-                    </div>
-                     <div class="card-content">
-                        <span class="card-category">Success Stories</span>
-                        <h3 class="card-title">From Our Community to the Runway: Maya's Story</h3>
-                        <p class="card-description">Learn how one of our own members used the platform's tools to get discovered and walk in fashion week.</p>
-                        
-                    </div>
-                </div>
-
             </div>
+
         </div>
-    </section>
+    </div>
+</section> 
 <!-- End of Service Section 
 	============================================= -->
 <!-- Start of Fun Fact Section
@@ -399,9 +443,9 @@ FashionVogue
                             <i class="fas fa-tshirt"></i>
                         </div>
                         <div class="service-text pera-content">
-                            <h3><a href="#">Runway Shows</a></h3>
-                            <p>Experience the energy of our main-stage runway productions, showcasing the future of style from visionary designers.</p>
-                        </div>
+    <h3><a href="#">Portfolio Development</a></h3>
+    <p>Join our workshops with pro photographers and stylists to build a stunning portfolio that captures your unique look.</p>
+</div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="350ms" data-wow-duration="1000ms">
