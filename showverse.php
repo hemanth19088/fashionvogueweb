@@ -5,9 +5,9 @@
 $page_id = 'showverse';
 $body_class = 'ori-digital-studio';
 $meta_overrides = [
-    'title'       => 'Showverse - Fashion Vogue',
-    'description' => 'Enter the Showverse by FashionVogue — an immersive fashion universe of virtual runways, digital couture, and visionary designers.',
-    'keywords'    => 'fashion, showverse, digital fashion, virtual runways, couture, fashion technology, fashion metaverse, designers'
+    'title'       => 'Showverse - The Future of Fashion Is Here',
+    'description' => 'The first-ever hybrid fashion experience that blends real and virtual worlds. A competitive showcase for models, designers, MUAs, and creators.',
+    'keywords'    => 'showverse, fashion competition, virtual fashion, hybrid event, models, designers, makeup artists, fashion vogue'
 ];
 
 include __DIR__ . '/includes/head.php';
@@ -68,8 +68,11 @@ include __DIR__ . '/includes/header.php';
     .ori-digital-studio .ori-service-text h3 a {
         color: #060606 !important;
     }
+    .ori-digital-studio .ori-service-text h3 {
+        color: #000000 !important;
+    }
     .ori-digital-studio .ori-service-text p {
-        color: #ccc !important;
+        color: #333 !important;
     }
     .ori-digital-studio .ori-skill-text-progress-bar p {
         color: #ccc !important;
@@ -120,30 +123,12 @@ include __DIR__ . '/includes/header.php';
         color: #fff !important;
     }
     /* Fix slick slider text colors */
-    .ori-digital-studio .ori-sponsor-slider-7 {
-        color: #000 !important;
-    }
-    .ori-digital-studio .ori-sponsor-slider-7 * {
-        color: #000 !important;
-    }
-    .ori-digital-studio .slick-slider {
-        color: #000 !important;
-    }
-    .ori-digital-studio .slick-slider * {
-        color: #000 !important;
-    }
-    .ori-digital-studio .slick-list {
-        color: #000 !important;
-    }
-    .ori-digital-studio .slick-track {
-        color: #000 !important;
-    }
-    .ori-digital-studio .slick-slide {
-        color: #000 !important;
-    }
-    .ori-digital-studio .slick-arrow {
-        color: #000 !important;
-    }
+    .ori-digital-studio .ori-sponsor-slider-7,
+    .ori-digital-studio .slick-slider,
+    .ori-digital-studio .slick-list,
+    .ori-digital-studio .slick-track,
+    .ori-digital-studio .slick-slide,
+    .ori-digital-studio .slick-arrow,
     .ori-digital-studio .slick-prev,
     .ori-digital-studio .slick-next {
         color: #000 !important;
@@ -158,35 +143,25 @@ include __DIR__ . '/includes/header.php';
     .ori-digital-studio .ori-service-inner-item-7 * {
         color: #000000 !important;
     }
-    .ori-digital-studio .ori-video-skill-section-7 {
-        background-color: #0d0d0d !important;
-        color: #fff !important;
+    .ori-digital-studio .ori-service-inner-item-7 p {
+        color: #555 !important;
     }
-    .ori-digital-studio .ori-video-skill-section-7 * {
-        color: #fff !important;
-    }
-    .ori-digital-studio .ori-video-play-7 {
-        background-color: #0d0d0d !important;
-    }
+    .ori-digital-studio .ori-video-skill-section-7,
+    .ori-digital-studio .ori-video-play-7,
     .ori-digital-studio .ori-skill-content-7 {
         background-color: #0d0d0d !important;
         color: #fff !important;
     }
+    .ori-digital-studio .ori-video-skill-section-7 *,
     .ori-digital-studio .ori-skill-content-7 * {
         color: #fff !important;
     }
     /* Force all sections to have black background */
-    .ori-digital-studio section {
-        background-color: #0d0d0d !important;
-    }
+    .ori-digital-studio section,
     .ori-digital-studio .position-relative {
         background-color: #0d0d0d !important;
     }
-    /* Fix banner section before pseudo-element */
-    .ori-digital-studio .ori-banner-section-7:before {
-        background-color: #0d0d0d !important;
-        color: #fff !important;
-    }
+    .ori-digital-studio .ori-banner-section-7:before,
     .ori-digital-studio .ori-banner-section-7:after {
         background-color: #0d0d0d !important;
         color: #fff !important;
@@ -196,44 +171,33 @@ include __DIR__ . '/includes/header.php';
 <section id="ori-banner-7" class="ori-banner-section-7 position-relative">
     <span class="ori-banner-shape1 position-absolute wow fadeInRight" data-wow-delay="400ms" data-wow-duration="1500ms"><img src="assets/img/vector/banner-shape1.png" alt=""></span>
     <span class="ori-banner-shape2 position-absolute wow fadeInRight" data-wow-delay="600ms" data-wow-duration="1500ms"><img src="assets/img/vector/banner-shape2.png" alt=""></span>
+    <div class="line_animation">
+        <div class="line_area"></div><div class="line_area"></div><div class="line_area"></div><div class="line_area"></div><div class="line_area"></div><div class="line_area"></div><div class="line_area"></div><div class="line_area"></div>
+    </div>
     <div class="ori-banner-circle-img1 banner-circle-img position-absolute wow zoomIn" data-wow-delay="700ms" data-wow-duration="1500ms">
-        <div class="banner-circle">
-            <img src="assets/images/showverse/sreeleela.jpg">
-        </div>
-        <div class="circle-icon d-flex align-items-center justify-content-center">
-            <i class="fab fa-dribbble"></i>
-        </div>
+        <div class="banner-circle"><img src="assets/images/showverse/akshita.jpg" alt="Fashion Model 1"></div>
+        <div class="circle-icon d-flex align-items-center justify-content-center"><i class="fab fa-dribbble"></i></div>
     </div>
     <div class="ori-banner-circle-img2 banner-circle-img position-absolute wow zoomIn" data-wow-delay="900ms" data-wow-duration="1500ms">
-        <div class="banner-circle">
-            <img src="assets/images/showverse/celeb2.jpg" alt="">
-        </div>
-        <div class="circle-icon d-flex align-items-center justify-content-center">
-            <i class="fab fa-facebook-f"></i>
-        </div>
+        <div class="banner-circle"><img src="assets/images/showverse/celeb2.jpg" alt="Fashion Model 2"></div>
+        <div class="circle-icon d-flex align-items-center justify-content-center"><i class="fab fa-facebook-f"></i></div>
     </div>
     <div class="ori-banner-circle-img3 banner-circle-img position-absolute wow zoomIn" data-wow-delay="1000ms" data-wow-duration="1500ms">
-        <div class="banner-circle">
-            <img src="assets/images/showverse/celeb1.jpg" alt="">
-        </div>
-        <div class="circle-icon d-flex align-items-center justify-content-center">
-            <i class="fab fa-twitter"></i>
-        </div>
+        <div class="banner-circle"><img src="assets/images/showverse/celeb1.jpg" alt="Fashion Model 3"></div>
+        <div class="circle-icon d-flex align-items-center justify-content-center"><i class="fab fa-twitter"></i></div>
     </div>
     <div class="ori-banner-option position-absolute wow fadeInLeft" data-wow-delay="1200ms" data-wow-duration="1500ms">
         <div class="inner-item-option">
-            <div class="inner-icon position-absolute d-flex align-items-center justify-content-center">
-                <i class="fal fa-users"></i>
-            </div>
+            <div class="inner-icon position-absolute d-flex align-items-center justify-content-center"><i class="fal fa-users"></i></div>
             <div class="inner-text pera-content">
-                <p>Meet our Featured <span>Designers</span></p>
+                <p>Showcasing Global <span>Talent</span></p>
                 <div class="inner-img-list ul-li d-flex align-items-center">
                     <ul>
-                        <li><img src="assets/images/showverse/mini1.jpg"></li>
-                        <li><img src="assets/images/showverse/mini2.jpg" alt=""></li>
-                        <li><img src="assets/images/showverse/mini3.jpg"></li>
+                        <li><img src="assets/images/showverse/mini1.jpg" alt="Talent thumbnail 1"></li>
+                        <li><img src="assets/images/showverse/mini2.jpg" alt="Talent thumbnail 2"></li>
+                        <li><img src="assets/images/showverse/mini3.jpg" alt="Talent thumbnail 3"></li>
                     </ul>
-                    <a href="team.html"><span>More</span> <i class="far fa-arrow-right"></i></a>
+                    <a href="#explore"><span>More</span> <i class="far fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -241,29 +205,22 @@ include __DIR__ . '/includes/header.php';
     <div class="container">
         <div class="ori-banner-content-7">
             <div class="ori-banner-text-wrap-7 pera-content">
-                <div class="banner-slug text-uppercase wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-                    Where Haute Couture Meets the Digital Age
-                </div>
                 <h1 class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
-                    Welcome to the <span>Showverse</span>
+                    Not a Runway. Not a Beauty Pageant. <span>It’s Showverse.</span>
                 </h1>
-                <p class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">Step inside FashionVogue’s immersive fashion universe — virtual runways, exclusive digital couture drops, and visionary creators redefining tomorrow’s style.</p>
+                <p class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">The first-ever hybrid fashion experience that blends real and virtual worlds.</p>
                 <div class="banner-play-btn d-flex wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1000ms">
                     <div class="ori-btn-7">
-                        <a href="showverse">Explore Now</a>
+                        <a href="#explore">Explore Showverse</a>
                     </div>
-                    <div class="banner-play">
-                        <a class="d-flex video_box align-items-center" href="https://www.youtube.com/watch?v=bIoPkZRVll"><i class="fas fa-play-circle"></i> <span>Watch the Trailer</span></a>
+                    <div class="ori-btn-7" style="margin-left: 15px;">
+                         <a href="#join">Join Now</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
-<!-- Banner Section End -->
-<!-- Sponsor Section -->
- 
-<section id="ori-service-7" class="ori-service-section-7">
+</section><section id="ori-service-7" class="ori-service-section-7">
     <div class="container">
         <div class="ori-section-title-7 text-center wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
             <div class="sub-title text-uppercase" style="color: #120101ff;">Testimonials</div>
@@ -277,26 +234,26 @@ include __DIR__ . '/includes/header.php';
                     <div class="ori-service-inner-item-7 position-relative" style="min-height: 450px; display: flex; flex-direction: column;">
                         <span class="service-shape1 position-absolute"> </span>
                         <div class="ori-service-icon">
-                            <img src="assets/images/showverse/priya.jpg" alt="Priya K.">
+                            <img src="assets/images/showverse/priya.jpg" alt="Aisha S.">
                         </div>
                         <div class="ori-service-text pera-content" style="flex: 1; display: flex; flex-direction: column;">
-                            <h3>"The exclusive digital drops are incredible!"</h3>
-                            <p style="flex-grow: 1;">This platform completely changed how I discover fashion. I feel like I have access to the future of style before anyone else!</p>
-                            <footer>— Priya K.</footer>
+                            <h3>"I landed my first audition in a week!"</h3>
+                            <p style="flex-grow: 1;">The Audition Alerts are amazing. I was tired of searching everywhere, but FashionVerge sent a perfect local casting call right to my phone. It felt like a dream!</p>
+                            <footer>— Aisha S.</footer>
                         </div>
                     </div>
                 </div>
 
                 <div class="ori-service-item-7 position-relative">
-                     <div class="ori-service-inner-item-7 ser-color-2 position-relative" style="min-height: 450px; display: flex; flex-direction: column;">
+                        <div class="ori-service-inner-item-7 ser-color-2 position-relative" style="min-height: 450px; display: flex; flex-direction: column;">
                         <span class="service-shape1 position-absolute"> </span>
                         <div class="ori-service-icon">
-                             <img src="assets/images/showverse/roshan.jpg" alt="Rohan S.">
+                             <img src="assets/images/showverse/anjali.jpg" alt="Vikram R.">
                         </div>
                         <div class="ori-service-text pera-content" style="flex: 1; display: flex; flex-direction: column;">
-                            <h3>"The virtual try-on is a game-changer."</h3>
-                            <p style="flex-grow: 1;">Being able to see how pieces fit my digital avatar before purchasing is incredible. The technology works flawlessly.</p>
-                             <footer>— Rohan S.</footer>
+                            <h3>"The Portfolio Builder is a game-changer."</h3>
+                            <p style="flex-grow: 1;">I didn't know how to create a professional portfolio. With the builder, I made one in minutes and used the Agency Directory to send it out. An agency contacted me the next day!</p>
+                             <footer>— Ramya R.</footer>
                         </div>
                     </div>
                 </div>
@@ -305,12 +262,12 @@ include __DIR__ . '/includes/header.php';
                     <div class="ori-service-inner-item-7 ser-color-3 position-relative" style="min-height: 450px; display: flex; flex-direction: column;">
                         <span class="service-shape1 position-absolute"> </span>
                         <div class="ori-service-icon">
-                            <img src="assets/images/showverse/anjali.jpg" alt="Anjali M.">
+                            <img src="assets/images/showverse/geetha.jpg" alt="Sneha P.">
                         </div>
                         <div class="ori-service-text pera-content" style="flex: 1; display: flex; flex-direction: column;">
-                            <h3>"True ownership of digital couture."</h3>
-                            <p style="flex-grow: 1;">Owning a piece of authenticated digital couture feels amazing. The process was secure and seamless.</p>
-                             <footer>— Anjali M.</footer>
+                            <h3>"The workshops gave me so much confidence."</h3>
+                            <p style="flex-grow: 1;">I was so nervous about walking and posing. The Skill Workshops with pro models taught me everything. I walked into my next audition feeling like a star.</p>
+                             <footer>— Sneha P.</footer>
                         </div>
                     </div>
                 </div>
@@ -319,12 +276,12 @@ include __DIR__ . '/includes/header.php';
                     <div class="ori-service-inner-item-7 ser-color-4 position-relative" style="min-height: 450px; display: flex; flex-direction: column;">
                         <span class="service-shape1 position-absolute"> </span>
                         <div class="ori-service-icon">
-                             <img src="assets/images/showverse/geetha.jpg" alt="Geetha">
+                             <img src="assets/images/showverse/roshan.jpg" alt="Karan L.">
                         </div>
                         <div class="ori-service-text pera-content" style="flex: 1; display: flex; flex-direction: column;">
-                           <h3>"Connecting with visionary designers."</h3>
-                           <p style="flex-grow: 1;">What I love most is learning the story behind each piece. This platform isn't just a marketplace; it's a cultural hub that excites me more</p>
-                           <footer>— Geetha </footer>
+                           <h3>"I finally feel like I'm not alone."</h3>
+                           <p style="flex-grow: 1;">The best part is the Community Hub. Connecting with other aspiring models who get it has been so helpful. We all support each other. It's my favorite feature!</p>
+                           <footer>— Roshan L.</footer>
                         </div>
                     </div>
                 </div>
@@ -337,103 +294,100 @@ include __DIR__ . '/includes/header.php';
         </div>
     </div>
 </section>
-<!-- About Section End -->
- <!-- Google Fonts: Cormorant Garamond for headings, Inter for body text -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS for utility-first styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <style>
-        /* Custom styles to complement Tailwind */
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #FDFDFD; /* A very light, almost white background */
-            color: #1C1C1C;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Cormorant Garamond', serif;
-            font-weight: 700;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+    /* Custom styles to complement Tailwind */
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: #FDFDFD; /* A very light, almost white background */
+        color: #1C1C1C;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 700;
+    }
+    .section-title {
+        font-size: 3.5rem; /* 56px */
+        letter-spacing: -0.025em;
+        line-height: 1.1;
+    }
+    .section-subtitle {
+        font-size: 1.125rem; /* 18px */
+        line-height: 1.7;
+        color: #525252; /* A softer gray for text */
+    }
+    .brand-accent {
+        color: #A18A70; /* A sophisticated, muted gold/tan */
+    }
+    .btn-primary {
+        background-color: #1C1C1C;
+        color: #FFFFFF;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        padding: 0.875rem 2rem; /* 14px 32px */
+        border-radius: 9999px; /* pill shape */
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .btn-primary:hover {
+        background-color: #333333;
+        transform: scale(1.05);
+    }
+    .form-input {
+        border: 1px solid #D1D5DB;
+        border-radius: 0.5rem;
+        padding: 0.75rem 1rem;
+        width: 100%;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .form-input:focus {
+        outline: none;
+        border-color: #A18A70;
+        box-shadow: 0 0 0 2px rgba(161, 138, 112, 0.2);
+    }
+    .feature-card {
+        background-color: #ffffff;
+        border: 1px solid #F0EAE4;
+        border-radius: 0.75rem;
+        padding: 2.5rem;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .feature-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    .feature-icon {
+        width: 2.5rem; /* Changed from 3.5rem */
+        height: 2.5rem; /* Changed from 3.5rem */
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.5rem;
+        color: #A18A70;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
         .section-title {
-            font-size: 3.5rem; /* 56px */
-            letter-spacing: -0.025em;
-            line-height: 1.1;
+            font-size: 2.5rem;
         }
-        .section-subtitle {
-            font-size: 1.125rem; /* 18px */
-            line-height: 1.7;
-            color: #525252; /* A softer gray for text */
-        }
-        .brand-accent {
-            color: #A18A70; /* A sophisticated, muted gold/tan */
-        }
-        .btn-primary {
-            background-color: #1C1C1C;
-            color: #FFFFFF;
-            font-family: 'Inter', sans-serif;
-            font-weight: 500;
-            padding: 0.875rem 2rem; /* 14px 32px */
-            border-radius: 9999px; /* pill shape */
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-        .btn-primary:hover {
-            background-color: #333333;
-            transform: scale(1.05);
-        }
-        .form-input {
-            border: 1px solid #D1D5DB;
-            border-radius: 0.5rem;
-            padding: 0.75rem 1rem;
-            width: 100%;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        }
-        .form-input:focus {
-            outline: none;
-            border-color: #A18A70;
-            box-shadow: 0 0 0 2px rgba(161, 138, 112, 0.2);
-        }
-        .feature-card {
-            background-color: #ffffff;
-            border: 1px solid #F0EAE4;
-            border-radius: 0.75rem;
-            padding: 2.5rem;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .feature-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .feature-icon {
-            width: 2.5rem; /* Changed from 3.5rem */
-            height: 2.5rem; /* Changed from 3.5rem */
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 1.5rem;
-            color: #A18A70;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .section-title {
-                font-size: 2.5rem;
-            }
-        }
-    </style>
+    }
+</style>
 
 
 
 
-   <section id="ori-service-7" class="ori-service-section-7">
+<section id="ori-service-7" class="ori-service-section-7">
     <div class="container">
         <div class="ori-section-title-7 text-center wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
-            <div class="sub-title text-uppercase">Platform Features</div>
+            <div class="sub-title text-uppercase">Your Toolkit For Success</div>
             <h2>
-                Experience Fashion in a
-                <span>New Dimension</span>
+                Everything You Need to
+                <span>Start Modeling</span>
             </h2>
         </div>
         <div class="ori-service-content-7 position-relative">
@@ -442,11 +396,13 @@ include __DIR__ . '/includes/header.php';
                     <div class="ori-service-inner-item-7 position-relative">
                         <span class="service-shape1 position-absolute"> </span>
                         <div class="ori-service-icon">
-                            <i class="fal fa-gem"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="48" height="48">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                            </svg>
                         </div>
                         <div class="ori-service-text pera-content">
-                            <h3><a href="#">Exclusive Digital Drops</a></h3>
-                            <p>Access limited-edition digital collections from leading Indian and global designers, available only here.</p>
+                            <h3><a href="#">Instant Audition Alerts</a></h3>
+                            <p>Get real-time notifications for casting calls and auditions in your area that match your profile.</p>
                         </div>
                     </div>
                 </div>
@@ -454,11 +410,13 @@ include __DIR__ . '/includes/header.php';
                     <div class="ori-service-inner-item-7 ser-color-2 position-relative">
                         <span class="service-shape1 position-absolute"> </span>
                         <div class="ori-service-icon">
-                            <i class="fal fa-magic"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="48" height="48">
+                               <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                            </svg>
                         </div>
                         <div class="ori-service-text pera-content">
-                            <h3><a href="#">Immersive Virtual Try-On</a></h3>
-                            <p>Visualize how garments look on your digital avatar with our cutting-edge AR try-on technology.</p>
+                            <h3><a href="#">Professional Portfolio Builder</a></h3>
+                            <p>Create a stunning digital portfolio in minutes. Add photos, stats, and share your lookbook with agencies.</p>
                         </div>
                     </div>
                 </div>
@@ -466,11 +424,13 @@ include __DIR__ . '/includes/header.php';
                     <div class="ori-service-inner-item-7 ser-color-3 position-relative">
                         <span class="service-shape1 position-absolute"> </span>
                         <div class="ori-service-icon">
-                            <i class="fal fa-signature"></i>
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="48" height="48">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5z" />
+                            </svg>
                         </div>
                         <div class="ori-service-text pera-content">
-                            <h3><a href="#">Direct From The Designers</a></h3>
-                            <p>Explore the story and inspiration behind each collection, connecting you with visionary creators.</p>
+                            <h3><a href="#">Live Skill Workshops</a></h3>
+                            <p>Learn runway walking, posing, and industry secrets from professional models and coaches.</p>
                         </div>
                     </div>
                 </div>
@@ -478,11 +438,13 @@ include __DIR__ . '/includes/header.php';
                     <div class="ori-service-inner-item-7 ser-color-4 position-relative">
                         <span class="service-shape1 position-absolute"> </span>
                         <div class="ori-service-icon">
-                            <i class="fal fa-shield-check"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="48" height="48">
+                               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h6.375M9 12h6.375m-6.375 5.25h6.375M5.25 9h.008v.008H5.25V9zm.75 3h.008v.008H6v-.008zm.75 3h.008v.008H6.75v-.008zm.75 3h.008v.008H7.5v-.008zm6-12h.008v.008H13.5V9zm.75 3h.008v.008H14.25v-.008zm.75 3h.008v.008H15v-.008zm.75 3h.008v.008H15.75v-.008z" />
+                            </svg>
                         </div>
                         <div class="ori-service-text pera-content">
-                            <h3><a href="#">Verifiable Ownership</a></h3>
-                            <p>Own a piece of digital couture. Every item is authenticated on the blockchain for true ownership.</p>
+                            <h3><a href="#">Verified Agency Directory</a></h3>
+                            <p>Connect with trusted, industry-vetted modeling agencies and find the right representation for you.</p>
                         </div>
                     </div>
                 </div>
@@ -490,11 +452,13 @@ include __DIR__ . '/includes/header.php';
                     <div class="ori-service-inner-item-7 position-relative">
                         <span class="service-shape1 position-absolute"> </span>
                         <div class="ori-service-icon">
-                            <i class="fal fa-gem"></i>
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="48" height="48">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                            </svg>
                         </div>
                         <div class="ori-service-text pera-content">
-                            <h3><a href="#">Exclusive Digital Drops</a></h3>
-                            <p>Access limited-edition digital collections from leading Indian and global designers, available only here.</p>
+                            <h3><a href="#">Instant Audition Alerts</a></h3>
+                            <p>Get real-time notifications for casting calls and auditions in your area that match your profile.</p>
                         </div>
                     </div>
                 </div>
@@ -502,11 +466,13 @@ include __DIR__ . '/includes/header.php';
                     <div class="ori-service-inner-item-7 ser-color-2 position-relative">
                         <span class="service-shape1 position-absolute"> </span>
                         <div class="ori-service-icon">
-                            <i class="fal fa-magic"></i>
+                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="48" height="48">
+                               <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                            </svg>
                         </div>
                         <div class="ori-service-text pera-content">
-                            <h3><a href="#">Immersive Virtual Try-On</a></h3>
-                            <p>Visualize how garments look on your digital avatar with our cutting-edge AR try-on technology.</p>
+                            <h3><a href="#">Professional Portfolio Builder</a></h3>
+                            <p>Create a stunning digital portfolio in minutes. Add photos, stats, and share your lookbook with agencies.</p>
                         </div>
                     </div>
                 </div>
@@ -520,49 +486,51 @@ include __DIR__ . '/includes/header.php';
 </section>
 <section id="ori-video-skill-7" class="ori-video-skill-section-7">
     <div class="ori-video-skill-content-7 d-flex">
-        <div class="ori-video-play-7 position-relative" data-background="assets/images/showverse/bg2.jpg">>
-           
+        <div class="ori-video-play-7 position-relative" data-background="assets/images/showverse/bg2.jpg">
         </div>
         <div class="ori-skill-content-7">
             <div class="ori-skill-content-progress">
                 <div class="ori-section-title-7 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                    <div class="sub-title text-uppercase">The Technology</div>
-                    <h2> Powered by Cutting-Edge <span>Style Innovation</span> </h2>
+                    <div class="sub-title text-uppercase">About &amp; Format</div>
+                    <h2>The Journey to <span>Recognition</span></h2>
                 </div>
                 <div class="ori-skill-text-progress-bar wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                    <p>Real-time 3D artistry, seamless AR try‑on, and authenticated digital couture ensure every Showverse moment feels like a front-row experience — refined, exclusive, and truly future-ready.</p>
+                    <p>
+                        Showverse is Fashion Vogue’s signature competitive showcase — a format that redefines how fashion talent is discovered, celebrated, and connected. It combines digital access, immersive virtual experiences, and live competitions into a single, seamless platform.
+                        <br><br>
+                        <b>The 4-Stage Process:</b><br>
+                        <b>1. Entry & Screening:</b> Register online, upload your portfolio, and pass the initial review.<br>
+                        <b>2. Themed Challenges:</b> Participate in creative rounds, photoshoots, and brand campaigns.<br>
+                        <b>3. The Main Event:</b> Experience a cinematic 3D showcase with live judging and voting.<br>
+                        <b>4. Recognition & Opportunities:</b> Earn awards, press, casting calls, and collaborations.
+                    </p>
                     <div class="ori-skill-progress-7">
                         <div class="skill-progress-bar">
                             <div class="skill-set-percent headline">
-                                <h4>High‑Fidelity Virtual Runways</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" data-percent="92"></div>
-                                </div>
+                                <h4>Why Join: Gain Global Exposure</h4>
+                                <div class="progress"><div class="progress-bar" data-percent="95"></div></div>
                             </div>
                             <div class="skill-set-percent headline">
-                                <h4>Seamless AR Try‑On</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" data-percent="85"></div>
-                                </div>
+                                <h4>Why Join: Collaborate with Top Professionals</h4>
+                                <div class="progress"><div class="progress-bar" data-percent="90"></div></div>
                             </div>
                             <div class="skill-set-percent headline">
-                                <h4>Blockchain‑Backed Couture IDs</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" data-percent="99"></div>
-                                </div>
+                                <h4>Why Join: Build a Year-Round Online Portfolio</h4>
+                                <div class="progress"><div class="progress-bar" data-percent="100"></div></div>
+                            </div>
+                             <div class="skill-set-percent headline">
+                                <h4>Why Join: Get Discovered by Brands & Agencies</h4>
+                                <div class="progress"><div class="progress-bar" data-percent="92"></div></div>
+                            </div>
+                             <div class="skill-set-percent headline">
+                                <h4>Why Join: Access Real Paid Opportunities</h4>
+                                <div class="progress"><div class="progress-bar" data-percent="88"></div></div>
                             </div>
                         </div>
                     </div>
                     <div class="ori-skill-client-more">
-                        <div class="inner-img-list ul-li d-flex align-items-center">
-                            <ul>
-                                <li><img src="assets/images/showverse/mini1.jpg" alt=""></li>
-                                <li><img src="assets/images/showverse/mini2.jpg" alt=""></li>
-                                <li><img src="assets/images/showverse/mini3.jpg" alt=""></li>
-                            </ul>
-                            <div class="more-btn">
-                                2k+ Fashion Enthusiasts. <a href="about.html"><span>Explore now</span> <i class="far fa-arrow-right"></i></a>
-                            </div>
+                        <div class="more-btn">
+                            Your stage is no longer limited by walls or borders — <a href="#join"><span>step into Showverse</span> <i class="far fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
