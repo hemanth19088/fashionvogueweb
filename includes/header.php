@@ -43,7 +43,6 @@
 							<ul class="dropdown-menu clearfix">
 								<li><a href="press">Press & Bytes</a></li>
 								<li><a href="gallery">Gallery</a></li>
-								<li><a href="latest-news">Latest News</a></li>
 								<li><a href="blogs">Blogs</a></li>
 								<li><a href="contact">Get in Touch</a></li>
 							</ul>
