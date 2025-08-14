@@ -252,30 +252,24 @@ include __DIR__ . '/includes/head.php';
         </div>
         <div class="news-grid">
             <article class="news-card">
-                <img src="https://placehold.co/600x400/1a237e/ffffff?text=Announcement" alt="Major company announcement" class="news-card-image">
+                <img src="assets/images/media/A ina_MGL9448.jpg" alt="Major company announcement" class="news-card-image">
                 <div class="news-card-content">
-                    <p class="date">August 12, 2025</p>
-                    <h3>We're Launching a New Global Initiative</h3>
-                    <p>We are thrilled to announce a landmark project aimed at expanding our impact across three new continents...</p>
-                    <a href="#" class="read-more">Read More &rarr;</a>
+                    <h3>40+ celebrity Directors/Jury</h3>
+                    <p>The dias which has seenand produced so much talent...</p>
                 </div>
             </article>
             <article class="news-card">
-                <img src="https://placehold.co/600x400/e0e0e0/000000?text=Event" alt="Recap of a recent event" class="news-card-image">
-                <div class="news-card-content">
-                    <p class="date">July 30, 2025</p>
-                    <h3>Our Annual Summit: A Record-Breaking Success</h3>
-                    <p>This year's summit brought together industry leaders from around the world for three days of innovation...</p>
-                    <a href="#" class="read-more">Read More &rarr;</a>
-                </div>
+                <img src="assets/images/oppurtunities/bgo2.jpg" alt="Recap of a recent event" class="news-card-image">
+<div class="news-card-content">
+    <h3>100+ Career opportunities</h3>
+    <p>Connect directly with top brands and agencies actively recruiting for over 100 roles, from runway modeling to brand campaigns.</p>
+</div>
             </article>
             <article class="news-card">
-                <img src="https://placehold.co/600x400/333333/ffffff?text=Report" alt="Cover of a new report" class="news-card-image">
+                <img src="assets/images/media/ppt-page-00007.jpg" alt="Cover of a new report" class="news-card-image">
                 <div class="news-card-content">
-                    <p class="date">July 15, 2025</p>
                     <h3>New Industry Report Published</h3>
                     <p>Our latest research provides key insights into market trends and future growth opportunities for 2026...</p>
-                    <a href="#" class="read-more">Read More &rarr;</a>
                 </div>
             </article>
         </div>
@@ -287,58 +281,28 @@ include __DIR__ . '/includes/head.php';
             <p>Explore our curated collection of high-resolution photos and videos. Here, our story unfolds through captivating moments and powerful imagery.</p>
         </div>
         <div class="gallery-grid">
-            <a href="#"><img src="https://placehold.co/400x400/1a237e/ffffff?text=Event+Photo" alt="Photo from a company event"></a>
-            <a href="#"><img src="https://placehold.co/400x400/cccccc/000000?text=Behind+the+Scenes" alt="Behind the scenes at a photoshoot"></a>
-            <a href="#"><img src="https://placehold.co/400x400/555555/ffffff?text=Team" alt="Company team photo"></a>
-            <a href="#"><img src="https://placehold.co/400x400/1a237e/ffffff?text=Product" alt="Product in action"></a>
-            <a href="#"><img src="https://placehold.co/400x400/cccccc/000000?text=Campaign" alt="Image from a marketing campaign"></a>
-            <a href="#"><img src="https://placehold.co/400x400/555555/ffffff?text=Office" alt="Photo of the company office"></a>
-            <a href="#"><img src="https://placehold.co/400x400/1a237e/ffffff?text=Community" alt="Community outreach event"></a>
-            <a href="#"><img src="https://placehold.co/400x400/cccccc/000000?text=Leadership" alt="Headshot of a company leader"></a>
+            <a href="#"><img src="assets/images/media/a ina-INA_3289.jpg" alt="Photo from a company event"></a>
+            <a href="#"><img src="assets/images/media/a ina-INA_3292.jpg" alt="Behind the scenes at a photoshoot"></a>
+            <a href="#"><img src="assets/images/media/a ina-INA_3608.jpg" alt="Company team photo"></a>
+            <a href="#"><img src="assets/images/media/a ina1E8A0970.jpg" alt="Product in action"></a>
+            <a href="#"><img src="assets/images/media/a ina-INA_3720.jpg" alt="Image from a marketing campaign"></a>
+            <a href="#"><img src="assets/images/media/model5.jpg" alt="Photo of the company office"></a>
+            <a href="#"><img src="assets/images/media/rtw.jpg" alt="Community outreach event"></a>
+            <a href="#"><img src="assets/images/media/A ina_MGL9448.jpg" alt="Headshot of a company leader"></a>
         </div>
     </section>
 
     <section id="in-the-press" class="media-section">
         <div class="section-header">
 <h2 style="color: white;">AS SEEN IN</h2>    
-        <p>We're honored to be featured by leading publications and media outlets. See what others are saying about our work and impact.</p>
         </div>
-        <div class="press-logos">
-            <img src="https://placehold.co/150x40/f0f0f0/cccccc?text=FORBES" alt="Forbes Logo">
-            <img src="https://placehold.co/150x40/f0f0f0/cccccc?text=TechCrunch" alt="TechCrunch Logo">
-            <img src="https://placehold.co/150x40/f0f0f0/cccccc?text=VOGUE" alt="Vogue Logo">
-            <img src="https://placehold.co/150x40/f0f0f0/cccccc?text=WIRED" alt="Wired Logo">
-            <img src="https://placehold.co/150x40/f0f0f0/cccccc?text=BLOOMBERG" alt="Bloomberg Logo">
-        </div>
+
         <div class="press-quote">
-<blockquote style="color: white;">"A true innovator in their field, consistently pushing the boundaries of what's possible and setting new standards for the entire industry."</blockquote>            <footer>- Forbes Magazine</footer>
+<blockquote style="color: white;">"A true innovator in their field, consistently pushing the boundaries of what's possible and setting new standards for the entire industry."</blockquote>            <footer>- Times of INDIA Magazine</footer>
         </div>
     </section>
 
-    <section id="press-kit" class="media-section" style="background-color: var(--secondary-color);">
-        <div class="section-header">
-            <h2>Resources for the Press</h2>
-            <p>Everything you need to tell our story. Access our official brand assets, executive bios, and contact information for media inquiries.</p>
-        </div>
-        <div class="resource-grid">
-            <div class="resource-card">
-                <div class="icon">&#128196;</div> <h4>Company Fact Sheet</h4>
-                <a href="#">Download PDF</a>
-            </div>
-            <div class="resource-card">
-                <div class="icon">&#128444;</div> <h4>Logo & Brand Assets</h4>
-                <a href="#">Download .ZIP</a>
-            </div>
-            <div class="resource-card">
-                <div class="icon">&#128247;</div> <h4>High-Res Image Pack</h4>
-                <a href="#">Download .ZIP</a>
-            </div>
-            <div class="resource-card">
-                <div class="icon">&#128100;</div> <h4>Executive Bios</h4>
-                <a href="#">View Bios</a>
-            </div>
-        </div>
-    </section>
+    
 
     <section id="connect" class="media-section">
         <div class="section-header">
