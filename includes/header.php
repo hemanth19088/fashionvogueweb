@@ -31,7 +31,6 @@
 						<li class="dropdown">
 							<a href="opportunities">Opportunities</a>
 							<ul class="dropdown-menu clearfix">
-							<li><a href="pressrelease">PR/Agency</a></li>
 								<li><a href="models">Models</a></li>
 								<li><a href="designers">Designers</a></li>
 								<li><a href="makeup-artists">Makeup Artists</a></li>
@@ -110,7 +109,6 @@
 								<ul class="dropdown-menu clearfix">
 									<li><a href="press">Press & Bytes</a></li>
 									<li><a href="gallery">Gallery</a></li>
-									<li><a href="latest-news">Latest News</a></li>
 									<li><a href="blogs">Blogs</a></li>
 									<li><a href="contact">Get in Touch</a></li>
 								</ul>

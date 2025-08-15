@@ -292,36 +292,37 @@ include __DIR__ . '/includes/head.php';
         </div>
     </section>
 
-    <section id="in-the-press" class="media-section">
-        <div class="section-header">
-<h2 style="color: white;">AS SEEN IN</h2>    
+    <!-- ============================================ -->
+<!-- ==      Media Partnership Section         == -->
+<!-- ============================================ -->
+<section class="py-16 md:py-24 bg-gray-800 font-sans">
+    <div class="container mx-auto px-4 text-center">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">Media Coverage & Promotion</h2>
+            <p class="text-lg text-gray-400 max-w-3xl mx-auto">
+                Our media presence doesn't just create noise – it creates recall. We are proud to be featured in leading publications.
+            </p>
         </div>
 
-        <div class="press-quote">
-<blockquote style="color: white;">"A true innovator in their field, consistently pushing the boundaries of what's possible and setting new standards for the entire industry."</blockquote>            <footer>- Times of INDIA Magazine</footer>
+        <!-- Media Logos Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 items-center text-gray-500">
+            <div class="text-lg font-semibold hover:text-white transition-colors duration-300">Dailyhunt</div>
+            <div class="text-lg font-semibold hover:text-white transition-colors duration-300">Google News</div>
+            <div class="text-lg font-semibold hover:text-white transition-colors duration-300">ENTRACKR</div>
+            <div class="text-lg font-semibold hover:text-white transition-colors duration-300">The Indian Express</div>
+            <div class="text-lg font-semibold hover:text-white transition-colors duration-300">Hindustan Times</div>
+            <div class="text-lg font-semibold hover:text-white transition-colors duration-300">Entrepreneur</div>
+            <div class="text-lg font-semibold hover:text-white transition-colors duration-300">Business Standard</div>
+            <div class="text-lg font-semibold hover:text-white transition-colors duration-300">The Print</div>
+            <div class="text-lg font-semibold hover:text-white transition-colors duration-300">The Logical Indian</div>
+            <div class="text-lg font-semibold hover:text-white transition-colors duration-300">Forbes India</div>
+            <div class="text-lg font-semibold hover:text-white transition-colors duration-300">99 News</div>
+            <div class="text-lg font-semibold hover:text-white transition-colors duration-300">UP 18 News</div>
         </div>
-    </section>
+    </div>
+</section>
 
-    
-
-    <section id="connect" class="media-section">
-        <div class="section-header">
-<h2 style="color: white;">Let's Keep in Touch</h2>
-            <p>Follow our journey on social media or subscribe to our newsletter for the latest news delivered straight to your inbox.</p>
-        </div>
-        <div class="connect-wrapper">
-             <div class="social-links">
-                <a href="#" title="Facebook">FB</a>
-                <a href="#" title="Instagram">IG</a>
-                <a href="#" title="Twitter / X">X</a>
-                <a href="#" title="LinkedIn">IN</a>
-             </div>
-             <form class="newsletter-form">
-                <input type="email" placeholder="Enter your email address" required>
-                <button type="submit">Subscribe</button>
-             </form>
-        </div>
-    </section>
 
 </main>
 
