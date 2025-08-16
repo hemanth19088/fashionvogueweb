@@ -63,6 +63,54 @@ $SEO_META = [
         'image' => 'assets/img/logos/fashionvogue_colour_logo.png',
         'robots' => 'index,follow'
     ],
+    'gallery' => [
+        'title' => 'Gallery - Fashion Vogue',
+        'description' => 'Explore the visual world of fashion with Fashion Vogue’s gallery.',
+        'keywords' => 'fashion gallery, fashion images, fashion photography, fashion vogue gallery',
+        'url' => 'gallery',
+        'image' => 'assets/img/logos/fashionvogue_colour_logo.png',
+        'robots' => 'index,follow'
+    ],
+    'press' => [
+        'title' => 'Press - Fashion Vogue',
+        'description' => 'Get the latest press releases and media coverage of Fashion Vogue.',
+        'keywords' => 'fashion press, fashion releases, fashion media coverage, fashion vogue press',
+        'url' => 'press',
+        'image' => 'assets/img/logos/fashionvogue_colour_logo.png',
+        'robots' => 'index,follow'
+    ],
+    'contact' => [
+        'title' => 'Contact - Fashion Vogue',
+        'description' => 'Get in touch with Fashion Vogue for inquiries and collaborations.',
+        'keywords' => 'fashion contact, fashion inquiries, fashion collaborations, fashion vogue contact',
+        'url' => 'contact',
+        'image' => 'assets/img/logos/fashionvogue_colour_logo.png',
+        'robots' => 'index,follow'
+    ],
+    'designers' => [
+        'title' => 'Designers - Fashion Vogue',
+        'description' => 'Discover talented fashion designers and their works with Fashion Vogue.',
+        'keywords' => 'fashion designers, fashion talent, fashion creativity, fashion vogue designers',
+        'url' => 'designers',
+        'image' => 'assets/img/logos/fashionvogue_colour_logo.png',
+        'robots' => 'index,follow'
+    ],
+    'blogs' => [
+        'title' => 'Blogs - Fashion Vogue',
+        'description' => 'Read insightful blogs about the fashion industry and trends with Fashion Vogue.',
+        'keywords' => 'fashion blogs, fashion insights, fashion trends, fashion vogue blogs',
+        'url' => 'blogs',
+        'image' => 'assets/img/logos/fashionvogue_colour_logo.png',
+        'robots' => 'index,follow'
+    ],
+    'sponsors' => [
+        'title' => 'Sponsors - Fashion Vogue',
+        'description' => 'Learn about our sponsors and partners who support Fashion Vogue.',
+        'keywords' => 'fashion sponsors, fashion partners, fashion support, fashion vogue sponsors',
+        'url' => 'sponsors',
+        'image' => 'assets/img/logos/fashionvogue_colour_logo.png',
+        'robots' => 'index,follow'
+    ],
 ];
 
 

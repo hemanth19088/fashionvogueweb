@@ -98,7 +98,7 @@
                     <video id="background-video" autoplay loop muted playsinline src="assets/images/demo video.mp4"></video>
                 </div>
                 <div class="ori-slider-text text-center text-uppercase">
-                    <h1>A NEW ERA OF FASHION  <span>IS COMING</span> <i class="fas fa-arrow-right"></i></h1>
+                    <h1>A NEW ERA OF FASHION<span>IS COMING</span> <i class="fas fa-arrow-right"></i></h1>
                 </div>
                 <button id="audio-btn" class="audio-toggle-btn" aria-label="Toggle Audio">
                     <i class="fas fa-volume-off"></i>
