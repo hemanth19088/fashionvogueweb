@@ -230,6 +230,142 @@
             </a>
         </div>
     </section>
+    <section class="model-showcase-minimal">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        .model-showcase-minimal {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #010101ff; /* Pure white background */
+            color: #e7e4e4ff; /* Dark grey font for readability */
+            padding: 80px 0;
+            text-align: center;
+        }
+        .model-showcase-minimal .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .model-showcase-minimal .section-header h2 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .model-showcase-minimal .section-header p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 60px auto;
+            line-height: 1.7;
+        }
+        .model-showcase-minimal .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 35px;
+        }
+        .model-showcase-minimal .model-card {
+            background-color: #ffffff;
+            /* Subtle border to define the card against the white background */
+            border: 1px solid #eeeeee;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .model-showcase-minimal .model-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+        }
+        .model-showcase-minimal .model-image-container {
+            aspect-ratio: 4 / 5;
+            overflow: hidden;
+        }
+        .model-showcase-minimal .model-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .model-showcase-minimal .model-info {
+            padding: 25px;
+            /* Add a border on top to separate from the image */
+            border-top: 1px solid #eeeeee;
+        }
+        .model-showcase-minimal .model-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0 0 5px 0;
+        }
+        .model-showcase-minimal .model-category {
+            display: block;
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .model-showcase-minimal .portfolio-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: #222;
+            background-color: transparent;
+            border: 2px solid #222;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .model-showcase-minimal .portfolio-btn:hover {
+            background-color: #222;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            .model-showcase-minimal .section-header h2 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Talent</h2>
+            <p>A curated selection of professionals who embody grace, strength, and the spirit of contemporary fashion.</p>
+        </div>
+
+        <div class="showcase-grid">
+
+            <div class="model-card">
+                <div class="model-image-container">
+                    <img src="assets/images/gallery/16.jpg" alt="Model Anya">
+                </div>
+                <div class="model-info">
+                    <h3 class="model-name"></h3>
+                    <span class="model-category">Editorial | Runway</span>
+                </div>
+            </div>
+            <div class="model-card">
+                <div class="model-image-container">
+                    <img src="assets/images/gallery/13.jpg" alt="Model Mateo">
+                </div>
+                <div class="model-info">
+                    <h3 class="model-name"></h3>
+                    <span class="model-category">Commercial</span>
+                </div>
+            </div>
+            <div class="model-card">
+                <div class="model-image-container">
+                    <img src="assets/images/gallery/12.jpg" alt="Model Sloane">
+                </div>
+                <div class="model-info">
+                    <h3 class="model-name"></h3>
+                    <span class="model-category">Fitness | Print</span>
+                </div>
+            </div>
+            </div>
+    </div>
+</section>
 <title>In-House Collaboration Section</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
