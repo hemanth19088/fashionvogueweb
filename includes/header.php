@@ -50,7 +50,7 @@
             <!-- Header Right Side -->
             <div class="ori-header-sidebar-search d-flex align-items-center">
                 <!-- ✅ Login Button (Will hide when logged in) -->
-                <a href="app" class="login-btn" id="loginBtn">Login / Signin</a>
+                <a href="app-launch" class="login-btn" id="loginBtn">Login / Signin</a>
 
                 <div class="ori-sidenav-btn navSidebar-button">
                     <button><i class="fal fa-bars"></i></button>
