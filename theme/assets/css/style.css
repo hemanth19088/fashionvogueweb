@@ -4588,9 +4588,7 @@ select:visited {
   z-index: -1;
   height: 805px;
   position: absolute;
-  background-repeat: no-repeat;
-  background-image: url(../img/slider/dm-banner.png);
-}
+  background-repeat: no-repeat;}
 .ori-dm-banner-section .ori-dm-banner-shape1 {
   left: 0;
   bottom: 245px;
@@ -4851,7 +4849,6 @@ select:visited {
   height: 585px;
   position: absolute;
   background-repeat: no-repeat;
-  background-image: url(../img/slider/dm-banner.png);
 }
 
 .ori-dm-testimonial-content {
