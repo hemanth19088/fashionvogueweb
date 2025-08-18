@@ -45,6 +45,8 @@ $baseHref = rtrim($scriptDir, '/') . '/';
 <html lang="<?= htmlspecialchars($lang, ENT_QUOTES) ?>">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title><?= htmlspecialchars($title, ENT_QUOTES) ?></title>
     <meta name="description" content="<?= htmlspecialchars($description, ENT_QUOTES) ?>">
     <meta name="keywords" content="<?= htmlspecialchars($keywords, ENT_QUOTES) ?>">

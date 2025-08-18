@@ -1,6 +1,7 @@
 <!-- Start of header section
     ============================================= -->
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <header id="ori-header" class="ori-header-section header-style-one">
     <div class="ori-header-content-area">
         <div class="ori-header-content d-flex align-items-center justify-content-between">

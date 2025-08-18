@@ -181,26 +181,28 @@ include __DIR__ . '/includes/head.php';
 </style>
 <?php include __DIR__ . '/includes/header.php'; ?>
 
-<section id="ori-dm-banner" class="ori-dm-banner-section position-relative">
-    <div class="container">
+<section id="ori-dm-banner" class="ori-dm-banner-section position-relative" style="background: #000;">
+    <div class="container"></div>
         <div class="ori-dm-banner-content">
             <div class="ori-dm-banner-text-play-btn d-flex align-items-center justify-content-between">
                 <div class="ori-dm-banner-text wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
-                    <h1>Launch Your
-                        <span>Legacy in Fashion</span>
+                    <h1>Launch Your<br>
+                        Legacy in Fashion
                     </h1>
-<p style="color: white;"><strong>This is where careers ignite. Discover opportunities for models, designers, artists, and brands.</strong></p>
+                    <p style="color: white;"><strong>This is where careers ignite. Discover opportunities for models, designers, artists, and brands.</strong></p>
                 </div>
-            <div class="ori-dm-banner-img wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
-                <img src="assets/images/oppurtunities/bgo1.png" alt="High fashion opportunities banner">
+                <div class="ori-dm-banner-img wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+                    <img src="assets/images/oppurtunities/bgo1.png" alt="High fashion opportunities banner">
+                </div>
             </div>
         </div>
     </div>
 </section>
-<section id="opportunities-models" class="hero-section-new" style="background-image: url('https://placehold.co/1920x800/000000/FFFFFF?text=Model+in+Dramatic+Lighting');">
-    <div class="container text-center">
+<section id="opportunities-models" class="hero-section-new">
+    <img src="assets/img/slider/dm-banner.png" alt="Models hero background" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+    <div class="container text-center" style="position:relative;z-index:1;">
         <div class="wow fadeInUp" data-wow-delay="200ms">
-            <h2 class="display-4 font-weight-bold">Define the Next Look</h2>
+            <h2 class="display-4 font-weight-bold"><br><br>Define the Next Look</h2>
             <p class="lead my-4">Your unique look has a place here. We connect emerging models with global opportunities. <br> No experience required.</p>
             <div class="ori-btn-5 text-uppercase">
                 <a href="#">Start Your Journey</a>

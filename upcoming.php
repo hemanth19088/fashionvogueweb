@@ -12,12 +12,12 @@ include __DIR__ . '/includes/head.php';
     <style>
         .fashion-vogue-event-full {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            color: #333;
+            color: #f3efefff;
             line-height: 1.6;
             width: 100%;
             /* This padding adds space at the top and bottom of the section */
             padding: 60px 0;
-            background-color: #ffffff; /* Use a background color to fill the space */
+            background-color: #121111ff; /* Use a background color to fill the space */
             box-sizing: border-box; /* Ensures padding doesn't add to the width */
         }
         .fashion-vogue-event-full .event-content-wrapper {
@@ -30,21 +30,21 @@ include __DIR__ . '/includes/head.php';
         .fashion-vogue-event-full .event-title {
             font-size: 2.8rem;
             font-weight: bold;
-            color: #1a1a1a;
+            color: #efededff;
             margin-top: 0;
             margin-bottom: 10px;
         }
         .fashion-vogue-event-full .event-subtitle {
             font-size: 1.2rem;
             font-style: italic;
-            color: #6c757d;
+            color: #c5c6c7ff;
             margin-top: 0;
             margin-bottom: 25px;
         }
         .fashion-vogue-event-full .event-dates {
             font-size: 1.2rem;
             font-weight: 600;
-            background-color: #f2f2f2;
+            background-color: #1f1f1fff;
             padding: 10px 15px;
             border-radius: 5px;
             display: inline-block;
@@ -53,13 +53,13 @@ include __DIR__ . '/includes/head.php';
         .fashion-vogue-event-full .section-divider {
             border: 0;
             height: 1px;
-            background: #e0e0e0;
+            background: #131313ff;
             margin: 40px auto;
             max-width: 100px;
         }
         .fashion-vogue-event-full .section-title {
             font-size: 2rem;
-            color: #1a1a1a;
+            color: #ebe8e8ff;
             margin-bottom: 25px;
         }
         .fashion-vogue-event-full .highlights-grid {
@@ -70,7 +70,7 @@ include __DIR__ . '/includes/head.php';
             margin-bottom: 20px;
         }
         .fashion-vogue-event-full .highlight-item {
-            background-color: #fafafa;
+            background-color: #1e1e1eff;
             padding: 25px;
             border-radius: 8px;
             border-left: 4px solid #007bff; /* Main Accent color */
@@ -94,7 +94,7 @@ include __DIR__ . '/includes/head.php';
             margin-bottom: 8px;
         }
         .fashion-vogue-event-full .contact-section {
-            background-color: #f8f9fa;
+            background-color: #0e0e0eff;
             padding: 30px;
             border-radius: 8px;
             margin-top: 40px;
@@ -125,7 +125,7 @@ include __DIR__ . '/includes/head.php';
     </style>
     
     <div class="event-content-wrapper">
-        <h1 class="event-title">FASHION VOGUE 2025</h1>
+        <h1 class="event-title"><br>FASHION VOGUE 2025</h1>
         <p class="event-subtitle">"Where Auditions Meet Talent, and Talent Meets the Runway"</p>
         
         <div class="event-dates">

@@ -2,9 +2,8 @@
   $page_id = 'sponsors';
   $body_class = 'ori-digital-studio';
   include __DIR__ . '/includes/head.php';
-  // Assuming head.php includes the Tailwind CSS CDN link, but if not, you'd need this:
-  // echo '<script src="https://cdn.tailwindcss.com"></script>';
-?>
+  ?>
+  <?php include __DIR__ . '/includes/header.php'; ?>
    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,12 +19,7 @@
     <!-- ============================================ -->
     <!-- ==              Header Section            == -->
     <!-- ============================================ -->
-    <header class="bg-gray-800">
-        <div class="container mx-auto px-4 py-6">
-            <h1 class="text-2xl font-bold">FashionVogue Sponsorship</h1>
-        </div>
-    </header>
-
+   
     <main>
         <!-- ============================================ -->
         <!-- ==               Hero Section             == -->
