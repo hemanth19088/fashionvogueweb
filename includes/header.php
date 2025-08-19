@@ -180,40 +180,6 @@
                                 <div class="bubble"><img src="assets/images/events/model6.jpg" alt="Fashion Look 6"></div>
                             </div>
                         </div>
-
-
-<style>
-.fashion-bubbles .bubble-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    justify-items: center;
-}
-.fashion-bubbles .bubble {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 2px solid #fff;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-}
-.fashion-bubbles .bubble img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-</style>
-
-
-                        <div class="content-box">
-                            <h5>Social Account</h5>
-                            <ul class="social-box">
-                                <li><a href="https://www.facebook.com/" class="fab fa-facebook-f"></a></li>
-                                <li><a href="https://www.twitter.com/" class="fab fa-twitter"></a></li>
-                                <li><a href="https://dribbble.com/" class="fab fa-dribbble"></a></li>
-                                <li><a href="https://www.linkedin.com/" class="fab fa-linkedin"></a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
