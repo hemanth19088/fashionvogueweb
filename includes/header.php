@@ -2,6 +2,7 @@
     ============================================= -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
 <header id="ori-header" class="ori-header-section header-style-one">
     <div class="ori-header-content-area">
         <div class="ori-header-content d-flex align-items-center justify-content-between">
@@ -48,15 +49,16 @@
                 </nav>
             </div>
 
-            <!-- Header Right Side -->
-            <div class="ori-header-sidebar-search d-flex align-items-center">
-                <!-- ✅ Login Button (Will hide when logged in) -->
-                <a href="app-launch" class="login-btn" id="loginBtn">Login / Signin</a>
 
-                <div class="ori-sidenav-btn navSidebar-button">
-                    <button><i class="fal fa-bars"></i></button>
-                </div>
-            </div>
+            <!-- Header Right Side -->
+             
+            <div class="ori-header-sidebar-search d-flex align-items-center">
+    <a href="app-launch" class="login-btn" id="loginBtn"> Signin</a>
+    <div class="ori-sidenav-btn navSidebar-button">
+        <button><i class="fal fa-bars"></i></button>
+    </div>
+</div>
+            <!-- /Header Right Side -->
         </div>
         
         <!-- Mobile Menu -->
@@ -70,10 +72,13 @@
                     <div class="mobile_menu_close open_mobile_menu">
                         <i class="fal fa-times"></i>
                     </div>
-                    <div class="m-brand-logo">
-                        <a href="index">
-                            <img src="assets/images/logos/fashionvogue_colour_logo.png" alt="FashionVogue Logo">
-                        </a>
+                    <div class="mobile_top_header">
+                        <div class="m-brand-logo">
+                            <a href="index">
+                                <img src="assets/images/logos/fashionvogue_colour_logo.png" alt="FashionVogue Logo">
+                            </a>
+                        </div>
+                        <a href="app-launch" class="mobile_login_btn" id="mobileLoginBtn">Login / Signin</a>
                     </div>
                     <nav class="mobile-main-navigation  clearfix ul-li">
                         <ul id="m-main-nav" class="nav navbar-nav clearfix">
@@ -128,6 +133,7 @@
 </header><!-- /header -->
 
 
+
 <!-- Sidebar sidebar Item -->
 <div class="xs-sidebar-group info-group">
     <div class="xs-overlay xs-bg-black">
@@ -174,38 +180,6 @@
                                 <div class="bubble"><img src="assets/images/events/model6.jpg" alt="Fashion Look 6"></div>
                             </div>
                         </div>
-
-<style>
-.fashion-bubbles .bubble-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    justify-items: center;
-}
-.fashion-bubbles .bubble {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 2px solid #fff;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-}
-.fashion-bubbles .bubble img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-</style>
-
-                        <div class="content-box">
-                            <h5>Social Account</h5>
-                            <ul class="social-box">
-                                <li><a href="https://www.facebook.com/" class="fab fa-facebook-f"></a></li>
-                                <li><a href="https://www.twitter.com/" class="fab fa-twitter"></a></li>
-                                <li><a href="https://dribbble.com/" class="fab fa-dribbble"></a></li>
-                                <li><a href="https://www.linkedin.com/" class="fab fa-linkedin"></a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -214,6 +188,7 @@
 </div>
 <!-- End of header section
     ============================================= -->
+
 
 
 <!-- ✅ Button styling -->
@@ -233,18 +208,50 @@
     background-color: #dc7c07ff;
     color: #fff;
 }
+
+/* Mobile top header with logo and login */
+.mobile_top_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.mobile_login_btn {
+    background-color: orange !important;
+    color: #fff !important;
+    padding: 8px 15px !important;
+    border-radius: 5px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    display: inline-block !important;
+}
+
+.mobile_login_btn:hover {
+    background-color: #dc7c07ff !important;
+    color: #fff !important;
+    text-decoration: none !important;
+}
 </style>
+
 
 <!-- ✅ JS to hide button if logged in -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     const loginBtn = document.getElementById("loginBtn");
+    const mobileLoginBtn = document.getElementById("mobileLoginBtn");
     const isLoggedIn = localStorage.getItem("isLoggedIn"); 
 
     if (isLoggedIn === "true") {
         if (loginBtn) loginBtn.style.display = "none";
+        if (mobileLoginBtn) mobileLoginBtn.style.display = "none";
     } else {
         if (loginBtn) loginBtn.style.display = "inline-block";
+        if (mobileLoginBtn) mobileLoginBtn.style.display = "inline-block";
     }
 });
 </script>
