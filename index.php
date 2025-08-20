@@ -3,29 +3,33 @@
   $body_class = 'ori-digital-studio';
   include __DIR__ . '/includes/head.php';
 ?>
-	<div id="preloader"></div>
-	<div class="up">
-		<a href="#" class="scrollup text-center"><i class="fas fa-chevron-up"></i></a>
-	</div>
-    <div class="cursor"></div>
 
-    <?php include __DIR__ . '/includes/header.php'; ?>
+<head>
+    <!-- Meta and Core Links (from your includes) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Vogue - India's Biggest Fashion & Audition Showcase</title>
 
-	<section id="ori-slider" class="ori-slider-section position-relative">
+    <!-- CDN CSS & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Consolidated Styles -->
     <style>
-        /* --- Main Slider Styles --- */
-        /* NOTE: For this section to display correctly, you may need to define
-           the utility classes used (e.g., .position-relative, .position-absolute,
-           .text-uppercase, .text-center, .ul-li) in your main stylesheet.
-        */
+        /* --- 1. YOUR ORIGINAL SLIDER STYLES --- */
         .ori-slider-content {
             position: relative;
             overflow: hidden;
-            min-height: 110vh;
+            min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
+            background-color: transparent; 
         }
         .ori-slider-img {
             position: absolute;
@@ -33,21 +37,35 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: 1; 
+            z-index: 1;
         }
         .ori-slider-img video {
             object-fit: cover;
             width: 100%;
             height: 100%;
         }
-        .ori-slider-text {
-            position: relative;
-            z-index: 2; 
-            color: white;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        .slider-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 2;
         }
+        /* --- 1. YOUR ORIGINAL SLIDER STYLES --- */
+/* ... other slider styles ... */
 
-        /* --- Audio Button Styles --- */
+.ori-slider-text h1 {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 3.5rem; /* Adjust size as needed */
+    line-height: 1.1;
+}
+
+/* ... rest of the slider styles ... */
+        
+        
         .audio-toggle-btn {
             position: absolute;
             bottom: 30px;
@@ -69,50 +87,181 @@
         .audio-toggle-btn:hover {
             background-color: rgba(0, 0, 0, 0.8);
         }
+
+        /* --- 2. NEW CREATIVE SECTION STYLES --- */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .privilege-card {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+        }
+        .privilege-card:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: #EAB308; /* yellow-400 */
+            transform: translateY(-5px);
+        }
+        .opportunity-tab {
+            transition: all 0.3s;
+            border-bottom: 2px solid transparent;
+        }
+        .opportunity-tab.active {
+            color: #EAB308;
+            border-bottom-color: #EAB308;
+        }
+        .stat-item {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .stat-item.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .perspective-1000 { perspective: 1000px; }
+        .preserve-3d { transform-style: preserve-3d; }
+        .rotate-y-180 { transform: rotateY(180deg); }
+        .backface-hidden { backface-visibility: hidden; }
     </style>
-
-    <div class="ori-slider-content-wrapper position-relative">
-        
-        <div class="ori-slider-social position-absolute text-uppercase ul-li">
-            <ul>
-                <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-                <li><a href="#"><i class="fab fa-youtube"></i> Youtube</a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-            </ul>
-        </div>
-        
-        <div class="line_animation">
-            <div class="line_area"></div>
-            <div class="line_area"></div>
-            <div class="line_area"></div>
-            <div class="line_area"></div>
-            <div class="line_area"></div>
-            <div class="line_area"></div>
-            <div class="line_area"></div>
-            <div class="line_area"></div>
-        </div>
-
-        <div class="ori-slider-wrap">
-            <div class="ori-slider-content position-relative">
-                <div class="ori-slider-img position-absolute">
-                    <video id="background-video" autoplay loop muted playsinline src="assets/images/demo video.mp4"></video>
-                </div>
-                <div class="ori-slider-text text-center text-uppercase">
-                    <h1>A NEW ERA OF FASHION<span>IS COMING</span> <i class="fas fa-arrow-right"></i></h1>
-                </div>
-                <button id="audio-btn" class="audio-toggle-btn" aria-label="Toggle Audio">
-                    <i class="fas fa-volume-off"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-
     <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Montserrat', 'sans-serif'],
+                        'display': ['Oswald', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="preloader"></div>
+    <div class="up">
+        <a href="#" class="scrollup text-center"><i class="fas fa-chevron-up"></i></a>
+    </div>
+    <div class="cursor"></div>
+
+    <?php include __DIR__ . '/includes/header.php'; ?>
+
+    <main>
+        <!-- Section 1: YOUR ORIGINAL SLIDER SECTION -->
+        <section id="ori-slider" class="ori-slider-section position-relative">
+            <div class="ori-slider-content-wrapper-1 position-relative">
+                <div class="ori-slider-wrap">
+                    <div class="ori-slider-content position-relative">
+                        <!-- New Top Text (Centered Vertically & Horizontally) -->
+                        <div class="absolute inset-0 flex flex-col items-center justify-center z-20 text-center w-full">
+                            <span class="text-xl md:text-5xl font-display text-white-500 drop-shadow-lg uppercase tracking-wide">
+                               <br> A new era of <br>fashion is coming
+                            </span>
+                        
+                        </div>
+                        <div class="ori-slider-img">
+                            <video id="background-video" autoplay loop muted playsinline src="assets/images/demo video.mp4"></video>
+                        </div>
+                        <div class="slider-overlay"></div>
+                        <button id="audio-btn" class="audio-toggle-btn" aria-label="Toggle Audio">
+                            <i class="fas fa-volume-off"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Why Fashion Vogue (Interactive Cards) -->
+        <section id="why-vogue" class="py-20 md:py-28 bg-black">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-display mb-12">Your Launchpad to Stardom</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                    <div class="group perspective-1000"><div class="relative preserve-3d group-hover:rotate-y-180 w-full h-48 duration-500"><div class="absolute backface-hidden w-full h-full flex flex-col items-center justify-center bg-gray-900 border border-gray-700 rounded-lg p-4"><i class="fa-solid fa-trophy text-yellow-400 text-4xl mb-3"></i><h3 class="font-display text-xl">Lucrative Prizes</h3></div><div class="absolute rotate-y-180 backface-hidden w-full h-full flex items-center justify-center bg-yellow-400 text-black rounded-lg p-4"><p class="text-center font-semibold">Fuel your ambition with substantial cash rewards.</p></div></div></div>
+                    <div class="group perspective-1000"><div class="relative preserve-3d group-hover:rotate-y-180 w-full h-48 duration-500"><div class="absolute backface-hidden w-full h-full flex flex-col items-center justify-center bg-gray-900 border border-gray-700 rounded-lg p-4"><i class="fa-solid fa-camera-retro text-yellow-400 text-4xl mb-3"></i><h3 class="font-display text-xl">Elite Photoshoots</h3></div><div class="absolute rotate-y-180 backface-hidden w-full h-full flex items-center justify-center bg-yellow-400 text-black rounded-lg p-4"><p class="text-center font-semibold">Build a world-class portfolio with high-fashion shoots.</p></div></div></div>
+                    <div class="group perspective-1000"><div class="relative preserve-3d group-hover:rotate-y-180 w-full h-48 duration-500"><div class="absolute backface-hidden w-full h-full flex flex-col items-center justify-center bg-gray-900 border border-gray-700 rounded-lg p-4"><i class="fa-solid fa-person-booth text-yellow-400 text-4xl mb-3"></i><h3 class="font-display text-xl">The Grand Runway</h3></div><div class="absolute rotate-y-180 backface-hidden w-full h-full flex items-center justify-center bg-yellow-400 text-black rounded-lg p-4"><p class="text-center font-semibold">Command the stage on the most prestigious runway.</p></div></div></div>
+                    <div class="group perspective-1000"><div class="relative preserve-3d group-hover:rotate-y-180 w-full h-48 duration-500"><div class="absolute backface-hidden w-full h-full flex flex-col items-center justify-center bg-gray-900 border border-gray-700 rounded-lg p-4"><i class="fa-solid fa-mobile-screen-button text-yellow-400 text-4xl mb-3"></i><h3 class="font-display text-xl">Insider Access</h3></div><div class="absolute rotate-y-180 backface-hidden w-full h-full flex items-center justify-center bg-yellow-400 text-black rounded-lg p-4"><p class="text-center font-semibold">Get exclusive casting calls and updates via our private app.</p></div></div></div>
+                    <div class="group perspective-1000"><div class="relative preserve-3d group-hover:rotate-y-180 w-full h-48 duration-500"><div class="absolute backface-hidden w-full h-full flex flex-col items-center justify-center bg-gray-900 border border-gray-700 rounded-lg p-4"><i class="fa-solid fa-users text-yellow-400 text-4xl mb-3"></i><h3 class="font-display text-xl">Power Networking</h3></div><div class="absolute rotate-y-180 backface-hidden w-full h-full flex items-center justify-center bg-yellow-400 text-black rounded-lg p-4"><p class="text-center font-semibold">Connect with the titans of the fashion industry.</p></div></div></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 3: India's Biggest Audition (Animated Stats) -->
+        <section id="audition" class="py-20 md:py-32 bg-gray-900 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/19409315/pexels-photo-19409315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+            <div class="absolute inset-0 bg-black opacity-70"></div>
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <h2 class="text-4xl md:text-6xl font-display text-white mb-12">The Epicenter of Indian Fashion</h2>
+                <div id="stats-container" class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                    <div class="stat-item text-center"><p class="text-5xl md:text-7xl font-display text-yellow-400" data-target="200">0</p><p class="text-lg font-semibold uppercase tracking-wider mt-2">Elite Models</p></div>
+                    <div class="stat-item text-center"><p class="text-5xl md:text-7xl font-display text-yellow-400" data-target="40">0</p><p class="text-lg font-semibold uppercase tracking-wider mt-2">Industry Icons</p></div>
+                    <div class="stat-item text-center"><p class="text-5xl md:text-7xl font-display text-yellow-400" data-target="100">0</p><p class="text-lg font-semibold uppercase tracking-wider mt-2">Career-Defining Roles</p></div>
+                    <div class="stat-item text-center"><p class="text-5xl md:text-7xl font-display text-yellow-400" data-target="30">0</p><p class="text-lg font-semibold uppercase tracking-wider mt-2">Visionary Designers</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Elite Participant Privileges -->
+        <section id="privileges" class="py-20 md:py-28 bg-black">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16"><h2 class="text-4xl md:text-5xl font-display">Unlock The Inner Circle</h2><p class="text-lg text-gray-400 max-w-2xl mx-auto mt-4">As an elite participant, you receive more than an opportunity—you gain an empire.</p></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="privilege-card p-8 rounded-lg"><div class="flex items-center mb-4"><span class="text-4xl font-display text-yellow-400 mr-4">01</span><h3 class="text-2xl font-display">The Signature Portfolio</h3></div><p class="text-gray-300">Command attention with a bespoke, hardbound portfolio of your iconic runway moments.</p></div>
+                    <div class="privilege-card p-8 rounded-lg"><div class="flex items-center mb-4"><span class="text-4xl font-display text-yellow-400 mr-4">02</span><h3 class="text-2xl font-display">The Magazine Cover</h3></div><p class="text-gray-300">Solidify your status with a feature and full credits in a national fashion magazine.</p></div>
+                    <div class="privilege-card p-8 rounded-lg"><div class="flex items-center mb-4"><span class="text-4xl font-display text-yellow-400 mr-4">03</span><h3 class="text-2xl font-display">The Black Book</h3></div><p class="text-gray-300">Gain coveted access to top-tier designer & makeup artist lookbooks for future castings.</p></div>
+                    <div class="privilege-card p-8 rounded-lg"><div class="flex items-center mb-4"><span class="text-4xl font-display text-yellow-400 mr-4">04</span><h3 class="text-2xl font-display">The Luxury Collaboration</h3></div><p class="text-gray-300">Become the face of luxury, styled by premium brand partners in exclusive collaborations.</p></div>
+                    <div class="privilege-card p-8 rounded-lg"><div class="flex items-center mb-4"><span class="text-4xl font-display text-yellow-400 mr-4">05</span><h3 class="text-2xl font-display">The 3-Year All-Access Pass</h3></div><p class="text-gray-300">Your career is always on. Get three years of priority access to castings via our exclusive app.</p></div>
+                    <div class="privilege-card p-8 rounded-lg"><div class="flex items-center mb-4"><span class="text-4xl font-display text-yellow-400 mr-4">06</span><h3 class="text-2xl font-display">The Direct Line</h3></div><p class="text-gray-300">Skip the line. Get direct access to brands and networks for priority invites and showcases.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Opportunities for All (Interactive Tabs) -->
+        <section id="opportunities" class="py-20 md:py-28 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16"><h2 class="text-4xl md:text-5xl font-display">Your Spotlight Awaits</h2><p class="text-lg text-gray-400 max-w-2xl mx-auto mt-4">The stage is set. The world is watching. It's your time to define a legacy.</p></div>
+                <div class="flex justify-center space-x-4 md:space-x-8 mb-12 border-b border-gray-700">
+                    <button class="opportunity-tab active py-4 px-2 md:px-6 text-lg font-semibold" onclick="switchTab('models')">For Models</button>
+                    <button class="opportunity-tab py-4 px-2 md:px-6 text-lg font-semibold" onclick="switchTab('designers')">For Designers</button>
+                    <button class="opportunity-tab py-4 px-2 md:px-6 text-lg font-semibold" onclick="switchTab('artists')">For Makeup Artists</button>
+                </div>
+                <div id="opportunities-content">
+                    <div id="models" class="opportunity-content grid md:grid-cols-2 gap-12 items-center"><img src="https://images.pexels.com/photos/3775087/pexels-photo-3775087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rounded-lg object-cover w-full h-full max-h-[500px]" alt="Fashion Model"><div><h3 class="text-3xl font-display mb-6">Become Unforgettable</h3><ul class="space-y-4 text-lg text-gray-300"><li class="flex items-start"><i class="fa-solid fa-check-circle text-yellow-400 mt-1 mr-3"></i><span>Claim your moment on the runway, guaranteed, before a panel of industry titans.</span></li><li class="flex items-start"><i class="fa-solid fa-check-circle text-yellow-400 mt-1 mr-3"></i><span>Unlock your future with 3 years of priority access to casting agents via our app.</span></li><li class="flex items-start"><i class="fa-solid fa-check-circle text-yellow-400 mt-1 mr-3"></i><span>Be immortalized in print with features in prestigious portfolios and magazines.</span></li><li class="flex items-start"><i class="fa-solid fa-check-circle text-yellow-400 mt-1 mr-3"></i><span>Build your brand with a dedicated spotlight segment, reels, and media promotion.</span></li></ul></div></div>
+                    <div id="designers" class="opportunity-content hidden grid md:grid-cols-2 gap-12 items-center"><img src="https://images.pexels.com/photos/375880/pexels-photo-375880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rounded-lg object-cover w-full h-full max-h-[500px]" alt="Fashion Designer"><div><h3 class="text-3xl font-display mb-6">Build Your Empire</h3><ul class="space-y-4 text-lg text-gray-300"><li class="flex items-start"><i class="fa-solid fa-check-circle text-yellow-400 mt-1 mr-3"></i><span>Present your collection to an exclusive audience of India's top models and buyers.</span></li><li class="flex items-start"><i class="fa-solid fa-check-circle text-yellow-400 mt-1 mr-3"></i><span>Secure a guaranteed runway showcase seen by over 40+ industry directors.</span></li><li class="flex items-start"><i class="fa-solid fa-check-circle text-yellow-400 mt-1 mr-3"></i><span>See your designs celebrated in high-fashion magazines and official portfolios.</span></li><li class="flex items-start"><i class="fa-solid fa-check-circle text-yellow-400 mt-1 mr-3"></i><span>Amplify your brand with a dedicated Designer Spotlight and massive social media reach.</span></li></ul></div></div>
+                    <div id="artists" class="opportunity-content hidden grid md:grid-cols-2 gap-12 items-center"><img src="https://images.pexels.com/photos/3018845/pexels-photo-3018845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rounded-lg object-cover w-full h-full max-h-[500px]" alt="Makeup Artist"><div><h3 class="text-3xl font-display mb-6">Craft Your Legacy</h3><ul class="space-y-4 text-lg text-gray-300"><li class="flex items-start"><i class="fa-solid fa-check-circle text-yellow-400 mt-1 mr-3"></i><span>Access a world of elite opportunities, lifetime app access, and luxury rewards.</span></li><li class="flex items-start"><i class="fa-solid fa-check-circle text-yellow-400 mt-1 mr-3"></i><span>Your artistry, guaranteed on the runway, in magazines, and on campaign shoots.</span></li><li class="flex items-start"><i class="fa-solid fa-check-circle text-yellow-400 mt-1 mr-3"></i><span>Receive high-profile recognition with credits in magazines and tags on all social media.</span></li><li class="flex items-start"><i class="fa-solid fa-check-circle text-yellow-400 mt-1 mr-3"></i><span>Be rewarded with exclusive backstage kits, premium vouchers, and award eligibility.</span></li></ul></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Premium Collaborations -->
+        <section id="collaborate" class="py-20 md:py-28 bg-black">
+             <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-display mb-4">Beyond the Runway: Strategic Collaborations</h2>
+                <p class="text-lg text-gray-400 max-w-3xl mx-auto mb-16">We don't just create moments; we build empires. From viral content to high-impact brand integrations.</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                    <div class="flex flex-col items-center p-6 bg-gray-900 rounded-lg border border-transparent hover:border-yellow-400 transition-colors"><i class="fas fa-film text-4xl text-yellow-400 mb-4"></i><h4 class="font-display text-xl">Viral Content Creation</h4></div>
+                    <div class="flex flex-col items-center p-6 bg-gray-900 rounded-lg border border-transparent hover:border-yellow-400 transition-colors"><i class="fas fa-copyright text-4xl text-yellow-400 mb-4"></i><h4 class="font-display text-xl">High-Impact Branding</h4></div>
+                    <div class="flex flex-col items-center p-6 bg-gray-900 rounded-lg border border-transparent hover:border-yellow-400 transition-colors"><i class="fas fa-box-open text-4xl text-yellow-400 mb-4"></i><h4 class="font-display text-xl">Seamless Product Integration</h4></div>
+                    <div class="flex flex-col items-center p-6 bg-gray-900 rounded-lg border border-transparent hover:border-yellow-400 transition-colors"><i class="fas fa-camera text-4xl text-yellow-400 mb-4"></i><h4 class="font-display text-xl">Exclusive Campaign Shoots</h4></div>
+                    <div class="flex flex-col items-center p-6 bg-gray-900 rounded-lg border border-transparent hover:border-yellow-400 transition-colors"><i class="fas fa-store text-4xl text-yellow-400 mb-4"></i><h4 class="font-display text-xl">Curated Brand Stalls</h4></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <?php include __DIR__ . '/includes/footer.php'; ?>
+
+    <!-- Consolidated Scripts -->
+    <script>
+        // Script for YOUR original slider
         document.addEventListener('DOMContentLoaded', function() {
             const video = document.getElementById('background-video');
             const audioBtn = document.getElementById('audio-btn');
-            
-            // Check if the button actually exists before adding a listener
             if (audioBtn) {
                 const audioIcon = audioBtn.querySelector('i');
                 audioBtn.addEventListener('click', function() {
@@ -128,562 +277,47 @@
                 });
             }
         });
+
+        // Script for NEW animated stats section
+        document.addEventListener("DOMContentLoaded", () => {
+            const statsContainer = document.getElementById('stats-container');
+            const animateCounter = (el) => {
+                const target = +el.dataset.target;
+                const duration = 2000;
+                let current = 0;
+                const stepTime = Math.abs(Math.floor(duration / target));
+                const timer = setInterval(() => {
+                    current += 1;
+                    el.textContent = current;
+                    if (current >= target) {
+                        el.textContent = target; // Ensure it ends on the exact number
+                        clearInterval(timer);
+                    }
+                }, stepTime);
+            };
+            const observer = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting) {
+                    const items = statsContainer.querySelectorAll('.stat-item');
+                    items.forEach((item, index) => {
+                        setTimeout(() => {
+                            item.classList.add('is-visible');
+                            const counter = item.querySelector('p[data-target]');
+                            if (counter) animateCounter(counter);
+                        }, index * 200);
+                    });
+                    observer.unobserve(statsContainer);
+                }
+            }, { threshold: 0.5 });
+            if(statsContainer) observer.observe(statsContainer);
+        });
+
+        // Script for NEW opportunities tabs
+        function switchTab(tabName) {
+            document.querySelectorAll('.opportunity-tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.opportunity-content').forEach(content => content.classList.add('hidden'));
+            document.querySelector(`.opportunity-tab[onclick="switchTab('${tabName}')"]`).classList.add('active');
+            document.getElementById(tabName).classList.remove('hidden');
+        }
     </script>
-</section>
-<!-- End of Slider section
-============================================= -->
-
-
-    <section class="model-showcase-minimal">
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-
-        .model-showcase-minimal {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #010101ff; /* Pure white background */
-            color: #e7e4e4ff; /* Dark grey font for readability */
-            padding: 80px 0;
-            text-align: center;
-        }
-        .model-showcase-minimal .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        .model-showcase-minimal .section-header h2 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-        }
-        .model-showcase-minimal .section-header p {
-            font-size: 1.1rem;
-            color: #666;
-            max-width: 600px;
-            margin: 0 auto 60px auto;
-            line-height: 1.7;
-        }
-        .model-showcase-minimal .showcase-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-            gap: 35px;
-        }
-        .model-showcase-minimal .model-card {
-            background-color: #ffffff;
-            /* Subtle border to define the card against the white background */
-            border: 1px solid #eeeeee;
-            border-radius: 8px;
-            overflow: hidden;
-            text-align: left;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .model-showcase-minimal .model-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
-        }
-        .model-showcase-minimal .model-image-container {
-            aspect-ratio: 4 / 5;
-            overflow: hidden;
-        }
-        .model-showcase-minimal .model-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-        .model-showcase-minimal .model-info {
-            padding: 25px;
-            /* Add a border on top to separate from the image */
-            border-top: 1px solid #eeeeee;
-        }
-        .model-showcase-minimal .model-name {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin: 0 0 5px 0;
-        }
-        .model-showcase-minimal .model-category {
-            display: block;
-            font-size: 0.9rem;
-            color: #888;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        .model-showcase-minimal .portfolio-btn {
-            display: inline-block;
-            text-decoration: none;
-            color: #222;
-            background-color: transparent;
-            border: 2px solid #222;
-            padding: 10px 25px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-        .model-showcase-minimal .portfolio-btn:hover {
-            background-color: #222;
-            color: #fff;
-        }
-        @media (max-width: 768px) {
-            .model-showcase-minimal .section-header h2 {
-                font-size: 2.2rem;
-            }
-        }
-    </style>
-
-    <div class="container">
-        <div class="section-header">
-            <h2>Our Talent</h2>
-            <p>A curated selection of professionals who embody grace, strength, and the spirit of contemporary fashion.</p>
-        </div>
-
-        <div class="showcase-grid">
-
-            <div class="model-card">
-                <div class="model-image-container">
-                    <img src="assets/images/gallery/16.jpg" alt="Model Anya">
-                </div>
-                <div class="model-info">
-                    <h3 class="model-name"></h3>
-                    <span class="model-category">Editorial | Runway</span>
-                </div>
-            </div>
-            <div class="model-card">
-                <div class="model-image-container">
-                    <img src="assets/images/gallery/13.jpg" alt="Model Mateo">
-                </div>
-                <div class="model-info">
-                    <h3 class="model-name"></h3>
-                    <span class="model-category">Commercial</span>
-                </div>
-            </div>
-            <div class="model-card">
-                <div class="model-image-container">
-                    <img src="assets/images/gallery/12.jpg" alt="Model Sloane">
-                </div>
-                <div class="model-info">
-                    <h3 class="model-name"></h3>
-                    <span class="model-category">Fitness | Print</span>
-                </div>
-            </div>
-            </div>
-    </div>
-</section>
-<title>In-House Collaboration Section</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <style>
-        :root {
-            --dark-bg: #2d3436;
-            --primary-accent: #00a8ff; /* A vibrant blue as an accent */
-            --light-text: #f5f6fa;
-            --faded-text: #b2bec3;
-            --hexagon-bg: rgba(255, 255, 255, 0.05);
-            --hexagon-border: rgba(255, 255, 255, 0.2);
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--dark-bg);
-            margin: 0;
-            padding: 0;
-        }
-
-        .collaboration-section {
-            position: relative;
-            background: linear-gradient(45deg, #25282cff, #0f0f0fff);
-            color: var(--light-text);
-            padding: 80px 20px;
-            overflow: hidden;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-header h2 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            margin: 0 0 10px 0;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-        }
-
-        .section-header p {
-            font-size: 1.1rem;
-            color: var(--faded-text);
-            max-width: 700px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-
-        .collaboration-grid {
-            display: grid;
-            /* UPDATED: Changed to 5 columns for a single row layout */
-            grid-template-columns: repeat(5, 1fr);
-            gap: 20px;
-        }
-
-        .collaboration-item {
-            /* This clip-path creates the hexagon shape */
-            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-            background-color: var(--hexagon-bg);
-            border: 2px solid var(--hexagon-border);
-            aspect-ratio: 1 / 1.1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
-            transition: background-color 0.3s ease, border-color 0.3s ease;
-        }
-
-        .collaboration-item:hover {
-            background-color: rgba(0, 168, 255, 0.1);
-            border-color: var(--primary-accent);
-        }
-
-        .item-icon {
-            font-size: 2.5rem;
-            color: var(--primary-accent);
-            margin-bottom: 15px;
-        }
-
-        .item-title {
-            font-size: 1rem;
-            font-weight: 600;
-            margin: 0;
-        }
-        
-        /* REMOVED: Specific grid placement rules are no longer needed */
-
-        .season-banner {
-            position: absolute;
-            top: 160px;
-            right: -55px;
-            background-color: var(--primary-accent);
-            color: var(--dark-bg);
-            padding: 10px 40px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transform: rotate(90deg);
-        }
-
-        /* --- Responsive Adjustments --- */
-        @media (max-width: 1200px) {
-            .collaboration-grid {
-                /* On tablets, wrap to 3 columns */
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .section-header h2 {
-                font-size: 2rem;
-            }
-            .collaboration-grid {
-                /* On small tablets/large phones, wrap to 2 columns */
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .season-banner {
-                display: none;
-            }
-        }
-        
-        @media (max-width: 500px) {
-             .collaboration-grid {
-                /* On small phones, stack into a single column */
-                grid-template-columns: 1fr;
-                max-width: 300px;
-                margin: 0 auto;
-            }
-        }
-
-    </style>
-</head>
-<body>
-
-<section class="collaboration-section">
-    <div class="container">
-        <header class="section-header">
-            <h2>A Premium In-House Collaboration</h2>
-            <p>India's most anticipated fashion platform, redefining brand activation and influencer reach — from the ramp to real-time content.</p>
-        </header>
-
-        <div class="collaboration-grid">
-            <div class="collaboration-item">
-                <div class="item-icon"><i class="fa-solid fa-clapperboard"></i></div>
-                <h3 class="item-title">Reels & Stories</h3>
-            </div>
-
-            <div class="collaboration-item">
-                <div class="item-icon"><i class="fa-solid fa-copyright"></i></div>
-                <h3 class="item-title">Event Branding & Visual Placement</h3>
-            </div>
-
-            <div class="collaboration-item">
-                <div class="item-icon"><i class="fa-solid fa-box-check"></i></div>
-                <h3 class="item-title">Authentic Product Integration</h3>
-            </div>
-
-            <div class="collaboration-item">
-                <div class="item-icon"><i class="fa-solid fa-camera-retro"></i></div>
-                <h3 class="item-title">Exclusive In-House Shoots with Models</h3>
-            </div>
-
-            <div class="collaboration-item">
-                <div class="item-icon"><i class="fa-solid fa-store"></i></div>
-                <h3 class="item-title">Stalls</h3>
-            </div>
-        </div>
-    </div>
-</section>
- <!-- Google Fonts: Cormorant Garamond for headings, Inter for body text -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-   
-   <!-- Tailwind CSS for utility-first styling -->
-   <script src="https://cdn.tailwindcss.com"></script>
-   
-   <style>
-	   /* Custom styles to complement Tailwind */
-	   body {
-		   font-family: 'Inter', sans-serif;
-		   background-color: #000000; /* A very light, almost white background */
-		   color: #1C1C1C;
-	   }
-	   h1, h2, h3, h4, h5, h6 {
-		   font-family: 'Cormorant Garamond', serif;
-		   font-weight: 700;
-	   }
-	   .section-title {
-		   font-size: 3.5rem; /* 56px */
-		   letter-spacing: -0.025em;
-		   line-height: 1.1;
-	   }
-	   .section-subtitle {
-		   font-size: 1.125rem; /* 18px */
-		   line-height: 1.7;
-		   color: #525252; /* A softer gray for text */
-	   }
-	   .brand-accent {
-		   color: #A18A70; /* A sophisticated, muted gold/tan */
-	   }
-	   .btn-primary {
-		   background-color: #1C1C1C;
-		   color: #FFFFFF;
-		   font-family: 'Inter', sans-serif;
-		   font-weight: 500;
-		   padding: 0.875rem 2rem; /* 14px 32px */
-		   border-radius: 9999px; /* pill shape */
-		   transition: background-color 0.3s ease, transform 0.3s ease;
-	   }
-	   .btn-primary:hover {
-		   background-color: #333333;
-		   transform: scale(1.05);
-	   }
-	   .form-input {
-		   border: 1px solid #000000;
-		   border-radius: 0.5rem;
-		   padding: 0.75rem 1rem;
-		   width: 100%;
-		   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-	   }
-	   .form-input:focus {
-		   outline: none;
-		   border-color: #A18A70;
-		   box-shadow: 0 0 0 2px rgba(161, 138, 112, 0.2);
-	   }
-	   .feature-card {
-		   background-color: #ffffff;
-		   border: 1px solid #F0EAE4;
-		   border-radius: 0.75rem;
-		   padding: 2.5rem;
-		   text-align: center;
-		   transition: transform 0.3s ease, box-shadow 0.3s ease;
-	   }
-	   .feature-card:hover {
-		   transform: translateY(-8px);
-		   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-	   }
-
-	   /* Responsive adjustments */
-	   @media (max-width: 768px) {
-		   .section-title {
-			   font-size: 2.5rem;
-		   }
-	   }
-   </style>
-<body class="bg-gray-50">
-   <!-- Section 2: Key Features -->
-<style>
-    .container .section-title,
-    .container .feature-card h3 {
-        color: black;
-    }
-</style>
-
-<section class="py-16 md:py-28 bg-gray-200">
-    <div class="container mx-auto px-6 bg-black rounded-2xl text-white py-12 md:py-20">
-        <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-            <p class="text-uppercase brand-accent font-semibold tracking-widest mb-2">WHAT WE OFFER</p>
-            <h2 class="section-title mb-4">
-                <span class="text-white">Launch Your Modeling Career with </span><span class="brand-accent">FashionVerge</span>
-            </h2>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="feature-card">
-                <div class="w-10 h-10 mx-auto mb-6 text-[#A18A70]">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
-                    </svg>
-                </div>
-                <h3 class="text-2xl mb-3">Audition Alerts</h3>
-                <p class="section-subtitle !text-base">Never miss a chance! Get instant messages for modeling tryouts that are a perfect match for you.</p>
-            </div>
-            <div class="feature-card">
-                <div class="w-10 h-10 mx-auto mb-6 text-[#A18A70]">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-                    </svg>
-                </div>
-                <h3 class="text-2xl mb-3">Portfolio Builder</h3>
-                <p class="section-subtitle !text-base">Show off your style! Easily make a cool online lookbook with your photos and info to share with agencies.</p>
-            </div>
-            <div class="feature-card">
-                <div class="w-10 h-10 mx-auto mb-6 text-[#A18A70]">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5z" />
-                    </svg>
-                </div>
-                <h3 class="text-2xl mb-3">Skill Workshops</h3>
-                <p class="section-subtitle !text-base">Learn from real pros! Join fun online classes that teach you how to walk the runway and pose for photos.</p>
-            </div>
-            <div class="feature-card">
-                <div class="w-10 h-10 mx-auto mb-6 text-[#A18A70]">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h6.375M9 12h6.375m-6.375 5.25h6.375M5.25 9h.008v.008H5.25V9zm.75 3h.008v.008H6v-.008zm.75 3h.008v.008H6.75v-.008zm.75 3h.008v.008H7.5v-.008zm6-12h.008v.008H13.5V9zm.75 3h.008v.008H14.25v-.008zm.75 3h.008v.008H15v-.008zm.75 3h.008v.008H15.75v-.008z" />
-                    </svg>
-                </div>
-                <h3 class="text-2xl mb-3">Agency Directory</h3>
-                <p class="section-subtitle !text-base">Find your team! Look through our safe list of modeling agencies to find the perfect one for you.</p>
-            </div>
-            <div class="feature-card">
-                <div class="w-10 h-10 mx-auto mb-6 text-[#A18A70]">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
-                    </svg>
-                </div>
-                <h3 class="text-2xl mb-3">Expert Advice</h3>
-                <p class="section-subtitle !text-base">Get secret tips from famous models and fashion experts to help you follow your dreams.</p>
-            </div>
-            <div class="feature-card">
-                <div class="w-10 h-10 mx-auto mb-6 text-[#A18A70]">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.5-2.962c.57-1.023-.09-2.3-1.023-2.962A4.5 4.5 0 006 6A4.5 4.5 0 006 15a7.527 7.527 0 001.732 4.721m9.509 0a9.094 9.094 0 01-3.741-.479 3 3 0 01-4.682-2.72m-7.5-2.962c-.57 1.023.09 2.3 1.023 2.962a4.5 4.5 0 01-1.732 4.721M6 6c0-1.714 1.401-3.099 3.12-2.675a4.505 4.505 0 014.76 0c1.719-.424 3.12 1.07 3.12 2.675v3.999a4.5 4.5 0 01-1.171 3.243m-2.13-1.854a.5.5 0 01.708 0l3 3a.5.5 0 01-.708.708l-3-3a.5.5 0 010-.708zM9 12a.5.5 0 01.708 0l3 3a.5.5 0 01-.708.708l-3-3a.5.5 0 010-.708z" />
-                    </svg>
-                </div>
-                <h3 class="text-2xl mb-3">Community Hub</h3>
-                <p class="section-subtitle !text-base">Make new friends! Chat with other aspiring models, share your stories, and cheer each other on.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-	<!-- Start of Testimonial section
-	============================================= -->
-	<section id="ori-testimonial-1" class="ori-testimonial-section-1 position-relative">
-    <div class="ori-vector-bg position-absolute wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-        <img src="assets/img/vector/tst-vector1.png" alt="">
-    </div>
-    <div class="container">
-        <div class="ori-testimonial-content-1 position-relative">
-            <div class="ori-testimonial-title text-center text-uppercase">
-                <h3>What Our Clients Say</h3>
-            </div>
-            <div class="ori-testimonial-slider-1">
-
-                <div class="ori-testimonial-item-area">
-                    <div class="ori-testimonial-item-1">
-                        <div class="ori-testimonial-text text-center pera-content">
-                            <p>“A high level of professionalism and creativity has been consistently experienced through our collaboration with Fashion Vogue. Opportunities have been created, careers have been launched, and talent has been showcased with excellence. Being associated with a brand that is reshaping the future of fashion in India is genuinely appreciated.”</p>
-                            <div class="ori-testimonial-author text-center text-uppercase">
-                                <h4>Lasya Gouda</h4>
-                                <span>CLIENT</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ori-testimonial-item-area">
-                    <div class="ori-testimonial-item-1">
-                        <div class="ori-testimonial-text text-center pera-content">
-                            <p>“Exceptional planning and execution have been witnessed in every event conducted by Fashion Vogue. Through their platform, fresh talent has been introduced and industry engagement has been greatly enhanced.”</p>
-                            <div class="ori-testimonial-author text-center text-uppercase">
-                                <h4>Ramya</h4>
-                                <span>CLIENT</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ori-testimonial-item-area">
-                    <div class="ori-testimonial-item-1">
-                        <div class="ori-testimonial-text text-center pera-content">
-                            <p>“Exceptional planning and execution have been witnessed in every event conducted by Fashion Vogue. Through their platform, fresh talent has been introduced and industry engagement has been greatly enhanced.”</p>
-                            <div class="ori-testimonial-author text-center text-uppercase">
-                                <h4>Lalitha</h4>
-                                <span>Client</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="carousel_nav">
-                <button type="button" class="testi-left_arrow"><img src="assets/img/vector/prev.png" alt="Previous Testimonial"></button>
-                <button type="button" class="testi-right_arrow"><img src="assets/img/vector/next.png" alt="Next Testimonial"></button>
-            </div>
-        </div>
-    </div>
-    <div class="line_animation">
-        <div class="line_area"></div>
-        <div class="line_area"></div>
-        <div class="line_area"></div>
-        <div class="line_area"></div>
-        <div class="line_area"></div>
-        <div class="line_area"></div>
-        <div class="line_area"></div>
-        <div class="line_area"></div>
-    </div>
-</section>
-<!-- End of Testimonial section
-	============================================= -->	 
-
-  
-
-
-           
-
-    <?php include __DIR__ . '/includes/footer.php'; ?>
-
 </body>
 </html>
-
-

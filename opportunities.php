@@ -6,10 +6,6 @@ include __DIR__ . '/includes/head.php';
 <style>
     /* --- DARK MODE THEME --- */
 
-    body {
-        background-color: #000000;
-        color: #f0f0f0;
-    }
 
     /* Make links visible on dark background */
     a {
