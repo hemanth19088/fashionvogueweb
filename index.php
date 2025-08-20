@@ -21,6 +21,33 @@
 
     <!-- Consolidated Styles -->
     <style>
+        /* --- Dull/Brightness Fixes --- */
+body {
+    background: linear-gradient(135deg, #232323 0%, #393939 100%);
+    color: #fafafa;
+}
+.slider-overlay {
+    background-color: rgba(255,255,255,0.13); /* subtle white touch */
+}
+.ori-slider-img video {
+    filter: brightness(1.17) saturate(1.2) contrast(1.09);
+}
+.privilege-card {
+    background-color: rgba(255,255,255,0.16);
+    border: 1px solid rgba(255,255,255,0.22);
+}
+.privilege-card:hover {
+    background-color: rgba(255,255,255,0.32);
+    border-color: #FFD700; /* brighter gold */
+}
+.text-gray-300, .text-gray-400 {
+    color: #fff!important;
+}
+section#audition {
+    filter: brightness(1.1) saturate(1.1);
+}
+/* --- End Brightness Fixes --- */
+
         /* --- 1. YOUR ORIGINAL SLIDER STYLES --- */
         .ori-slider-content {
             position: relative;
@@ -37,7 +64,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: 1;
+            z-index: -1;
         }
         .ori-slider-img video {
             object-fit: cover;
@@ -100,7 +127,7 @@
             letter-spacing: 0.05em;
         }
         .privilege-card {
-            background-color: rgba(255, 255, 255, 0.05);
+            background-color: rgba(0, 0, 0, 0.05);
             border: 1px solid rgba(255, 255, 255, 0.1);
             transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
         }
