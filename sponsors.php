@@ -27,7 +27,9 @@
         <section class="relative py-20 md:py-32 bg-gray-900 text-center">
             <div class="absolute inset-0 bg-cyan-900/30 backdrop-blur-sm"></div>
             <div class="relative container mx-auto px-4">
-                <h2 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">Partner With Us</h2>
+                <br>
+                <h2 class="text-4xl md:text-6xl font-black mb-4 leading-tight">Partner With Us</h2>
+
                 <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
                     Align your brand with innovation and creativity. Reach a dedicated audience of tech enthusiasts, designers, and industry leaders.
                 </p>
