@@ -1,6 +1,62 @@
-<!-- Start of header section
-    ============================================= -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    .login-btn {
+        background-color: orange;
+        color: #fff;
+        padding: 8px 18px;
+        border-radius: 5px;
+        margin-right: 15px;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .login-btn:hover {
+        background-color: #dc7c07ff;
+        color: #fff;
+    }
+    .mobile_top_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #eee;
+    }
+    .mobile_login_btn {
+        background-color: orange !important;
+        color: #fff !important;
+        padding: 8px 15px !important;
+        border-radius: 5px !important;
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        text-decoration: none !important;
+        transition: all 0.3s ease !important;
+        display: inline-block !important;
+    }
+    .mobile_login_btn:hover {
+        background-color: #dc7c07ff !important;
+        color: #fff !important;
+        text-decoration: none !important;
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const loginBtn = document.getElementById("loginBtn");
+        const mobileLoginBtn = document.getElementById("mobileLoginBtn");
+        const isLoggedIn = localStorage.getItem("isLoggedIn"); 
+
+        if (isLoggedIn === "true") {
+            if (loginBtn) loginBtn.style.display = "none";
+            if (mobileLoginBtn) mobileLoginBtn.style.display = "none";
+        } else {
+            if (loginBtn) loginBtn.style.display = "inline-block";
+            if (mobileLoginBtn) mobileLoginBtn.style.display = "inline-block";
+        }
+    });
+</script>
 
 
 <header id="ori-header" class="ori-header-section header-style-one">
@@ -15,7 +71,7 @@
                 </a>
             </div>
             <div class="ori-main-navigation-area">
-                <nav class="ori-main-navigation  clearfix ul-li">
+                <nav class="ori-main-navigation clearfix ul-li">
                     <ul id="main-nav" class="nav navbar-nav clearfix">
                         <li><a href="index">Home</a></li>
                         <li><a href="showverse">Showverse</a></li>
@@ -48,39 +104,28 @@
                     </ul>
                 </nav>
             </div>
-
-
-            <!-- Header Right Side -->
-             
             <div class="ori-header-sidebar-search d-flex align-items-center">
-    <a href="app-launch" class="login-btn" id="loginBtn"> Signin</a>
-    <div class="ori-sidenav-btn navSidebar-button">
-        <button><i class="fal fa-bars"></i></button>
-    </div>
-</div>
-            <!-- /Header Right Side -->
+                <a href="app-launch" class="login-btn" id="loginBtn"> Signin</a>
+                <div class="ori-sidenav-btn navSidebar-button">
+                    <button><i class="fas fa-bars"></i></button> </div>
+            </div>
         </div>
-        
-        <!-- Mobile Menu -->
         <div class="mobile_menu position-relative">
             <div class="mobile_menu_button open_mobile_menu">
-                <i class="fal fa-bars"></i>
-            </div>
+                <i class="fas fa-bars"></i> </div>
             <div class="mobile_menu_wrap">
                 <div class="mobile_menu_overlay open_mobile_menu"></div>
                 <div class="mobile_menu_content">
                     <div class="mobile_menu_close open_mobile_menu">
-                        <i class="fal fa-times"></i>
-                    </div>
+                        <i class="fas fa-times"></i> </div>
                     <div class="mobile_top_header">
                         <div class="m-brand-logo">
                             <a href="index">
                                 <img src="assets/images/logos/fashionvogue_colour_logo.png" alt="FashionVogue Logo">
                             </a>
                         </div>
-                        <a href="app-launch" class="mobile_login_btn" id="mobileLoginBtn">Login / Signin</a>
                     </div>
-                    <nav class="mobile-main-navigation  clearfix ul-li">
+                    <nav class="mobile-main-navigation clearfix ul-li">
                         <ul id="m-main-nav" class="nav navbar-nav clearfix">
                             <li><a href="index">Home</a></li>
                             <li class="dropdown">
@@ -127,29 +172,17 @@
                     </nav>
                 </div>
             </div>
-            <!-- /Mobile-Menu -->
         </div>
     </div>
-</header><!-- /header -->
+</header>
 
-
-
-<!-- Sidebar sidebar Item -->
 <div class="xs-sidebar-group info-group">
     <div class="xs-overlay xs-bg-black">
         <div class="row loader-area">
-            <div class="col-3 preloader-wrap">
-                <div class="loader-bg"></div>
-            </div>
-            <div class="col-3 preloader-wrap">
-                <div class="loader-bg"></div>
-            </div>
-            <div class="col-3 preloader-wrap">
-                <div class="loader-bg"></div>
-            </div>
-            <div class="col-3 preloader-wrap">
-                <div class="loader-bg"></div>
-            </div>
+            <div class="col-3 preloader-wrap"><div class="loader-bg"></div></div>
+            <div class="col-3 preloader-wrap"><div class="loader-bg"></div></div>
+            <div class="col-3 preloader-wrap"><div class="loader-bg"></div></div>
+            <div class="col-3 preloader-wrap"><div class="loader-bg"></div></div>
         </div>
     </div>
     <div class="xs-sidebar-widget">
@@ -186,72 +219,3 @@
         </div>
     </div>
 </div>
-<!-- End of header section
-    ============================================= -->
-
-
-
-<!-- ✅ Button styling -->
-<style>
-.login-btn {
-    background-color: orange;
-    color: #fff;
-    padding: 8px 18px;
-    border-radius: 5px;
-    margin-right: 15px;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-.login-btn:hover {
-    background-color: #dc7c07ff;
-    color: #fff;
-}
-
-/* Mobile top header with logo and login */
-.mobile_top_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #eee;
-}
-
-.mobile_login_btn {
-    background-color: orange !important;
-    color: #fff !important;
-    padding: 8px 15px !important;
-    border-radius: 5px !important;
-    font-size: 12px !important;
-    font-weight: 600 !important;
-    text-decoration: none !important;
-    transition: all 0.3s ease !important;
-    display: inline-block !important;
-}
-
-.mobile_login_btn:hover {
-    background-color: #dc7c07ff !important;
-    color: #fff !important;
-    text-decoration: none !important;
-}
-</style>
-
-
-<!-- ✅ JS to hide button if logged in -->
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const loginBtn = document.getElementById("loginBtn");
-    const mobileLoginBtn = document.getElementById("mobileLoginBtn");
-    const isLoggedIn = localStorage.getItem("isLoggedIn"); 
-
-    if (isLoggedIn === "true") {
-        if (loginBtn) loginBtn.style.display = "none";
-        if (mobileLoginBtn) mobileLoginBtn.style.display = "none";
-    } else {
-        if (loginBtn) loginBtn.style.display = "inline-block";
-        if (mobileLoginBtn) mobileLoginBtn.style.display = "inline-block";
-    }
-});
-</script>
