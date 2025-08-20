@@ -105,7 +105,9 @@
                 </nav>
             </div>
             <div class="ori-header-sidebar-search d-flex align-items-center">
-                <a href="app-launch" class="login-btn" id="loginBtn"> Signin</a>
+                <?php if (!isset($page_id) || $page_id !== 'showverse'): ?>
+                    <a href="app-launch" class="login-btn" id="loginBtn"> SignIn</a>
+                <?php endif; ?>
                 <div class="ori-sidenav-btn navSidebar-button">
                     <button><i class="fas fa-bars"></i></button> </div>
             </div>
@@ -124,17 +126,15 @@
                                 <img src="assets/images/logos/fashionvogue_colour_logo.png" alt="FashionVogue Logo">
                             </a>
                         </div>
+                        <?php if (!isset($page_id) || $page_id !== 'showverse'): ?>
+                            <a href="app-launch" class="mobile_login_btn" id="mobileLoginBtn">SignIn</a>
+                        <?php endif; ?>
                     </div>
                     <nav class="mobile-main-navigation clearfix ul-li">
                         <ul id="m-main-nav" class="nav navbar-nav clearfix">
                             <li><a href="index">Home</a></li>
-                            <li class="dropdown">
+                            <li class="">
                                 <a href="showverse">Showverse</a>
-                                <ul class="dropdown-menu clearfix">
-                                    <li><a href="about">About</a></li>
-                                    <li><a href="experience">Experience</a></li>
-                                    <li><a href="highlights">Highlights</a></li>
-                                </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="events">Events</a>
@@ -152,12 +152,9 @@
                                     <li><a href="sponsors">Sponsors</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="">
                                 <a href="app">App</a>
-                                <ul class="dropdown-menu clearfix">
-                                    <li><a href="download">Download</a></li>
-                                    <li><a href="features">Features</a></li>
-                                </ul>
+                               
                             </li>
                             <li class="dropdown">
                                 <a href="media">Media</a>

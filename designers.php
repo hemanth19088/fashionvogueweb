@@ -15,6 +15,7 @@ include __DIR__ . '/includes/head.php';
         <div class="container mx-auto px-4">
             <!-- Section Header -->
             <div class="text-center mb-12">
+                <br>
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">Featured Designers</h2>
                 <p class="text-lg text-gray-400">Industry leaders shaping the future of fashion.</p>
             </div>
