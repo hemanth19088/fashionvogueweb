@@ -210,13 +210,7 @@ include __DIR__ . '/includes/header.php';
                 </h1>
                 <p class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">The first-ever hybrid fashion experience that blends real and virtual worlds.</p>
                 <div class="banner-play-btn d-flex wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1000ms">
-                    <div class="ori-btn-7">
-                        <a href="#explore">Explore Showverse</a>
-                    </div>
-                    <div class="ori-btn-7" style="margin-left: 15px;">
-                         <a href="#join">Join Now</a>
-                    </div>
-                </div>
+                 
             </div>
         </div>
     </div>

@@ -201,15 +201,42 @@
                         </div>
                         <div class="gallery-box fashion-bubbles">
                             <h5>Gallery</h5>
+                            <style>
+                                .bubble-gallery {
+                                    display: grid;
+                                    grid-template-columns: repeat(3, 1fr);
+                                    gap: 15px;
+                                    justify-content: center;
+                                    max-width: 400px;
+                                    margin: 0 auto;
+                                }
+                                .bubble {
+                                    width: 100px;
+                                    height: 100px;
+                                    border-radius: 50%;
+                                    overflow: hidden;
+                                    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                                    transition: transform 0.3s ease;
+                                    justify-self: center;
+                                }
+                                .bubble:hover {
+                                    transform: scale(1.1);
+                                }
+                                .bubble img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            </style>
                             <div class="bubble-gallery">
-                                <div class="bubble"><img src="assets/images/events/model1.jpg" alt="Fashion Look 1"></div>
-                                <div class="bubble"><img src="assets/images/events/model2.jpg" alt="Fashion Look 2"></div>
-                                <div class="bubble"><img src="assets/images/events/model3.jpg" alt="Fashion Look 3"></div>
-                                <div class="bubble"><img src="assets/images/events/model7.jpg" alt="Fashion Look 4"></div>
-                                <div class="bubble"><img src="assets/images/events/model5.jpg" alt="Fashion Look 5"></div>
-                                <div class="bubble"><img src="assets/images/events/model6.jpg" alt="Fashion Look 6"></div>
+                                <div class="bubble"><img src="assets/images/events/model1.jpg" alt="Fashion Look 1" loading="lazy"></div>
+                                <div class="bubble"><img src="assets/images/events/model2.jpg" alt="Fashion Look 2" loading="lazy"></div>
+                                <div class="bubble"><img src="assets/images/events/model3.jpg" alt="Fashion Look 3" loading="lazy"></div>
+                                <div class="bubble"><img src="assets/images/events/model7.jpg" alt="Fashion Look 4" loading="lazy"></div>
+                                <div class="bubble"><img src="assets/images/events/model5.jpg" alt="Fashion Look 5" loading="lazy"></div>
+                                <div class="bubble"><img src="assets/images/events/model6.jpg" alt="Fashion Look 6" loading="lazy"></div>
                             </div>
-                        </div>
+                        </div></div>
                     </div>
                 </div>
             </div>

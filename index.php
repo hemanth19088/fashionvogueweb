@@ -13,13 +13,12 @@
     <?php include __DIR__ . '/includes/header.php'; ?>
 
     <main>
-        <!-- Section 1: YOUR ORIGINAL SLIDER SECTION (updated with corner fade) -->
         <section id="ori-slider" class="ori-slider-section position-relative">
             <div class="ori-slider-content-wrapper-1 position-relative">
                 <div class="ori-slider-wrap">
                     <div class="ori-slider-content position-relative">
                         <!-- Center text -->
-                        <div class="absolute inset-0 flex flex-col items-center justify-center z-20 text-center w-full">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center  text-center w-full">
                             <span class="text-xl md:text-5xl font-display text-white drop-shadow-lg uppercase tracking-wide">
                                 <br> A new era of <br>fashion is coming
                             </span>
@@ -48,14 +47,53 @@
         <!-- Section 2: Why Fashion Vogue (Interactive Cards) -->
         <section id="why-vogue" class="py-20 md:py-28 bg-black">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-4xl md:text-5xl font-display mb-12">Your Launchpad to Stardom</h2>
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-                    <div class="group perspective-1000"><div class="relative preserve-3d group-hover:rotate-y-180 w-full h-48 duration-500"><div class="absolute backface-hidden w-full h-full flex flex-col items-center justify-center bg-gray-900 border border-gray-700 rounded-lg p-4"><i class="fa-solid fa-trophy text-yellow-400 text-4xl mb-3"></i><h3 class="font-display text-xl">Lucrative Prizes</h3></div><div class="absolute rotate-y-180 backface-hidden w-full h-full flex items-center justify-center bg-yellow-400 text-black rounded-lg p-4"><p class="text-center font-semibold">Fuel your ambition with substantial cash rewards.</p></div></div></div>
-                    <div class="group perspective-1000"><div class="relative preserve-3d group-hover:rotate-y-180 w-full h-48 duration-500"><div class="absolute backface-hidden w-full h-full flex flex-col items-center justify-center bg-gray-900 border border-gray-700 rounded-lg p-4"><i class="fa-solid fa-camera-retro text-yellow-400 text-4xl mb-3"></i><h3 class="font-display text-xl">Elite Photoshoots</h3></div><div class="absolute rotate-y-180 backface-hidden w-full h-full flex items-center justify-center bg-yellow-400 text-black rounded-lg p-4"><p class="text-center font-semibold">Build a world-class portfolio with high-fashion shoots.</p></div></div></div>
-                    <div class="group perspective-1000"><div class="relative preserve-3d group-hover:rotate-y-180 w-full h-48 duration-500"><div class="absolute backface-hidden w-full h-full flex flex-col items-center justify-center bg-gray-900 border border-gray-700 rounded-lg p-4"><i class="fa-solid fa-person-booth text-yellow-400 text-4xl mb-3"></i><h3 class="font-display text-xl">The Grand Runway</h3></div><div class="absolute rotate-y-180 backface-hidden w-full h-full flex items-center justify-center bg-yellow-400 text-black rounded-lg p-4"><p class="text-center font-semibold">Command the stage on the most prestigious runway.</p></div></div></div>
-                    <div class="group perspective-1000"><div class="relative preserve-3d group-hover:rotate-y-180 w-full h-48 duration-500"><div class="absolute backface-hidden w-full h-full flex flex-col items-center justify-center bg-gray-900 border border-gray-700 rounded-lg p-4"><i class="fa-solid fa-mobile-screen-button text-yellow-400 text-4xl mb-3"></i><h3 class="font-display text-xl">Insider Access</h3></div><div class="absolute rotate-y-180 backface-hidden w-full h-full flex items-center justify-center bg-yellow-400 text-black rounded-lg p-4"><p class="text-center font-semibold">Get exclusive casting calls and updates via our private app.</p></div></div></div>
-                    <div class="group perspective-1000"><div class="relative preserve-3d group-hover:rotate-y-180 w-full h-48 duration-500"><div class="absolute backface-hidden w-full h-full flex flex-col items-center justify-center bg-gray-900 border border-gray-700 rounded-lg p-4"><i class="fa-solid fa-users text-yellow-400 text-4xl mb-3"></i><h3 class="font-display text-xl">Power Networking</h3></div><div class="absolute rotate-y-180 backface-hidden w-full h-full flex items-center justify-center bg-yellow-400 text-black rounded-lg p-4"><p class="text-center font-semibold">Connect with the titans of the fashion industry.</p></div></div></div>
+            <h2 class="text-4xl md:text-5xl font-display mb-12">Your Launchpad to Stardom</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="group perspective-1000">
+                <div class="relative preserve-3d group-hover:rotate-y-180 w-full aspect-square duration-500">
+                    <div class="absolute backface-hidden w-full h-full flex flex-col items-center justify-center bg-gray-900 border border-gray-700 rounded-lg p-4">
+                    <img src="assets/images/media/a ina-INA_3289.jpg" alt="Trophy">
+                    <h3 class="font-display text-xl">Lucrative Prizes</h3>
+                    </div>
+                    <div class="absolute rotate-y-180 backface-hidden w-full h-full flex items-center justify-center bg-yellow-400 text-black rounded-lg p-4">
+                    <p class="text-center font-semibold">Fuel your ambition with substantial cash rewards.</p>
+                    </div>
                 </div>
+                </div>
+                <div class="group perspective-1000">
+                <div class="relative preserve-3d group-hover:rotate-y-180 w-full aspect-square duration-500">
+                    <div class="absolute backface-hidden w-full h-full flex flex-col items-center justify-center bg-gray-900 border border-gray-700 rounded-lg p-4">
+                    <img src="assets/images/media/anjali.jpg" alt="Camera" >
+                    <h3 class="font-display text-xl">Elite Photoshoots</h3>
+                    </div>
+                    <div class="absolute rotate-y-180 backface-hidden w-full h-full flex items-center justify-center bg-yellow-400 text-black rounded-lg p-4">
+                    <p class="text-center font-semibold">Build a world-class portfolio with high-fashion shoots.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="group perspective-1000">
+                <div class="relative preserve-3d group-hover:rotate-y-180 w-full aspect-square duration-500">
+                    <div class="absolute backface-hidden w-full h-full flex flex-col items-center justify-center bg-gray-900 border border-gray-700 rounded-lg p-4">
+                    <img src="assets/images/media/a ina-INA_3720.jpg" alt="Runway">
+                    <h3 class="font-display text-xl">The Grand Runway</h3>
+                    </div>
+                    <div class="absolute rotate-y-180 backface-hidden w-full h-full flex items-center justify-center bg-yellow-400 text-black rounded-lg p-4">
+                    <p class="text-center font-semibold">Command the stage on the most prestigious runway.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="group perspective-1000">
+                <div class="relative preserve-3d group-hover:rotate-y-180 w-full aspect-square duration-500">
+                    <div class="absolute backface-hidden w-full h-full flex flex-col items-center justify-center bg-gray-900 border border-gray-700 rounded-lg p-4">
+                    <img src="assets/images/media/A ina_MGL9448.jpg" alt="Mobile">
+                    <h3 class="font-display text-xl">Awards</h3>
+                    </div>
+                    <div class="absolute rotate-y-180 backface-hidden w-full h-full flex items-center justify-center bg-yellow-400 text-black rounded-lg p-4">
+                    <p class="text-center font-semibold">Get exclusive casting calls and updates via our private app.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
             </div>
         </section>
         
@@ -76,15 +114,15 @@
         <!-- Section 4: Elite Participant Privileges -->
         <section id="privileges" class="py-20 md:py-28 bg-black">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-16"><h2 class="text-4xl md:text-5xl font-display">Unlock The Inner Circle</h2><p class="text-lg text-gray-400 max-w-2xl mx-auto mt-4">As an elite participant, you receive more than an opportunity—you gain an empire.</p></div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="privilege-card p-8 rounded-lg"><div class="flex items-center mb-4"><span class="text-4xl font-display text-yellow-400 mr-4">01</span><h3 class="text-2xl font-display">The Signature Portfolio</h3></div><p class="text-gray-300">Command attention with a bespoke, hardbound portfolio of your iconic runway moments.</p></div>
-                    <div class="privilege-card p-8 rounded-lg"><div class="flex items-center mb-4"><span class="text-4xl font-display text-yellow-400 mr-4">02</span><h3 class="text-2xl font-display">The Magazine Cover</h3></div><p class="text-gray-300">Solidify your status with a feature and full credits in a national fashion magazine.</p></div>
-                    <div class="privilege-card p-8 rounded-lg"><div class="flex items-center mb-4"><span class="text-4xl font-display text-yellow-400 mr-4">03</span><h3 class="text-2xl font-display">The Black Book</h3></div><p class="text-gray-300">Gain coveted access to top-tier designer & makeup artist lookbooks for future castings.</p></div>
-                    <div class="privilege-card p-8 rounded-lg"><div class="flex items-center mb-4"><span class="text-4xl font-display text-yellow-400 mr-4">04</span><h3 class="text-2xl font-display">The Luxury Collaboration</h3></div><p class="text-gray-300">Become the face of luxury, styled by premium brand partners in exclusive collaborations.</p></div>
-                    <div class="privilege-card p-8 rounded-lg"><div class="flex items-center mb-4"><span class="text-4xl font-display text-yellow-400 mr-4">05</span><h3 class="text-2xl font-display">The 3-Year All-Access Pass</h3></div><p class="text-gray-300">Your career is always on. Get three years of priority access to castings via our exclusive app.</p></div>
-                    <div class="privilege-card p-8 rounded-lg"><div class="flex items-center mb-4"><span class="text-4xl font-display text-yellow-400 mr-4">06</span><h3 class="text-2xl font-display">The Direct Line</h3></div><p class="text-gray-300">Skip the line. Get direct access to brands and networks for priority invites and showcases.</p></div>
-                </div>
+            <div class="text-center mb-16"><h2 class="text-4xl md:text-5xl font-display">Unlock The Inner Circle</h2><p class="text-lg text-gray-400 max-w-2xl mx-auto mt-4">As an elite participant, you receive more than an opportunity—you gain an empire.</p></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="privilege-card p-8 rounded-lg"><div class="flex items-center mb-4"><span img src="assets/images/media/A ina_MGL9448.jpg font-display text-yellow-400 mr-4">01</span><h3 class="text-2xl font-display">The Signature Portfolio</h3></div><p class="text-gray-300">Command attention with a bespoke, hardbound portfolio of your iconic runway moments.</p></div>
+                <div class="privilege-card p-8 rounded-lg"><div class="flex items-center mb-4"><span class="text-4xl font-display text-yellow-400 mr-4">02</span><h3 class="text-2xl font-display">The Magazine Cover</h3></div><p class="text-gray-300">Solidify your status with a feature and full credits in a national fashion magazine.</p></div>
+                <div class="privilege-card p-8 rounded-lg"><div class="flex items-center mb-4"><span class="text-4xl font-display text-yellow-400 mr-4">03</span><h3 class="text-2xl font-display">The Black Book</h3></div><p class="text-gray-300">Gain coveted access to top-tier designer & makeup artist lookbooks for future castings.</p></div>
+                <div class="privilege-card p-8 rounded-lg"><div class="flex items-center mb-4"><span class="text-4xl font-display text-yellow-400 mr-4">04</span><h3 class="text-2xl font-display">The Luxury Collaboration</h3></div><p class="text-gray-300">Become the face of luxury, styled by premium brand partners in exclusive collaborations.</p></div>
+                <div class="privilege-card p-8 rounded-lg"><div class="flex items-center mb-4"><span class="text-4xl font-display text-yellow-400 mr-4">05</span><h3 class="text-2xl font-display">The Direct Line</h3></div><p class="text-gray-300">Skip the line. Get direct access to brands and networks for priority invites and showcases.</p></div>
+                <div class="privilege-card p-8 rounded-lg"><div class="flex items-center mb-4"><span class="text-4xl font-display text-yellow-400 mr-4">06</span><h3 class="text-2xl font-display">The Global Network</h3></div><p class="text-gray-300">Connect with international fashion houses and get opportunities for global runway shows.</p></div>
+            </div>
             </div>
         </section>
 
@@ -255,21 +293,6 @@ h1, h2, h3, h4, h5, h6 {
 .rotate-y-180 { transform: rotateY(180deg); }
 .backface-hidden { backface-visibility: hidden; }
 
-/* --- Corner fade (vignette) overlay --- */
-.vignette-border {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    z-index: 3; /* above .slider-overlay, below text */
-    background: radial-gradient(
-        circle at 50% 50%,
-        rgba(0,0,0,0) 60%,
-        rgba(0,0,0,0.22) 76%,
-        rgba(0,0,0,0.5) 90%,
-        rgba(0,0,0,0.7) 100%
-    );
-}
-
 
 
 @media (max-width: 640px) {
@@ -291,18 +314,20 @@ h1, h2, h3, h4, h5, h6 {
         document.addEventListener('DOMContentLoaded', function() {
             const video = document.getElementById('background-video');
             const audioBtn = document.getElementById('audio-btn');
-            if (audioBtn) {
-                const audioIcon = audioBtn.querySelector('i');
-                audioBtn.addEventListener('click', function() {
-                    if (video.muted) {
-                        video.muted = false;
-                        audioIcon.classList.remove('fa-volume-off');
-                        audioIcon.classList.add('fa-volume-high');
-                    } else {
-                        video.muted = true;
-                        audioIcon.classList.remove('fa-volume-high');
-                        audioIcon.classList.add('fa-volume-off');
-                    }
+            
+            if (video && audioBtn) {
+                video.addEventListener('loadedmetadata', function() {
+                    const audioIcon = audioBtn.querySelector('i');
+                    audioBtn.addEventListener('click', function() {
+                        video.muted = !video.muted;
+                        if (!video.muted) {
+                            audioIcon.classList.remove('fa-volume-off');
+                            audioIcon.classList.add('fa-volume-high');
+                        } else {
+                            audioIcon.classList.remove('fa-volume-high');
+                            audioIcon.classList.add('fa-volume-off');
+                        }
+                    });
                 });
             }
         });
