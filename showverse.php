@@ -412,191 +412,344 @@ include __DIR__ . '/includes/header.php';
         </div>
     </div>
 </section>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+ <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <style>
-        :root {
-            --primary-color: #5a67d8;
-            --border-color: #e9ecef;
-            --card-bg: #ffffff;
-        }
+  <style>
+    :root{
+      /* Aurora theme tokens */
+      --bg: #070707ff;
+      --bg-2: #0c0c0cff;
+      --panel: #0f0f0fff;
+      --card: #090909ff;
+      --ink: #f2f5ff;
+      --ink-2: #101010ff;
 
-        /* Basic styling for demonstration */
-        body {
-            font-family: system-ui, -apple-system, sans-serif;
-            margin: 0;
-            background-color: #f0f2f5;
-            padding: 40px 20px;
-            box-sizing: border-box;
-        }
-        .ori-video-skill-section-7 {
-            max-width: 1100px;
-            margin: auto;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-            background-color: var(--card-bg);
-        }
-        .d-flex { display: flex; }
+      --primary: #74f0ff;     /* aurora cyan */
+      --primary-2: #7c5cff;   /* violet */
+      --accent: #ffd36e;      /* warm highlight */
+      --outline: #050505ff;
 
-        /* Left column: Image */
-        .ori-video-play-7 {
-            flex: 0 0 40%;
-            min-height: 600px;
-            background-size: cover;
-            background-position: center;
-            background-image: url('https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-        }
-        
-        /* Right column: Content */
-        .ori-skill-content-7 {
-            flex: 1;
-            padding: 40px;
-        }
-        .ori-section-title-7 h2 {
-            font-size: 2.5em;
-            margin: 0 0 15px 0;
-        }
-        .ori-section-title-7 h2 span {
-            color: var(--primary-color);
-        }
-        .ori-section-title-7 .sub-title {
-            color: #6c757d;
-            font-weight: bold;
-        }
-        .ori-skill-text-progress-bar p {
-            line-height: 1.7;
-            color: #495057;
-        }
+      --glow-cyan: 0 0 36px rgba(5, 5, 5, 0.25);
+      --glow-violet: 0 0 36px rgba(13, 13, 13, 0.25);
 
-        /* --- Robust Flowchart Styling --- */
-        .flowchart-container {
-            margin-top: 30px;
-        }
-        .flowchart-container h4 {
-            font-size: 1.4em;
-            margin-bottom: 20px;
-        }
-        .flowchart-list {
-            position: relative;
-            padding-left: 16px;
-        }
-        /* The main vertical line created with a pseudo-element */
-        .flowchart-list::before {
-            content: '';
-            position: absolute;
-            left: 16px;
-            top: 16px;
-            height: calc(100% - 32px);
-            width: 2px;
-            background-color: var(--border-color);
-        }
-        .flowchart-item {
-            position: relative;
-            display: flex;
-            align-items: center;
-            padding-left: 45px;
-            min-height: 32px;
-        }
-        .flowchart-item:not(:last-child) {
-            margin-bottom: 30px;
-        }
-        .flowchart-item i {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            background-color: var(--card-bg);
-            border: 2px solid var(--border-color);
-            color: var(--primary-color);
-            display: grid;
-            place-items: center;
-        }
-        .flowchart-item b {
-            font-size: 1.1em;
-        }
-        .flowchart-item span {
-            display: block;
-            color: #6c757d;
-            font-size: 0.9em;
-            font-weight: normal;
-            margin-top: 4px;
-        }
+      --r-sm: 12px;
+      --r-md: 16px;
+      --r-lg: 22px;
 
-        /* CTA Button */
-        .ori-skill-client-more {
-            margin-top: 40px;
-        }
-        .more-btn a {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: white;
-            padding: 12px 25px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background-color 0.2s;
-        }
-        .more-btn a:hover {
-            background-color: #3e4ab8;
-        }
+      --s-1: 6px;
+      --s-2: 10px;
+      --s-3: 14px;
+      --s-4: 18px;
+      --s-5: 24px;
+      --s-6: 28px;
+      --s-8: 36px;
+      --s-10: 48px;
 
-        /* Responsive */
-        @media (max-width: 900px) {
-            .d-flex { flex-direction: column; }
-            .ori-video-play-7 { min-height: 250px; }
-        }
-    </style>
+      --container: 1200px;
+
+      --fz-eyebrow: .8rem;
+      --fz-title: clamp(2rem, 3.8vw, 3.1rem);
+      --fz-lead: clamp(1rem, 1.2vw, 1.15rem);
+      --fz-step: 1.05rem;
+
+      --dur-1: .18s;
+      --dur-2: .35s;
+      --dur-3: .6s;
+    }
+
+    /* Page background: aurora gradient + starfield */
+    html,body{height:100%}
+    body{
+      margin:0; color:var(--ink);
+      background:
+        radial-gradient(1200px 500px at 80% -10%, rgba(116,240,255,.18), transparent 60%),
+        radial-gradient(900px 600px at 10% 110%, rgba(124,92,255,.18), transparent 60%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial;
+      line-height:1.65;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .stars{
+      position: fixed; inset: 0; pointer-events: none; opacity:.25;
+      background-image:
+        radial-gradient(2px 2px at 10% 20%, rgba(255,255,255,.6), transparent 60%),
+        radial-gradient(2px 2px at 60% 40%, rgba(255,255,255,.5), transparent 60%),
+        radial-gradient(2px 2px at 30% 80%, rgba(255,255,255,.6), transparent 60%),
+        radial-gradient(2px 2px at 85% 70%, rgba(255,255,255,.5), transparent 60%);
+      filter: blur(.2px);
+      animation: twinkle 7s ease-in-out infinite alternate;
+    }
+    @keyframes twinkle{ to { opacity:.4; transform: translateY(-2px) } }
+
+    /* Shell */
+    .aura-wrap{
+      max-width: var(--container);
+      margin: clamp(18px,4vw,40px) auto;
+      padding: clamp(var(--s-6), 4vw, var(--s-10));
+      border-radius: var(--r-lg);
+      background:
+        linear-gradient(180deg, rgba(8, 8, 8, 0.8), rgba(18,24,62,.55));
+      border: 1px solid rgba(12, 12, 12, 0.08);
+      box-shadow:
+        0 18px 60px rgba(0,0,0,.45),
+        inset 0 0 0 1px rgba(255,255,255,.03);
+      backdrop-filter: blur(8px);
+      position: relative;
+      overflow: clip;
+      isolation: isolate;
+    }
+    .aura-wrap::before{
+      content:"";
+      position:absolute; inset:-2px; z-index:-1;
+      background: conic-gradient(from 210deg,
+        rgba(116,240,255,.22), rgba(124,92,255,.22), rgba(255,211,110,.18), rgba(116,240,255,.22));
+      filter: blur(26px);
+      opacity:.45;
+    }
+
+    /* New layout: side split with floating card stack */
+    .aura-grid{
+      display:grid;
+      gap: clamp(var(--s-6), 3vw, var(--s-10));
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 980px){
+      .aura-grid{ grid-template-columns: 48% 52% }
+    }
+
+    /* Left: stacked feature cards (replaces single hero) */
+    .stack{
+      display: grid;
+      gap: var(--s-4);
+    }
+    .stack-card{
+      position: relative;
+      border-radius: var(--r-md);
+      background: linear-gradient(180deg, rgba(10,14,40,.7), rgba(10,14,40,.45));
+      border: 1px solid rgba(255,255,255,.07);
+      min-height: 160px;
+      overflow: hidden;
+      transition: transform var(--dur-1) ease, box-shadow var(--dur-2) ease, border-color var(--dur-1) ease;
+    }
+    .stack-card:hover{
+      transform: translateY(-2px);
+      box-shadow: var(--glow-cyan), var(--glow-violet);
+      border-color: rgba(116,240,255,.25);
+    }
+    .stack-card .bg{
+      position:absolute; inset:0; z-index:0;
+      background:
+        radial-gradient(600px 300px at 70% 20%, rgba(116,240,255,.15), transparent 60%),
+        radial-gradient(500px 300px at 25% 80%, rgba(124,92,255,.18), transparent 60%),
+        url("assets/images/media/a\ ina1E8A0970.jpg") center/cover no-repeat;
+      filter: saturate(1.05) contrast(1.02);
+      opacity:.9;
+      mix-blend-mode: screen;
+    }
+    .stack-card:nth-child(2) .bg{ background-image: url("assets/images/media/A\ ina_MGL9448.jpg"); }
+    .stack-card:nth-child(3) .bg{ background-image: linear-gradient(180deg, rgba(10,14,40,.7), rgba(10,14,40,.7)), url("assets/images/media/A\ ina_MGL9448.jpg"); }
+
+    .stack-card .chip{
+      position: absolute; top: 14px; right: 14px;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 12px; border-radius:999px;
+      font-weight:700; color:#0a0b16;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      border: 1px solid rgba(255,255,255,.35);
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,.25);
+    }
+    .stack-card .chip i{ color:#0a0b16 }
+
+    .stack-card .label{
+      position: absolute; left:16px; bottom:16px;
+      display:flex; flex-direction:column; gap:6px;
+      max-width: 80%;
+      z-index:1;
+    }
+    .label .kicker{
+      font-size:.78rem; letter-spacing:.14em; text-transform:uppercase;
+      color: var(--ink-2); font-weight:800;
+    }
+    .label .headline{
+      margin:0; font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+      font-weight:800; line-height:1.2;
+      text-shadow: 0 2px 20px rgba(0,0,0,.55);
+    }
+
+    /* Right: content and timeline in a pill card */
+    .content-card{
+      border-radius: var(--r-lg);
+      background: linear-gradient(180deg, rgba(12,18,56,.9), rgba(12,18,56,.7));
+      border: 1px solid rgba(255,255,255,.08);
+      padding: clamp(var(--s-6), 3.5vw, var(--s-10));
+      box-shadow: 0 14px 50px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.03);
+    }
+
+    .eyebrow{
+      margin:0 0 var(--s-2);
+      text-transform:uppercase; letter-spacing:.16em;
+      color: var(--ink-2); font-weight:800; font-size: var(--fz-eyebrow);
+    }
+    .title{
+      margin:0 0 var(--s-4);
+      font-size: var(--fz-title); font-weight:900; line-height:1.12; text-wrap:balance;
+    }
+    .title .accent{
+      background: linear-gradient(90deg, var(--primary), var(--primary-2) 55%, var(--accent));
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+      text-shadow: 0 0 22px rgba(116,240,255,.25);
+    }
+    .lead{
+      margin:0 0 var(--s-6);
+      color: var(--ink-2); font-size: var(--fz-lead);
+      max-width:70ch;
+    }
+
+    /* New timeline style: orbital nodes */
+    .timeline{
+      display:grid; gap: var(--s-4); margin:0; padding:0; list-style:none;
+    }
+    .t-item{
+      display:grid;
+      grid-template-columns: 56px 1fr;
+      gap:16px; align-items:start;
+    }
+    .node{
+      position:relative;
+      width:52px; height:52px; border-radius:50%;
+      background: radial-gradient(circle at 35% 35%, rgba(116,240,255,.45), rgba(124,92,255,.28));
+      box-shadow: var(--glow-cyan), inset 0 0 18px rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.2);
+      display:grid; place-items:center;
+    }
+    .node::after{
+      content:""; position:absolute; inset:-6px; border-radius:50%;
+      border: 1px dashed rgba(116,240,255,.35);
+      animation: orbit 6s linear infinite;
+    }
+    @keyframes orbit { to { transform: rotate(360deg) } }
+    .node i{ color:#081029; background:#b5f7ff; border-radius:8px; padding:6px; font-size:1rem }
+
+    .step-title{
+      margin:0; font-weight:900; font-size: var(--fz-step); letter-spacing:.2px;
+    }
+    .step-desc{
+      margin:6px 0 0 0; color: var(--ink-2);
+      max-width: 65ch;
+    }
+
+    /* CTA */
+    .actions{
+      margin-top: clamp(var(--s-6), 3vw, var(--s-10));
+      display:flex; flex-wrap:wrap; gap:12px; align-items:center;
+    }
+    .btn{
+      display:inline-flex; align-items:center; gap:10px;
+      padding: 12px 18px; border-radius: 999px;
+      text-decoration:none; font-weight:900; letter-spacing:.02em;
+      transition: transform var(--dur-1) ease, box-shadow var(--dur-2) ease, background var(--dur-1) ease;
+      border:1px solid rgba(255,255,255,.2);
+    }
+    .btn-primary{
+      background: linear-gradient(90deg, var(--primary), var(--primary-2));
+      color:#0a0b16;
+      box-shadow: 0 12px 36px rgba(116,240,255,.25), inset 0 0 0 1px rgba(255,255,255,.4);
+    }
+    .btn-primary i{ color:#0a0b16 }
+    .btn-primary:hover{ transform: translateY(-1px); box-shadow: 0 16px 46px rgba(124,92,255,.35) }
+    .btn-ghost{
+      background: transparent; color: var(--ink-2);
+    }
+    .btn-ghost:hover{ color: var(--ink) }
+
+    .subnote{ color: var(--ink-2); font-size:.92rem }
+
+    /* Accessibility focus */
+    .btn:focus-visible{
+      outline:none; box-shadow: 0 0 0 3px rgba(116,240,255,.45), 0 0 0 6px rgba(124,92,255,.28);
+    }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce){
+      *{ transition-duration:.01ms !important; animation-duration:.01ms !important }
+    }
+  </style>
 </head>
 <body>
 
-<section id="ori-video-skill-7" class="ori-video-skill-section-7">
-    <div class="ori-video-skill-content-7 d-flex">
-        <div class="ori-video-play-7 position-relative">
-            </div>
-        <div class="ori-skill-content-7">
-            <div class="ori-skill-content-progress">
-                <div class="ori-section-title-7">
-                    <div class="sub-title text-uppercase">About &amp; Format</div>
-                    <h2>The Journey to <span>Recognition</span></h2>
-                </div>
-                <div class="ori-skill-text-progress-bar">
-                    <p>
-                        Showverse is Fashion Vogue’s signature competitive showcase — a format that redefines how fashion talent is discovered, celebrated, and connected. It combines digital access, immersive virtual experiences, and live competitions into a single, seamless platform.
-                    </p>
-                    
-                    <div class="flowchart-container">
-                        <h4>The 4-Stage Process:</h4>
-                        <div class="flowchart-list">
-                            <div class="flowchart-item">
-                                <i class="fas fa-file-signature"></i>
-                                <div><b>1. Entry & Screening</b><span>Register, upload portfolio, and pass review.</span></div>
-                            </div>
-                            <div class="flowchart-item">
-                                <i class="fas fa-camera-retro"></i>
-                                <div><b>2. Themed Challenges</b><span>Participate in photoshoots and campaigns.</span></div>
-                            </div>
-                            <div class="flowchart-item">
-                                <i class="fas fa-cube"></i>
-                                <div><b>3. The Main Event</b><span>Experience a cinematic 3D showcase.</span></div>
-                            </div>
-                            <div class="flowchart-item">
-                                <i class="fas fa-award"></i>
-                                <div><b>4. Recognition & Opportunities</b><span>Earn awards, press, and collaborations.</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <div class="stars" aria-hidden="true"></div>
 
-                <div class="ori-skill-client-more">
-                    <div class="more-btn">
-                        <a href="#join">Step into Showverse <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
+  <section class="aura-wrap" aria-labelledby="sv-title">
+    <div class="aura-grid">
+      <!-- Left: stacked feature cards -->
+      <div class="stack" aria-hidden="false">
+        
+
+        <article class="stack-card" aria-label="Editorial photo challenges">
+          <div class="bg"></div>
+          <span class="chip"><i class="fa-solid fa-camera-retro"></i> Showcase Briefs</span>
+          <div class="label">
+            <span class="kicker">Creative</span>
+            <h3 class="headline">Shoots that showcase range and craft</h3>
+          </div>
+        </article>
+
+        <article class="stack-card" aria-label="Recognition and brand access">
+          <div class="bg"></div>
+          <span class="chip"><i class="fa-solid fa-award"></i> Recognition</span>
+          <div class="label">
+            <span class="kicker">Career</span>
+            <h3 class="headline">Awards, press, and direct brand collaboration</h3>
+          </div>
+        </article>
+      </div>
+
+      <!-- Right: content -->
+      <div class="content-card">
+        <p class="eyebrow">About &amp; Format</p>
+        <h2 id="sv-title" class="title">The Journey to <span class="accent">Recognition</span></h2>
+
+        <p class="lead">
+          Showverse is Fashion Vogue’s signature competitive showcase — a contemporary stage where discovery meets spectacle. It fuses digital access, immersive virtual worlds, and live competitions into one connected experience.
+        </p>
+
+        <ol class="timeline" role="list">
+          <li class="t-item">
+            <div class="node" aria-hidden="true"><i class="fa-solid fa-file-signature"></i></div>
+            <div>
+              <p class="step-title">1. Entry &amp; Screening</p>
+              <p class="step-desc">Create a profile, upload your portfolio, and pass a quick creative review to join the cohort.</p>
             </div>
-        </div>
+          </li>
+
+          <li class="t-item">
+            <div class="node" aria-hidden="true"><i class="fa-solid fa-camera-retro"></i></div>
+            <div>
+              <p class="step-title">2. Themed Challenges</p>
+              <p class="step-desc">Respond to editorial briefs and guided shoots that highlight technique, narrative, and versatility.</p>
+            </div>
+          </li>
+
+          
+
+          <li class="t-item">
+            <div class="node" aria-hidden="true"><i class="fa-solid fa-award"></i></div>
+            <div>
+              <p class="step-title">4. Recognition &amp; Opportunities</p>
+              <p class="step-desc">Gain awards, press features, and collaboration offers with brands and creators.</p>
+            </div>
+          </li>
+        </ol>
+
+       
+        <p class="subnote" style="margin-top:8px">Tip: Bring a concise, editorial-ready portfolio for the fastest screen.</p>
+      </div>
     </div>
-</section>
+  </section>
+
+
 
 <section id="ori-service-7" class="ori-service-section-7">
     <div class="container">

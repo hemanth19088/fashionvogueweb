@@ -1696,7 +1696,7 @@ select:visited {
 }
 
 .ori-slider-content-wrapper-1 {
-  z-index: 1;
+  z-index: 5;
   overflow: hidden;
 }
 

@@ -3,147 +3,6 @@
   $body_class = 'ori-digital-studio';
   include __DIR__ . '/includes/head.php';
 ?>
-
-<head>
-    <!-- Meta and Core Links (from your includes) -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Vogue - India's Biggest Fashion & Audition Showcase</title>
-
-    <!-- CDN CSS & Fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Consolidated Styles -->
-    <style>
-        /* --- 1. YOUR ORIGINAL SLIDER STYLES --- */
-        .ori-slider-content {
-            position: relative;
-            overflow: hidden;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: transparent; 
-        }
-        .ori-slider-img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-        }
-        .ori-slider-img video {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-        }
-        .slider-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.4);
-            z-index: 2;
-        }
-        /* --- 1. YOUR ORIGINAL SLIDER STYLES --- */
-/* ... other slider styles ... */
-
-.ori-slider-text h1 {
-    font-family: 'Oswald', sans-serif;
-    color: white;
-    font-size: 3.5rem; /* Adjust size as needed */
-    line-height: 1.1;
-}
-
-/* ... rest of the slider styles ... */
-        
-        
-        .audio-toggle-btn {
-            position: absolute;
-            bottom: 30px;
-            right: 30px;
-            z-index: 10;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: 1px solid white;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            font-size: 18px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background-color 0.3s ease;
-        }
-        .audio-toggle-btn:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        /* --- 2. NEW CREATIVE SECTION STYLES --- */
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #000000;
-            color: #ffffff;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Oswald', sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-        .privilege-card {
-            background-color: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
-        }
-        .privilege-card:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-            border-color: #EAB308; /* yellow-400 */
-            transform: translateY(-5px);
-        }
-        .opportunity-tab {
-            transition: all 0.3s;
-            border-bottom: 2px solid transparent;
-        }
-        .opportunity-tab.active {
-            color: #EAB308;
-            border-bottom-color: #EAB308;
-        }
-        .stat-item {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-        .stat-item.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .perspective-1000 { perspective: 1000px; }
-        .preserve-3d { transform-style: preserve-3d; }
-        .rotate-y-180 { transform: rotateY(180deg); }
-        .backface-hidden { backface-visibility: hidden; }
-    </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'sans': ['Montserrat', 'sans-serif'],
-                        'display': ['Oswald', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
-</head>
 <body>
     <div id="preloader"></div>
     <div class="up">
@@ -154,22 +13,30 @@
     <?php include __DIR__ . '/includes/header.php'; ?>
 
     <main>
-        <!-- Section 1: YOUR ORIGINAL SLIDER SECTION -->
+        <!-- Section 1: YOUR ORIGINAL SLIDER SECTION (updated with corner fade) -->
         <section id="ori-slider" class="ori-slider-section position-relative">
             <div class="ori-slider-content-wrapper-1 position-relative">
                 <div class="ori-slider-wrap">
                     <div class="ori-slider-content position-relative">
-                        <!-- New Top Text (Centered Vertically & Horizontally) -->
+                        <!-- Center text -->
                         <div class="absolute inset-0 flex flex-col items-center justify-center z-20 text-center w-full">
-                            <span class="text-xl md:text-5xl font-display text-white-500 drop-shadow-lg uppercase tracking-wide">
-                               <br> A new era of <br>fashion is coming
+                            <span class="text-xl md:text-5xl font-display text-white drop-shadow-lg uppercase tracking-wide">
+                                <br> A new era of <br>fashion is coming
                             </span>
-                        
                         </div>
+
+                        <!-- Video layer -->
                         <div class="ori-slider-img">
                             <video id="background-video" autoplay loop muted playsinline src="assets/images/demo video.mp4"></video>
                         </div>
+
+                        <!-- Base overlay -->
                         <div class="slider-overlay"></div>
+
+                        <!-- Vignette overlay for corner fade -->
+                        <div class="vignette-border"></div>
+
+                        <!-- Controls -->
                         <button id="audio-btn" class="audio-toggle-btn" aria-label="Toggle Audio">
                             <i class="fas fa-volume-off"></i>
                         </button>
@@ -256,6 +123,168 @@
     
     <?php include __DIR__ . '/includes/footer.php'; ?>
 
+    <!-- Consolidated Styles (moved to bottom for your convenience; keep in your CSS file in production) -->
+    <style>
+/* --- Dull/Brightness Fixes --- */
+body {
+    background: linear-gradient(135deg, #232323 0%, #393939 100%);
+    color: #fafafa;
+}
+.slider-overlay {
+    background-color: rgba(255,255,255,0.13);
+}
+.ori-slider-img video {
+    filter: brightness(1.17) saturate(1.2) contrast(1.09);
+}
+.privilege-card {
+    background-color: rgba(255,255,255,0.16);
+    border: 1px solid rgba(255,255,255,0.22);
+}
+.privilege-card:hover {
+    background-color: rgba(255,255,255,0.32);
+    border-color: #FFD700;
+}
+.text-gray-300, .text-gray-400 {
+    color: #fff!important;
+}
+section#audition {
+    filter: brightness(1.1) saturate(1.1);
+}
+
+/* --- Slider base styles --- */
+.ori-slider-content {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.ori-slider-img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: -1;
+}
+.ori-slider-img video {
+    object-fit: cover;
+    width: 100%; height: 100%;
+}
+.slider-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.32); /* slightly lighter to showcase vignette */
+    z-index: 2;
+}
+
+/* Headline */
+.ori-slider-text h1 {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 3.5rem;
+    line-height: 1.1;
+}
+
+/* Audio button */
+.audio-toggle-btn {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+.audio-toggle-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Typography */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Cards etc. */
+.privilege-card {
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+}
+.privilege-card:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #EAB308;
+    transform: translateY(-5px);
+}
+.opportunity-tab {
+    transition: all 0.3s;
+    border-bottom: 2px solid transparent;
+}
+.opportunity-tab.active {
+    color: #EAB308;
+    border-bottom-color: #EAB308;
+}
+.stat-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.stat-item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.perspective-1000 { perspective: 1000px; }
+.preserve-3d { transform-style: preserve-3d; }
+.rotate-y-180 { transform: rotateY(180deg); }
+.backface-hidden { backface-visibility: hidden; }
+
+/* --- Corner fade (vignette) overlay --- */
+.vignette-border {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 3; /* above .slider-overlay, below text */
+    background: radial-gradient(
+        circle at 50% 50%,
+        rgba(0,0,0,0) 60%,
+        rgba(0,0,0,0.22) 76%,
+        rgba(0,0,0,0.5) 90%,
+        rgba(0,0,0,0.7) 100%
+    );
+}
+
+
+
+@media (max-width: 640px) {
+    .vignette-border {
+        background: radial-gradient(
+            circle at 50% 50%,
+            rgba(0,0,0,0) 62%,
+            rgba(0,0,0,0.18) 78%,
+            rgba(0,0,0,0.42) 92%,
+            rgba(0,0,0,0.62) 100%
+        );
+    }
+}
+    </style>
+
     <!-- Consolidated Scripts -->
     <script>
         // Script for YOUR original slider
@@ -290,7 +319,7 @@
                     current += 1;
                     el.textContent = current;
                     if (current >= target) {
-                        el.textContent = target; // Ensure it ends on the exact number
+                        el.textContent = target;
                         clearInterval(timer);
                     }
                 }, stepTime);
